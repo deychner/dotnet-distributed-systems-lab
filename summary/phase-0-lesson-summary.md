@@ -65,6 +65,20 @@
 
 ---
 
+## Addendum: Image Version Discipline (post-completion follow-up)
+
+After Phase 0 was marked complete, a follow-up question ("is `redis:7` actually current?") surfaced a real gap worth logging:
+
+- **RabbitMQ was running on a stale major version.** The container had been set up with `rabbitmq:3-management`. Checked against Docker Hub's official page directly (not a search snippet) and found the current supported line is `4.3.5`/`4`/`latest`. Corrected to `rabbitmq:4-management`. Also added `--hostname` to the run command, which had been missing — RabbitMQ keys its data directory to the container hostname, and Docker's own docs recommend setting it explicitly to avoid orphaning data on container recreation.
+- **Redis guidance given earlier (`redis:7`) was also out of date.** Current major version is `8` (license moved from RSAL back to open-source AGPLv3 as of Redis 8, worth knowing as a side fact). Corrected recommendation to `redis:8` — pinned major version, not `latest`, for the same reproducibility reasoning applied to RabbitMQ.
+- **Independently, before being asked, a SQL Server image was pulled using `mcr.microsoft.com/mssql/server:2025-latest`** — checked against Microsoft's own docs and confirmed as a real, current, officially supported tag (SQL Server 2025 / 17.x). This was the right instinct applied without prompting: check the actual current version rather than trust a remembered or copy-pasted one.
+
+**Takeaway logged for the weak-spot list:** version tags given in the moment (by either party) should be treated as provisional, not authoritative, until checked against the source (Docker Hub / vendor docs) — training data and casual recall both go stale on version numbers specifically, even when the surrounding concept is otherwise correct. This is a good general habit to keep applying across every phase, not just infrastructure setup: check current versions of NuGet packages, SDKs, and tooling before locking them in, rather than assuming a remembered version number is current.
+
+**Redis and SQL Server containers pulled as tests only** — not yet wired into any project, not yet part of "Phase 0 complete" scope. Formal setup (restart policy, data volumes, wiring into code) deferred to Phase 5 as originally planned. Captured in `system-requirements.md` as test pulls so a fresh-machine setup has a record of what's been validated versus what's still pending.
+
+---
+
 ## Carried Forward Into Phase 1
 
 - RabbitMQ running locally, restart-safe, management UI confirmed.
