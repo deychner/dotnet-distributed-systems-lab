@@ -1,3 +1,5 @@
+using TenantVault.BusinessLogic;
+using TenantVault.DataAccess;
 
 namespace TenantVault
 {
@@ -8,6 +10,8 @@ namespace TenantVault
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
+            builder.Services.AddScoped<IInventoryService, InventoryService>();
+            builder.Services.AddSingleton<IInventoryDataAdapter, InventoryDataAdapter>();
 
             builder.Services.AddControllers();
             // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
