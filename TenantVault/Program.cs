@@ -1,5 +1,8 @@
 using Microsoft.Azure.Cosmos;
 using Microsoft.Extensions.Options;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Serialization;
+using System.Text.Json;
 using TenantVault.BusinessLogic;
 using TenantVault.DataAccess;
 using TenantVault.Models;
@@ -21,7 +24,17 @@ namespace TenantVault
             builder.Services.AddSingleton<CosmosClient>(provider =>
             {
                 var options = provider.GetRequiredService<IOptions<CosmosOptions>>().Value;
-                return new CosmosClient(options.AccountEndpoint, options.AccountKey);
+
+                var clientOptions = new CosmosClientOptions
+                {
+                    ApplicationName = "TenantVault",
+                    UseSystemTextJsonSerializerWithOptions = new JsonSerializerOptions
+                    {
+                        PropertyNamingPolicy = JsonNamingPolicy.CamelCase
+                    }
+                };
+
+                return new CosmosClient(options.AccountEndpoint, options.AccountKey, clientOptions);
             });
 
             builder.Services.AddHostedService<CosmosBootstrapper>();

@@ -4,6 +4,6 @@ namespace TenantVault.DataAccess
 {
     public interface IInventoryDataAdapter
     {
-        public Task<Guid> AddVehicleAsync(string tenantId, Vehicle vehicle, CancellationToken cancellationToken);
+        public Task<Guid> AddVehicleAsync(Vehicle vehicle, CancellationToken cancellationToken);
     }
 }

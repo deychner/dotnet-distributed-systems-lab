@@ -12,9 +12,9 @@ namespace TenantVault.Controllers
         private readonly IInventoryService _inventoryService = inventoryService;
 
         [HttpPost("vehicle")]
-        public async Task<ActionResult<Guid>> AddVehicleAsync([FromQuery,Required]string tenantId, [FromBody,Required] Vehicle vehicle, CancellationToken cancellationToken)
+        public async Task<ActionResult<Guid>> AddVehicleAsync([FromBody,Required] Vehicle vehicle, CancellationToken cancellationToken)
         {
-            var vehicleId = await _inventoryService.AddVehicleAsync(tenantId, vehicle, cancellationToken);
+            var vehicleId = await _inventoryService.AddVehicleAsync(vehicle, cancellationToken);
             return Ok(vehicleId);
         }
     }
