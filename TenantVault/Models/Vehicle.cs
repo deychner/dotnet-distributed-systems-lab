@@ -19,9 +19,9 @@ namespace TenantVault.Models
         public int Year { get; set; }
 
         [JsonRequired]
-        public string? WarehouseId { get; set; }
+        public int WarehouseId { get; set; }
 
         [JsonRequired]
-        public string? SpotId { get; set; }
+        public int SpotId { get; set; }
     }
 }
