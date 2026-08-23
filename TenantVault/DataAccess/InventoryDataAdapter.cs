@@ -1,19 +1,24 @@
-﻿using Microsoft.Azure.Cosmos;
+﻿using Azure;
+using Microsoft.Azure.Cosmos;
 using Microsoft.Extensions.Options;
 using System.Net;
 using TenantVault.Models;
 
 namespace TenantVault.DataAccess
 {
-    public class InventoryDataAdapter(CosmosClient cosmosClient, IOptions<CosmosOptions> options) : IInventoryDataAdapter
+    public class InventoryDataAdapter(CosmosClient cosmosClient, IOptions<CosmosOptions> options, ILogger<InventoryDataAdapter> logger) : IInventoryDataAdapter
     {
         private readonly Container _container = cosmosClient.GetContainer(options.Value.DatabaseName, options.Value.ContainerName);
+        private readonly ILogger<InventoryDataAdapter> _logger = logger;
 
         public async Task<Guid> AddVehicleAsync(Vehicle vehicle, CancellationToken cancellationToken)
         {
             var partitionKey = BuildPartitionKey(vehicle.TenantId, vehicle.WarehouseId);
 
             var response = await _container.CreateItemAsync(vehicle, partitionKey, cancellationToken: cancellationToken);
+
+            _logger.LogInformation("AddVehicleAsync Request Charge: {charge}", response.RequestCharge);
+
             return response.Resource.Id;
         }
 
@@ -24,6 +29,9 @@ namespace TenantVault.DataAccess
             try
             {
                 var response = await _container.ReadItemAsync<Vehicle>(vehicleId.ToString(), partitionKey, cancellationToken: cancellationToken);
+
+                _logger.LogInformation("GetVehicleAsync Request Charge: {charge}", response.RequestCharge);
+
                 return response.Resource;
             }
             catch (CosmosException ex) when (ex.StatusCode == HttpStatusCode.NotFound)
@@ -42,8 +50,19 @@ namespace TenantVault.DataAccess
             };
 
             using var iterator = _container.GetItemQueryIterator<Vehicle>(query, requestOptions: requestOptions);
+            double totalRequestCharge = 0D;
 
-            return await GetFromFeed(iterator, cancellationToken);
+            var vehicles = new List<Vehicle>();
+            while (iterator.HasMoreResults)
+            {
+                var response = await iterator.ReadNextAsync(cancellationToken);
+                vehicles.AddRange(response.Resource);
+                totalRequestCharge += response.RequestCharge;
+            }
+
+            _logger.LogInformation("GetVehiclesByWarehouseAsync Request Charge: {charge}", totalRequestCharge);
+
+            return vehicles;
         }
 
         public async Task<IEnumerable<Vehicle>> GetVehiclesByTenantAsync(string tenantId, CancellationToken cancellationToken)
@@ -57,8 +76,19 @@ namespace TenantVault.DataAccess
             };
 
             using var iterator = _container.GetItemQueryIterator<Vehicle>(query, requestOptions: requestOptions);
+            double totalRequestCharge = 0D;
 
-            return await GetFromFeed(iterator, cancellationToken);
+            var vehicles = new List<Vehicle>();
+            while (iterator.HasMoreResults)
+            {
+                var response = await iterator.ReadNextAsync(cancellationToken);
+                vehicles.AddRange(response.Resource);
+                totalRequestCharge += response.RequestCharge;
+            }
+
+            _logger.LogInformation("GetVehiclesByTenantAsync Request Charge: {charge}", totalRequestCharge);
+
+            return vehicles;
         }
 
         public async Task<IEnumerable<Vehicle>> GetVehiclesByYearAsync(int year, CancellationToken cancellationToken)
@@ -67,8 +97,19 @@ namespace TenantVault.DataAccess
                 .WithParameter("@year", year);
 
             using var iterator = _container.GetItemQueryIterator<Vehicle>(query);
+            double totalRequestCharge = 0D;
 
-            return await GetFromFeed(iterator, cancellationToken);
+            var vehicles = new List<Vehicle>();
+            while (iterator.HasMoreResults)
+            {
+                var response = await iterator.ReadNextAsync(cancellationToken);
+                vehicles.AddRange(response.Resource);
+                totalRequestCharge += response.RequestCharge;
+            }
+
+            _logger.LogInformation("GetVehiclesByYearAsync Request Charge: {charge}", totalRequestCharge);
+
+            return vehicles;
         }
 
         private static PartitionKey BuildPartitionKey(string? tenantId, int warehouseId)
@@ -84,18 +125,6 @@ namespace TenantVault.DataAccess
             return new PartitionKeyBuilder()
                 .Add(tenantId)
                 .Build();
-        }
-
-        private static async Task<IEnumerable<T>> GetFromFeed<T>(FeedIterator<T> iterator, CancellationToken cancellationToken)
-        {
-            var items = new List<T>();
-            while (iterator.HasMoreResults)
-            {
-                var response = await iterator.ReadNextAsync(cancellationToken);
-                items.AddRange(response.Resource);
-            }
-
-            return items;
         }
     }
 }
