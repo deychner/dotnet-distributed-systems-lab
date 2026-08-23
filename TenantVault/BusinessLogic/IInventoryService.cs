@@ -4,6 +4,6 @@ namespace TenantVault.BusinessLogic
 {
     public interface IInventoryService
     {
-        public Task AddVehicleAsync(string tenantId, Vehicle vehicle, CancellationToken cancellationToken);
+        public Task<Guid> AddVehicleAsync(string tenantId, Vehicle vehicle, CancellationToken cancellationToken);
     }
 }

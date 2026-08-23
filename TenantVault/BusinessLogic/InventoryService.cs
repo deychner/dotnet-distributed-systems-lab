@@ -7,9 +7,9 @@ namespace TenantVault.BusinessLogic
     {
         private readonly IInventoryDataAdapter _inventoryDataAdapter = inventoryDataAdapter;
 
-        public Task AddVehicleAsync(string tenantId, Vehicle vehicle, CancellationToken cancellationToken)
+        public async Task<Guid> AddVehicleAsync(string tenantId, Vehicle vehicle, CancellationToken cancellationToken)
         {
-            return _inventoryDataAdapter.AddVehicleAsync(tenantId, vehicle, cancellationToken);
+            return await _inventoryDataAdapter.AddVehicleAsync(tenantId, vehicle, cancellationToken);
         }
     }
 }
