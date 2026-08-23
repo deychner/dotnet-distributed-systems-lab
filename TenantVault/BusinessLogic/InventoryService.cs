@@ -1,10 +1,14 @@
-﻿namespace TenantVault.BusinessLogic
+﻿using TenantVault.DataAccess;
+
+namespace TenantVault.BusinessLogic
 {
-    public class InventoryService : IInventoryService
+    public class InventoryService(IInventoryDataAdapter inventoryDataAdapter) : IInventoryService
     {
+        private readonly IInventoryDataAdapter _inventoryDataAdapter = inventoryDataAdapter;
+
         public Task AddCarAsync()
         {
-            throw new NotImplementedException();
+            return _inventoryDataAdapter.AddCarAsync();
         }
     }
 }
