@@ -30,5 +30,15 @@ namespace TenantVault.Controllers
             var vehicle = await _inventoryService.GetVehicleAsync(tenantId, warehouseId, vehicleId, cancellationToken);
             return vehicle is null ? NotFound() : Ok(vehicle);
         }
+
+        [HttpGet("vehicle/{tenantId}/{warehouseId}")]
+        public async Task<ActionResult<IEnumerable<Vehicle>>> GetVehiclesByWarehouseAsync(
+            [FromRoute] string tenantId,
+            [FromRoute] string warehouseId,
+            CancellationToken cancellationToken)
+        {
+            var vehicles = await _inventoryService.GetVehiclesByWarehouseAsync(tenantId, warehouseId, cancellationToken);
+            return vehicles.Any() ? Ok(vehicles) : NotFound();
+        }
     }
 }

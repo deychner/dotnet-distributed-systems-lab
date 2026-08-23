@@ -16,5 +16,10 @@ namespace TenantVault.BusinessLogic
         {
             return await _inventoryDataAdapter.GetVehicleAsync(tenantId, warehouseId, vehicleId, cancellationToken);
         }
+
+        public async Task<IEnumerable<Vehicle>> GetVehiclesByWarehouseAsync(string tenantId, string warehouseId, CancellationToken cancellationToken)
+        {
+            return await _inventoryDataAdapter.GetVehiclesByWarehouseAsync(tenantId, warehouseId, cancellationToken);
+        }
     }
 }

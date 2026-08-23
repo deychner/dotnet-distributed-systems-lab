@@ -1,7 +1,8 @@
 ﻿using Microsoft.Azure.Cosmos;
 using Microsoft.Extensions.Options;
-using TenantVault.Models;
+using System.ClientModel.Primitives;
 using System.Net;
+using TenantVault.Models;
 
 namespace TenantVault.DataAccess
 {
@@ -11,10 +12,7 @@ namespace TenantVault.DataAccess
 
         public async Task<Guid> AddVehicleAsync(Vehicle vehicle, CancellationToken cancellationToken)
         {
-            var partitionKey = new PartitionKeyBuilder()
-                .Add(vehicle.TenantId)
-                .Add(vehicle.WarehouseId)
-                .Build();
+            var partitionKey = BuildPartitionKey(vehicle.TenantId, vehicle.WarehouseId);
 
             var response = await _container.CreateItemAsync(vehicle, partitionKey, cancellationToken: cancellationToken);
             return response.Resource.Id;
@@ -22,10 +20,7 @@ namespace TenantVault.DataAccess
 
         public async Task<Vehicle?> GetVehicleAsync(string tenantId, string warehouseId, Guid vehicleId, CancellationToken cancellationToken)
         {
-            var partitionKey = new PartitionKeyBuilder()
-                .Add(tenantId)
-                .Add(warehouseId)
-                .Build();
+            var partitionKey = BuildPartitionKey(tenantId, warehouseId);
 
             try
             {
@@ -36,6 +31,35 @@ namespace TenantVault.DataAccess
             {
                 return null;
             }
+        }
+
+        public async Task<IEnumerable<Vehicle>> GetVehiclesByWarehouseAsync(string tenantId, string warehouseId, CancellationToken cancellationToken)
+        {
+            QueryDefinition query = new("SELECT * FROM c");
+
+            QueryRequestOptions requestOptions = new()
+            {
+                PartitionKey = BuildPartitionKey(tenantId, warehouseId)
+            };
+
+            using var iterator = _container.GetItemQueryIterator<Vehicle>(query, requestOptions: requestOptions);
+
+            var vehicles = new List<Vehicle>();
+            while (iterator.HasMoreResults)
+            {
+                var response = await iterator.ReadNextAsync(cancellationToken);
+                vehicles.AddRange(response.Resource);
+            }
+
+            return vehicles;
+        }
+
+        private static PartitionKey BuildPartitionKey(string? tenantId, string? warehouseId)
+        {
+            return new PartitionKeyBuilder()
+                .Add(tenantId)
+                .Add(warehouseId)
+                .Build();
         }
     }
 }
