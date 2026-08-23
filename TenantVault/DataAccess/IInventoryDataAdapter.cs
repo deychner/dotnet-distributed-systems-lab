@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using TenantVault.Models;
+﻿using TenantVault.Models;
 
 namespace TenantVault.DataAccess
 {
