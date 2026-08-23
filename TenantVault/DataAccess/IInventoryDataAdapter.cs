@@ -1,4 +1,5 @@
-﻿using TenantVault.Models;
+﻿using Microsoft.AspNetCore.Mvc;
+using TenantVault.Models;
 
 namespace TenantVault.DataAccess
 {
@@ -11,5 +12,7 @@ namespace TenantVault.DataAccess
         public Task<IEnumerable<Vehicle>> GetVehiclesByWarehouseAsync(string tenantId, int warehouseId, CancellationToken cancellationToken);
 
         public Task<IEnumerable<Vehicle>> GetVehiclesByTenantAsync(string tenantId, CancellationToken cancellationToken);
+
+        public Task<IEnumerable<Vehicle>> GetVehiclesByYearAsync(int year, CancellationToken cancellationToken);
     }
 }

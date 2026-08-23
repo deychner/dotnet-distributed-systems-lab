@@ -1,5 +1,7 @@
-﻿using Microsoft.Azure.Cosmos;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Azure.Cosmos;
 using Microsoft.Extensions.Options;
+using System.ClientModel.Primitives;
 using System.Net;
 using TenantVault.Models;
 
@@ -64,6 +66,23 @@ namespace TenantVault.DataAccess
             };
 
             using var iterator = _container.GetItemQueryIterator<Vehicle>(query, requestOptions: requestOptions);
+
+            var vehicles = new List<Vehicle>();
+            while (iterator.HasMoreResults)
+            {
+                var response = await iterator.ReadNextAsync(cancellationToken);
+                vehicles.AddRange(response.Resource);
+            }
+
+            return vehicles;
+        }
+
+        public async Task<IEnumerable<Vehicle>> GetVehiclesByYearAsync(int year, CancellationToken cancellationToken)
+        {
+            QueryDefinition query = new QueryDefinition("SELECT * FROM c WHERE c.year = @year")
+                .WithParameter("@year", year);
+
+            using var iterator = _container.GetItemQueryIterator<Vehicle>(query);
 
             var vehicles = new List<Vehicle>();
             while (iterator.HasMoreResults)
