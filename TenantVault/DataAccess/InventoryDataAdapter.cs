@@ -55,7 +55,7 @@ namespace TenantVault.DataAccess
 
         public async Task<IEnumerable<Vehicle>> GetVehiclesByTenantAsync(string tenantId, CancellationToken cancellationToken)
         {
-            QueryDefinition query = new QueryDefinition("SELECT * FROM c WHERE c.TenantId = @tenantId")
+            QueryDefinition query = new QueryDefinition("SELECT * FROM c WHERE c.tenantId = @tenantId")
                 .WithParameter("@tenantId", tenantId);
 
             QueryRequestOptions requestOptions = new()
