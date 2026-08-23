@@ -2,6 +2,6 @@
 {
     public interface IInventoryService
     {
-        public Task AddCarAsync();
+        public Task AddVehicleAsync();
     }
 }

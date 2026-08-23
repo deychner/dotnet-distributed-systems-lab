@@ -8,7 +8,7 @@ namespace TenantVault.DataAccess
     {
         private readonly Container _container = cosmosClient.GetContainer(options.Value.DatabaseName, options.Value.ContainerName);
 
-        public Task AddCarAsync()
+        public Task AddVehicleAsync()
         {
             throw new NotImplementedException();
         }

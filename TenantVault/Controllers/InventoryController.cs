@@ -9,10 +9,10 @@ namespace TenantVault.Controllers
     {
         private readonly IInventoryService _inventoryService = inventoryService;
 
-        [HttpPost("car")]
-        public async Task<IActionResult> AddCarAsync()
+        [HttpPost("vehicle")]
+        public async Task<IActionResult> AddVehicleAsync()
         {
-            await _inventoryService.AddCarAsync();
+            await _inventoryService.AddVehicleAsync();
             return Ok();
         }
     }

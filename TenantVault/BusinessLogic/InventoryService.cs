@@ -6,9 +6,9 @@ namespace TenantVault.BusinessLogic
     {
         private readonly IInventoryDataAdapter _inventoryDataAdapter = inventoryDataAdapter;
 
-        public Task AddCarAsync()
+        public Task AddVehicleAsync()
         {
-            return _inventoryDataAdapter.AddCarAsync();
+            return _inventoryDataAdapter.AddVehicleAsync();
         }
     }
 }
