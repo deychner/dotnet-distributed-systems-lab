@@ -1,7 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.Azure.Cosmos;
+﻿using Microsoft.Azure.Cosmos;
 using Microsoft.Extensions.Options;
-using System.ClientModel.Primitives;
 using System.Net;
 using TenantVault.Models;
 
@@ -45,14 +43,7 @@ namespace TenantVault.DataAccess
 
             using var iterator = _container.GetItemQueryIterator<Vehicle>(query, requestOptions: requestOptions);
 
-            var vehicles = new List<Vehicle>();
-            while (iterator.HasMoreResults)
-            {
-                var response = await iterator.ReadNextAsync(cancellationToken);
-                vehicles.AddRange(response.Resource);
-            }
-
-            return vehicles;
+            return await GetFromFeed(iterator, cancellationToken);
         }
 
         public async Task<IEnumerable<Vehicle>> GetVehiclesByTenantAsync(string tenantId, CancellationToken cancellationToken)
@@ -67,14 +58,7 @@ namespace TenantVault.DataAccess
 
             using var iterator = _container.GetItemQueryIterator<Vehicle>(query, requestOptions: requestOptions);
 
-            var vehicles = new List<Vehicle>();
-            while (iterator.HasMoreResults)
-            {
-                var response = await iterator.ReadNextAsync(cancellationToken);
-                vehicles.AddRange(response.Resource);
-            }
-
-            return vehicles;
+            return await GetFromFeed(iterator, cancellationToken);
         }
 
         public async Task<IEnumerable<Vehicle>> GetVehiclesByYearAsync(int year, CancellationToken cancellationToken)
@@ -84,14 +68,7 @@ namespace TenantVault.DataAccess
 
             using var iterator = _container.GetItemQueryIterator<Vehicle>(query);
 
-            var vehicles = new List<Vehicle>();
-            while (iterator.HasMoreResults)
-            {
-                var response = await iterator.ReadNextAsync(cancellationToken);
-                vehicles.AddRange(response.Resource);
-            }
-
-            return vehicles;
+            return await GetFromFeed(iterator, cancellationToken);
         }
 
         private static PartitionKey BuildPartitionKey(string? tenantId, int warehouseId)
@@ -107,6 +84,18 @@ namespace TenantVault.DataAccess
             return new PartitionKeyBuilder()
                 .Add(tenantId)
                 .Build();
+        }
+
+        private static async Task<IEnumerable<T>> GetFromFeed<T>(FeedIterator<T> iterator, CancellationToken cancellationToken)
+        {
+            var items = new List<T>();
+            while (iterator.HasMoreResults)
+            {
+                var response = await iterator.ReadNextAsync(cancellationToken);
+                items.AddRange(response.Resource);
+            }
+
+            return items;
         }
     }
 }
