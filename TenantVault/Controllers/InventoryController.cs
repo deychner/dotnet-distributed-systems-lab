@@ -28,11 +28,7 @@ namespace TenantVault.Controllers
             CancellationToken cancellationToken)
         {
             var vehicle = await _inventoryService.GetVehicleAsync(tenantId, warehouseId, vehicleId, cancellationToken);
-            if (vehicle == null)
-            {
-                return NotFound();
-            }
-            return Ok(vehicle);
+            return vehicle is null ? NotFound() : Ok(vehicle);
         }
     }
 }
