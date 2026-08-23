@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System.ComponentModel.DataAnnotations;
 using TenantVault.BusinessLogic;
+using TenantVault.Models;
 
 namespace TenantVault.Controllers
 {
@@ -10,9 +12,9 @@ namespace TenantVault.Controllers
         private readonly IInventoryService _inventoryService = inventoryService;
 
         [HttpPost("vehicle")]
-        public async Task<IActionResult> AddVehicleAsync()
+        public async Task<IActionResult> AddVehicleAsync([FromQuery]string tenantId, [FromBody,Required] Vehicle vehicle, CancellationToken cancellationToken)
         {
-            await _inventoryService.AddVehicleAsync();
+            await _inventoryService.AddVehicleAsync(tenantId, vehicle, cancellationToken);
             return Ok();
         }
     }

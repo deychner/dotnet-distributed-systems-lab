@@ -1,4 +1,5 @@
 ﻿using TenantVault.DataAccess;
+using TenantVault.Models;
 
 namespace TenantVault.BusinessLogic
 {
@@ -6,9 +7,9 @@ namespace TenantVault.BusinessLogic
     {
         private readonly IInventoryDataAdapter _inventoryDataAdapter = inventoryDataAdapter;
 
-        public Task AddVehicleAsync()
+        public Task AddVehicleAsync(string tenantId, Vehicle vehicle, CancellationToken cancellationToken)
         {
-            return _inventoryDataAdapter.AddVehicleAsync();
+            return _inventoryDataAdapter.AddVehicleAsync(tenantId, vehicle, cancellationToken);
         }
     }
 }

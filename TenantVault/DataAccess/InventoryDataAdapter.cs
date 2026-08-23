@@ -8,9 +8,14 @@ namespace TenantVault.DataAccess
     {
         private readonly Container _container = cosmosClient.GetContainer(options.Value.DatabaseName, options.Value.ContainerName);
 
-        public Task AddVehicleAsync()
+        public Task AddVehicleAsync(string tenantId, Vehicle vehicle, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            var partitionKey = new PartitionKeyBuilder()
+                .Add(tenantId)
+                .Add(vehicle.WarehouseId.ToString())
+                .Build();
+
+            return _container.CreateItemAsync(vehicle, partitionKey, cancellationToken: cancellationToken);
         }
     }
 }
