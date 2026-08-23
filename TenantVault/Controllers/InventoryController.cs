@@ -58,6 +58,5 @@ namespace TenantVault.Controllers
             var vehicles = await _inventoryService.GetVehiclesByYearAsync(year, cancellationToken);
             return vehicles.Any() ? Ok(vehicles) : NotFound();
         }
-
     }
 }
