@@ -1,5 +1,4 @@
-﻿using Azure;
-using Microsoft.Azure.Cosmos;
+﻿using Microsoft.Azure.Cosmos;
 using Microsoft.Extensions.Options;
 using System.Net;
 using TenantVault.Models;
@@ -67,8 +66,7 @@ namespace TenantVault.DataAccess
 
         public async Task<IEnumerable<Vehicle>> GetVehiclesByTenantAsync(string tenantId, CancellationToken cancellationToken)
         {
-            QueryDefinition query = new QueryDefinition("SELECT * FROM c WHERE c.tenantId = @tenantId")
-                .WithParameter("@tenantId", tenantId);
+            QueryDefinition query = new("SELECT * FROM c");
 
             QueryRequestOptions requestOptions = new()
             {
