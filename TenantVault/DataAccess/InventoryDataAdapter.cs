@@ -60,13 +60,14 @@ namespace TenantVault.DataAccess
             }
 
             _logger.LogInformation("GetVehiclesByWarehouseAsync Request Charge: {charge}", totalRequestCharge);
-
+            _logger.LogInformation("GetVehiclesByWarehouseAsync Record count: {count}", vehicles.Count);
             return vehicles;
         }
 
         public async Task<IEnumerable<Vehicle>> GetVehiclesByTenantAsync(string tenantId, CancellationToken cancellationToken)
         {
-            QueryDefinition query = new("SELECT * FROM c");
+            QueryDefinition query = new QueryDefinition("SELECT * FROM c WHERE c.tenantId = @tenantId")
+                .WithParameter("@tenantId", tenantId);
 
             QueryRequestOptions requestOptions = new()
             {
@@ -85,7 +86,7 @@ namespace TenantVault.DataAccess
             }
 
             _logger.LogInformation("GetVehiclesByTenantAsync Request Charge: {charge}", totalRequestCharge);
-
+            _logger.LogInformation("GetVehiclesByTenantAsync Record count: {count}", vehicles.Count);
             return vehicles;
         }
 
@@ -106,7 +107,7 @@ namespace TenantVault.DataAccess
             }
 
             _logger.LogInformation("GetVehiclesByYearAsync Request Charge: {charge}", totalRequestCharge);
-
+            _logger.LogInformation("GetVehiclesByYearAsync Record count: {count}", vehicles.Count);
             return vehicles;
         }
 
