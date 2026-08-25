@@ -10,7 +10,19 @@ namespace TenantVault.BusinessLogic
 
         private readonly IInventoryDataAdapter _inventoryDataAdapter = inventoryDataAdapter;
 
-        public async Task<Guid> AddVehicleAsync(Vehicle vehicle, CancellationToken cancellationToken)
+        public Task<Guid> AddVehicleAsync(Vehicle vehicle, CancellationToken cancellationToken) =>
+            CosmosOperationRunner.ExecuteAsync(() => AddValidatedVehicleAsync(vehicle, cancellationToken));
+
+        public Task<Vehicle?> GetVehicleAsync(string tenantId, int warehouseId, Guid vehicleId, CancellationToken cancellationToken) =>
+            CosmosOperationRunner.ExecuteAsync(() => _inventoryDataAdapter.GetVehicleAsync(tenantId, warehouseId, vehicleId, cancellationToken));
+
+        public Task<IEnumerable<Vehicle>> GetVehiclesByWarehouseAsync(string tenantId, int warehouseId, CancellationToken cancellationToken) =>
+            CosmosOperationRunner.ExecuteAsync(() => _inventoryDataAdapter.GetVehiclesByWarehouseAsync(tenantId, warehouseId, cancellationToken));
+
+        public Task<IEnumerable<Vehicle>> GetVehiclesByTenantAsync(string tenantId, CancellationToken cancellationToken) =>
+            CosmosOperationRunner.ExecuteAsync(() => _inventoryDataAdapter.GetVehiclesByTenantAsync(tenantId, cancellationToken));
+
+        private async Task<Guid> AddValidatedVehicleAsync(Vehicle vehicle, CancellationToken cancellationToken)
         {
             ValidateVehicle(vehicle);
 
@@ -22,15 +34,6 @@ namespace TenantVault.BusinessLogic
 
             return await _inventoryDataAdapter.AddVehicleAsync(vehicle, cancellationToken);
         }
-
-        public Task<Vehicle?> GetVehicleAsync(string tenantId, int warehouseId, Guid vehicleId, CancellationToken cancellationToken) =>
-            _inventoryDataAdapter.GetVehicleAsync(tenantId, warehouseId, vehicleId, cancellationToken);
-
-        public Task<IEnumerable<Vehicle>> GetVehiclesByWarehouseAsync(string tenantId, int warehouseId, CancellationToken cancellationToken) =>
-            _inventoryDataAdapter.GetVehiclesByWarehouseAsync(tenantId, warehouseId, cancellationToken);
-
-        public Task<IEnumerable<Vehicle>> GetVehiclesByTenantAsync(string tenantId, CancellationToken cancellationToken) =>
-            _inventoryDataAdapter.GetVehiclesByTenantAsync(tenantId, cancellationToken);
 
         private static void ValidateVehicle(Vehicle vehicle)
         {
