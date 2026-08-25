@@ -47,6 +47,7 @@ namespace TenantVault
             builder.Services
                 .AddOptions<CosmosOptions>()
                 .Bind(builder.Configuration.GetSection(CosmosOptions.SectionName))
+                .ValidateDataAnnotations()
                 .ValidateOnStart();
 
             builder.Services.AddSingleton<CosmosClient>(provider =>
