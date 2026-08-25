@@ -10,32 +10,7 @@ namespace TenantVault.BusinessLogic
 
         private readonly IInventoryDataAdapter _inventoryDataAdapter = inventoryDataAdapter;
 
-        public Task<Guid> AddVehicleAsync(Vehicle vehicle, CancellationToken cancellationToken) =>
-            CosmosOperationRunner.ExecuteAsync(() => AddValidatedVehicleAsync(vehicle, cancellationToken));
-
-        public Task<Vehicle?> GetVehicleAsync(string tenantId, int warehouseId, Guid vehicleId, CancellationToken cancellationToken) =>
-            CosmosOperationRunner.ExecuteAsync(() => _inventoryDataAdapter.GetVehicleAsync(tenantId, warehouseId, vehicleId, cancellationToken));
-
-        public Task<IEnumerable<Vehicle>> GetVehiclesByWarehouseAsync(string tenantId, int warehouseId, CancellationToken cancellationToken) =>
-            CosmosOperationRunner.ExecuteAsync(() => _inventoryDataAdapter.GetVehiclesByWarehouseAsync(tenantId, warehouseId, cancellationToken));
-
-        public Task<IEnumerable<Vehicle>> GetVehiclesByTenantAsync(string tenantId, CancellationToken cancellationToken) =>
-            CosmosOperationRunner.ExecuteAsync(() => _inventoryDataAdapter.GetVehiclesByTenantAsync(tenantId, cancellationToken));
-
-        private async Task<Guid> AddValidatedVehicleAsync(Vehicle vehicle, CancellationToken cancellationToken)
-        {
-            ValidateVehicle(vehicle);
-
-            var vehiclesInWarehouse = await _inventoryDataAdapter.GetVehiclesByWarehouseAsync(vehicle.TenantId!, vehicle.WarehouseId, cancellationToken);
-            if (vehiclesInWarehouse.Any(v => v.SpotId == vehicle.SpotId))
-            {
-                throw new VehicleValidationException($"Warehouse {vehicle.WarehouseId} spot {vehicle.SpotId} is already occupied.");
-            }
-
-            return await _inventoryDataAdapter.AddVehicleAsync(vehicle, cancellationToken);
-        }
-
-        private static void ValidateVehicle(Vehicle vehicle)
+        public async Task<Guid> AddVehicleAsync(Vehicle vehicle, CancellationToken cancellationToken)
         {
             if (vehicle.Year < MinimumVehicleYear || vehicle.Year > DateTime.UtcNow.Year + 1)
             {
@@ -51,6 +26,23 @@ namespace TenantVault.BusinessLogic
             {
                 throw new VehicleValidationException($"SpotId {vehicle.SpotId} must be a positive number.");
             }
+
+            var vehiclesInWarehouse = await _inventoryDataAdapter.GetVehiclesByWarehouseAsync(vehicle.TenantId!, vehicle.WarehouseId, cancellationToken);
+            if (vehiclesInWarehouse.Any(v => v.SpotId == vehicle.SpotId))
+            {
+                throw new VehicleValidationException($"Warehouse {vehicle.WarehouseId} spot {vehicle.SpotId} is already occupied.");
+            }
+
+            return await CosmosOperationRunner.ExecuteAsync(() => _inventoryDataAdapter.AddVehicleAsync(vehicle, cancellationToken));
         }
+
+        public Task<Vehicle?> GetVehicleAsync(string tenantId, int warehouseId, Guid vehicleId, CancellationToken cancellationToken) =>
+            CosmosOperationRunner.ExecuteAsync(() => _inventoryDataAdapter.GetVehicleAsync(tenantId, warehouseId, vehicleId, cancellationToken));
+
+        public Task<IEnumerable<Vehicle>> GetVehiclesByWarehouseAsync(string tenantId, int warehouseId, CancellationToken cancellationToken) =>
+            CosmosOperationRunner.ExecuteAsync(() => _inventoryDataAdapter.GetVehiclesByWarehouseAsync(tenantId, warehouseId, cancellationToken));
+
+        public Task<IEnumerable<Vehicle>> GetVehiclesByTenantAsync(string tenantId, CancellationToken cancellationToken) =>
+            CosmosOperationRunner.ExecuteAsync(() => _inventoryDataAdapter.GetVehiclesByTenantAsync(tenantId, cancellationToken));
     }
 }
