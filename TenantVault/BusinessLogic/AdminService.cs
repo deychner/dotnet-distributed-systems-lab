@@ -7,9 +7,9 @@ namespace TenantVault.BusinessLogic
     {
         private readonly IInventoryDataAdapter _inventoryDataAdapter = inventoryDataAdapter;
 
-        public Task<IEnumerable<Vehicle>> GetVehiclesByYearAsync(int year, CancellationToken cancellationToken)
-        {
-            return _inventoryDataAdapter.GetVehiclesByYearAsync(year, cancellationToken);
-        }
+        // See CosmosOperationRunner for why this goes through ExecuteAsync rather than calling
+        // the adapter directly.
+        public Task<IEnumerable<Vehicle>> GetVehiclesByYearAsync(int year, CancellationToken cancellationToken) =>
+            CosmosOperationRunner.ExecuteAsync(() => _inventoryDataAdapter.GetVehiclesByYearAsync(year, cancellationToken));
     }
 }
