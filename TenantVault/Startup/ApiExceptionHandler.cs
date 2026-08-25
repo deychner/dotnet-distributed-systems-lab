@@ -4,6 +4,9 @@ using TenantVault.BusinessLogic.Exceptions;
 
 namespace TenantVault.Startup
 {
+    // Single place that maps business-logic exceptions to HTTP responses, so controllers stay
+    // free of try/catch and any endpoint that throws one of these gets consistent handling.
+    // Anything not listed here falls through to ASP.NET Core's default handling (a 500).
     public class ApiExceptionHandler : IExceptionHandler
     {
         public async ValueTask<bool> TryHandleAsync(HttpContext httpContext, Exception exception, CancellationToken cancellationToken)

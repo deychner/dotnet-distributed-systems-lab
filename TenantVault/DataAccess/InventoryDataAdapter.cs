@@ -7,6 +7,7 @@ namespace TenantVault.DataAccess
 {
     public class InventoryDataAdapter(CosmosClient cosmosClient, IOptions<CosmosOptions> options, ILogger<InventoryDataAdapter> logger) : IInventoryDataAdapter
     {
+        // Resolved once and cached as a field rather than looked up on every call.
         private readonly Container _container = cosmosClient.GetContainer(options.Value.DatabaseName, options.Value.ContainerName);
         private readonly ILogger<InventoryDataAdapter> _logger = logger;
 
@@ -18,6 +19,10 @@ namespace TenantVault.DataAccess
 
             _logger.LogInformation("AddVehicleAsync Request Charge: {charge}", response.RequestCharge);
 
+            // vehicle.Id was already generated client-side before this call, so it's returned
+            // directly instead of reading response.Resource.Id - response.Resource is Cosmos
+            // echoing the full document back over the wire, a real round trip, not something
+            // already sitting in memory, and it's not needed here.
             return vehicle.Id;
         }
 
@@ -35,10 +40,14 @@ namespace TenantVault.DataAccess
             }
             catch (CosmosException ex) when (ex.StatusCode == HttpStatusCode.NotFound)
             {
+                // Idiomatic Cosmos SDK pattern for a point read: catch the specific 404 and
+                // return null instead of letting exception-driven control flow reach the caller.
                 return null;
             }
         }
 
+        // Full partition key (tenantId + warehouseId) supplied, no WHERE clause needed: Cosmos
+        // routes the query directly to the matching logical partition.
         public Task<IEnumerable<Vehicle>> GetVehiclesByWarehouseAsync(string tenantId, int warehouseId, CancellationToken cancellationToken)
         {
             QueryDefinition query = new("SELECT * FROM c");
@@ -51,6 +60,8 @@ namespace TenantVault.DataAccess
             return ExecuteQueryAsync(query, requestOptions, nameof(GetVehiclesByWarehouseAsync), cancellationToken);
         }
 
+        // Partial/prefix partition key (tenantId only): Cosmos still scopes the query to just
+        // that tenant's logical partitions before the WHERE predicate runs.
         public Task<IEnumerable<Vehicle>> GetVehiclesByTenantAsync(string tenantId, CancellationToken cancellationToken)
         {
             QueryDefinition query = new QueryDefinition("SELECT * FROM c WHERE c.tenantId = @tenantId")
@@ -64,6 +75,9 @@ namespace TenantVault.DataAccess
             return ExecuteQueryAsync(query, requestOptions, nameof(GetVehiclesByTenantAsync), cancellationToken);
         }
 
+        // No partition key at all: year isn't part of the partition key, so this is a true
+        // cross-partition fan-out query - the expensive query shape, intentionally only
+        // reachable through AdminService rather than the tenant-scoped InventoryController.
         public Task<IEnumerable<Vehicle>> GetVehiclesByYearAsync(int year, CancellationToken cancellationToken)
         {
             QueryDefinition query = new QueryDefinition("SELECT * FROM c WHERE c.year = @year")
@@ -72,6 +86,9 @@ namespace TenantVault.DataAccess
             return ExecuteQueryAsync(query, requestOptions: null, nameof(GetVehiclesByYearAsync), cancellationToken);
         }
 
+        // Shared by all three query methods above: iterating a FeedIterator and accumulating
+        // charge/count was duplicated near-verbatim across each of them before this was pulled
+        // out, so this is the one place that logic (and its RU-charge/record-count logging) lives.
         private async Task<IEnumerable<Vehicle>> ExecuteQueryAsync(
             QueryDefinition query,
             QueryRequestOptions? requestOptions,
@@ -95,6 +112,8 @@ namespace TenantVault.DataAccess
             return vehicles;
         }
 
+        // PartitionKeyBuilder composes the hierarchical partition key (tenantId, then
+        // warehouseId) matching the container's configured PartitionKeyPaths.
         private static PartitionKey BuildPartitionKey(string? tenantId, int warehouseId)
         {
             return new PartitionKeyBuilder()

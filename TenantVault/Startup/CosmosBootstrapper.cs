@@ -4,6 +4,8 @@ using TenantVault.Models;
 
 namespace TenantVault.Startup
 {
+    // Implemented as an IHostedService so the create-if-not-exists work runs exactly once,
+    // during app startup, rather than being repeated every time a request touches Cosmos.
     public class CosmosBootstrapper(CosmosClient client, IOptions<CosmosOptions> options) : IHostedService
     {
         private readonly CosmosClient _client = client;
@@ -12,6 +14,10 @@ namespace TenantVault.Startup
         public async Task StartAsync(CancellationToken cancellationToken)
         {
             var options = _options.Value;
+
+            // Gated by the AutoProvision config flag (see CosmosOptions) instead of an
+            // IsDevelopment() check, so the behavior is explicit and can be enabled for other
+            // environments (e.g. CI) without adding more environment-name checks here.
             if (!options.AutoProvision) return;
 
             var database = await _client.CreateDatabaseIfNotExistsAsync(options.DatabaseName, cancellationToken: cancellationToken);
