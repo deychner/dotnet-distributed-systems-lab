@@ -18,7 +18,7 @@ namespace TenantVault.DataAccess
 
             _logger.LogInformation("AddVehicleAsync Request Charge: {charge}", response.RequestCharge);
 
-            return response.Resource.Id;
+            return vehicle.Id;
         }
 
         public async Task<Vehicle?> GetVehicleAsync(string tenantId, int warehouseId, Guid vehicleId, CancellationToken cancellationToken)
@@ -39,7 +39,7 @@ namespace TenantVault.DataAccess
             }
         }
 
-        public async Task<IEnumerable<Vehicle>> GetVehiclesByWarehouseAsync(string tenantId, int warehouseId, CancellationToken cancellationToken)
+        public Task<IEnumerable<Vehicle>> GetVehiclesByWarehouseAsync(string tenantId, int warehouseId, CancellationToken cancellationToken)
         {
             QueryDefinition query = new("SELECT * FROM c");
 
@@ -48,23 +48,10 @@ namespace TenantVault.DataAccess
                 PartitionKey = BuildPartitionKey(tenantId, warehouseId)
             };
 
-            using var iterator = _container.GetItemQueryIterator<Vehicle>(query, requestOptions: requestOptions);
-            double totalRequestCharge = 0D;
-
-            var vehicles = new List<Vehicle>();
-            while (iterator.HasMoreResults)
-            {
-                var response = await iterator.ReadNextAsync(cancellationToken);
-                vehicles.AddRange(response.Resource);
-                totalRequestCharge += response.RequestCharge;
-            }
-
-            _logger.LogInformation("GetVehiclesByWarehouseAsync Request Charge: {charge}", totalRequestCharge);
-            _logger.LogInformation("GetVehiclesByWarehouseAsync Record count: {count}", vehicles.Count);
-            return vehicles;
+            return ExecuteQueryAsync(query, requestOptions, nameof(GetVehiclesByWarehouseAsync), cancellationToken);
         }
 
-        public async Task<IEnumerable<Vehicle>> GetVehiclesByTenantAsync(string tenantId, CancellationToken cancellationToken)
+        public Task<IEnumerable<Vehicle>> GetVehiclesByTenantAsync(string tenantId, CancellationToken cancellationToken)
         {
             QueryDefinition query = new QueryDefinition("SELECT * FROM c WHERE c.tenantId = @tenantId")
                 .WithParameter("@tenantId", tenantId);
@@ -74,6 +61,23 @@ namespace TenantVault.DataAccess
                 PartitionKey = BuildPartitionKey(tenantId)
             };
 
+            return ExecuteQueryAsync(query, requestOptions, nameof(GetVehiclesByTenantAsync), cancellationToken);
+        }
+
+        public Task<IEnumerable<Vehicle>> GetVehiclesByYearAsync(int year, CancellationToken cancellationToken)
+        {
+            QueryDefinition query = new QueryDefinition("SELECT * FROM c WHERE c.year = @year")
+                .WithParameter("@year", year);
+
+            return ExecuteQueryAsync(query, requestOptions: null, nameof(GetVehiclesByYearAsync), cancellationToken);
+        }
+
+        private async Task<IEnumerable<Vehicle>> ExecuteQueryAsync(
+            QueryDefinition query,
+            QueryRequestOptions? requestOptions,
+            string operationName,
+            CancellationToken cancellationToken)
+        {
             using var iterator = _container.GetItemQueryIterator<Vehicle>(query, requestOptions: requestOptions);
             double totalRequestCharge = 0D;
 
@@ -85,29 +89,9 @@ namespace TenantVault.DataAccess
                 totalRequestCharge += response.RequestCharge;
             }
 
-            _logger.LogInformation("GetVehiclesByTenantAsync Request Charge: {charge}", totalRequestCharge);
-            _logger.LogInformation("GetVehiclesByTenantAsync Record count: {count}", vehicles.Count);
-            return vehicles;
-        }
+            _logger.LogInformation("{operation} Request Charge: {charge}", operationName, totalRequestCharge);
+            _logger.LogInformation("{operation} Record count: {count}", operationName, vehicles.Count);
 
-        public async Task<IEnumerable<Vehicle>> GetVehiclesByYearAsync(int year, CancellationToken cancellationToken)
-        {
-            QueryDefinition query = new QueryDefinition("SELECT * FROM c WHERE c.year = @year")
-                .WithParameter("@year", year);
-
-            using var iterator = _container.GetItemQueryIterator<Vehicle>(query);
-            double totalRequestCharge = 0D;
-
-            var vehicles = new List<Vehicle>();
-            while (iterator.HasMoreResults)
-            {
-                var response = await iterator.ReadNextAsync(cancellationToken);
-                vehicles.AddRange(response.Resource);
-                totalRequestCharge += response.RequestCharge;
-            }
-
-            _logger.LogInformation("GetVehiclesByYearAsync Request Charge: {charge}", totalRequestCharge);
-            _logger.LogInformation("GetVehiclesByYearAsync Record count: {count}", vehicles.Count);
             return vehicles;
         }
 
