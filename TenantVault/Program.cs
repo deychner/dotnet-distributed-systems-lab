@@ -72,14 +72,13 @@ namespace TenantVault
         private static void ConfigureLogging(WebApplicationBuilder builder)
         {
             Log.Logger = new LoggerConfiguration()
-                .MinimumLevel.Debug()
-                .WriteTo.Console()
+                .ReadFrom.Configuration(builder.Configuration)
                 .CreateLogger();
 
-            builder.Services.AddLogging(builder =>
+            builder.Services.AddLogging(loggingBuilder =>
             {
-                builder.ClearProviders();
-                builder.AddSerilog(dispose: true);
+                loggingBuilder.ClearProviders();
+                loggingBuilder.AddSerilog(dispose: true);
             });
         }
     }
