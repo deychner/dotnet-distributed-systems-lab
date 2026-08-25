@@ -4,6 +4,8 @@
     {
         public const string SectionName = "Cosmos";
 
+        public bool AutoProvision { get; set; } = false;
+
         public string AccountEndpoint { get; set; } = default!;
         public string AccountKey { get; set; } = default!;
         public string DatabaseName { get; set; } = default!;
