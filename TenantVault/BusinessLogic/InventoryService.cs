@@ -7,24 +7,16 @@ namespace TenantVault.BusinessLogic
     {
         private readonly IInventoryDataAdapter _inventoryDataAdapter = inventoryDataAdapter;
 
-        public async Task<Guid> AddVehicleAsync(Vehicle vehicle, CancellationToken cancellationToken)
-        {
-            return await _inventoryDataAdapter.AddVehicleAsync(vehicle, cancellationToken);
-        }
+        public Task<Guid> AddVehicleAsync(Vehicle vehicle, CancellationToken cancellationToken) =>
+            _inventoryDataAdapter.AddVehicleAsync(vehicle, cancellationToken);
 
-        public async Task<Vehicle?> GetVehicleAsync(string tenantId, int warehouseId, Guid vehicleId, CancellationToken cancellationToken)
-        {
-            return await _inventoryDataAdapter.GetVehicleAsync(tenantId, warehouseId, vehicleId, cancellationToken);
-        }
+        public Task<Vehicle?> GetVehicleAsync(string tenantId, int warehouseId, Guid vehicleId, CancellationToken cancellationToken) =>
+            _inventoryDataAdapter.GetVehicleAsync(tenantId, warehouseId, vehicleId, cancellationToken);
 
-        public async Task<IEnumerable<Vehicle>> GetVehiclesByWarehouseAsync(string tenantId, int warehouseId, CancellationToken cancellationToken)
-        {
-            return await _inventoryDataAdapter.GetVehiclesByWarehouseAsync(tenantId, warehouseId, cancellationToken);
-        }
+        public Task<IEnumerable<Vehicle>> GetVehiclesByWarehouseAsync(string tenantId, int warehouseId, CancellationToken cancellationToken) =>
+            _inventoryDataAdapter.GetVehiclesByWarehouseAsync(tenantId, warehouseId, cancellationToken);
 
-        public async Task<IEnumerable<Vehicle>> GetVehiclesByTenantAsync(string tenantId, CancellationToken cancellationToken)
-        {
-            return await _inventoryDataAdapter.GetVehiclesByTenantAsync(tenantId, cancellationToken);
-        }
+        public Task<IEnumerable<Vehicle>> GetVehiclesByTenantAsync(string tenantId, CancellationToken cancellationToken) =>
+            _inventoryDataAdapter.GetVehiclesByTenantAsync(tenantId, cancellationToken);
     }
 }
