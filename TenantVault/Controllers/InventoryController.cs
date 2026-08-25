@@ -38,7 +38,7 @@ namespace TenantVault.Controllers
             CancellationToken cancellationToken)
         {
             var vehicles = await _inventoryService.GetVehiclesByWarehouseAsync(tenantId, warehouseId, cancellationToken);
-            return vehicles.Any() ? Ok(vehicles) : NotFound();
+            return Ok(vehicles);
         }
 
         [HttpGet("vehicle/{tenantId}")]
@@ -47,7 +47,7 @@ namespace TenantVault.Controllers
             CancellationToken cancellationToken)
         {
             var vehicles = await _inventoryService.GetVehiclesByTenantAsync(tenantId, cancellationToken);
-            return vehicles.Any() ? Ok(vehicles) : NotFound();
+            return Ok(vehicles);
         }
     }
 }
