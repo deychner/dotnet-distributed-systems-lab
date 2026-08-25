@@ -1,0 +1,5001 @@
+tenantId,make,model,year,warehouseId,spotId
+tenant-005,Ford,Mustang,2026,1,137
+tenant-012,Freightliner,Cascadia,2017,2,370
+tenant-012,Honda,CR-V,2018,2,419
+tenant-032,Aston Martin,Vantage,2019,3,222
+tenant-024,Chevrolet,Silverado,2025,3,12
+tenant-006,Toyota,Tacoma,2026,2,151
+tenant-005,Aston Martin,Vantage,2019,4,383
+tenant-019,Freightliner,Cascadia,2019,3,13
+tenant-033,Porsche,911,2018,5,265
+tenant-035,Honda,CR-V,2011,4,339
+tenant-025,Kenworth,T680,2025,4,233
+tenant-027,Chevrolet,Silverado,2012,3,351
+tenant-008,Isuzu,NPR,2026,1,403
+tenant-049,Aston Martin,DB6,2020,2,457
+tenant-024,Ford,Mustang,2013,2,446
+tenant-027,Toyota,Tacoma,2010,1,388
+tenant-014,Volvo,VNL,2025,3,187
+tenant-044,Toyota,Camry,2021,1,381
+tenant-050,Chevrolet,Silverado,2019,2,149
+tenant-044,Ford,F-150,2018,4,446
+tenant-019,Aston Martin,Vantage,2026,3,229
+tenant-032,Isuzu,NPR,2023,2,137
+tenant-048,Honda,CR-V,2019,1,310
+tenant-044,Peterbilt,579,2018,1,187
+tenant-027,Toyota,Tacoma,2010,2,314
+tenant-005,Porsche,911,2025,3,55
+tenant-025,Aston Martin,Vantage,2018,4,7
+tenant-031,Kenworth,T680,2015,1,392
+tenant-018,Porsche,911,2025,3,437
+tenant-026,Volvo,VNL,2025,3,464
+tenant-018,Ford,F-150,2019,4,281
+tenant-007,Ford,F-150,2022,3,67
+tenant-034,Ford,F-150,2025,4,156
+tenant-037,Freightliner,Cascadia,2023,3,273
+tenant-008,Aston Martin,Vantage,2012,2,373
+tenant-013,Porsche,911,2025,4,404
+tenant-029,Honda,CR-V,2010,1,286
+tenant-007,Chevrolet,Silverado,2026,5,76
+tenant-009,Volvo,VNL,2026,5,116
+tenant-040,Ford,Mustang,2024,1,196
+tenant-011,Freightliner,Cascadia,2021,2,263
+tenant-006,Toyota,Tacoma,2014,2,34
+tenant-005,Ford,Mustang,2014,3,119
+tenant-032,Honda,CR-V,2014,1,160
+tenant-004,Porsche,911,2010,2,294
+tenant-009,Freightliner,Cascadia,2019,5,361
+tenant-029,Toyota,Tacoma,2010,3,214
+tenant-028,Freightliner,Cascadia,2024,2,339
+tenant-005,Mercedes-Benz,Sprinter,2018,4,468
+tenant-004,Toyota,Camry,2015,1,155
+tenant-027,Ford,F-150,2025,4,297
+tenant-045,Isuzu,NPR,2019,4,241
+tenant-037,Chevrolet,Silverado,2023,3,414
+tenant-036,Ford,Mustang,2019,2,456
+tenant-037,Freightliner,Cascadia,2025,2,464
+tenant-005,Toyota,Camry,2016,5,228
+tenant-040,Aston Martin,Vantage,2023,2,332
+tenant-037,Volvo,VNL,2011,5,66
+tenant-028,Ford,F-150,2010,3,478
+tenant-050,Aston Martin,DB6,2014,3,143
+tenant-025,Toyota,Tacoma,2010,4,126
+tenant-042,Aston Martin,Vantage,2014,1,193
+tenant-047,Freightliner,Cascadia,2025,5,103
+tenant-047,Mercedes-Benz,Sprinter,2015,4,153
+tenant-020,Ford,Mustang,2011,5,450
+tenant-037,Toyota,Tacoma,2023,4,120
+tenant-024,Ford,Mustang,2016,1,376
+tenant-009,Isuzu,NPR,2012,1,258
+tenant-014,Isuzu,NPR,2015,1,391
+tenant-040,Toyota,Camry,2022,3,194
+tenant-048,Freightliner,Cascadia,2012,4,181
+tenant-038,Honda,CR-V,2022,5,421
+tenant-001,Chevrolet,Silverado,2018,1,415
+tenant-041,Porsche,911,2013,3,376
+tenant-028,Peterbilt,579,2013,5,141
+tenant-038,Kenworth,T680,2011,4,239
+tenant-026,Ford,Mustang,2021,2,34
+tenant-038,Ford,Mustang,2016,2,157
+tenant-030,Toyota,Tacoma,2026,1,432
+tenant-042,Isuzu,NPR,2024,3,410
+tenant-029,Chevrolet,Silverado,2013,3,232
+tenant-003,Freightliner,Cascadia,2013,4,297
+tenant-031,Isuzu,NPR,2018,5,76
+tenant-011,Chevrolet,Silverado,2025,5,117
+tenant-008,Freightliner,Cascadia,2020,3,53
+tenant-036,Volvo,VNL,2026,3,163
+tenant-005,Kenworth,T680,2022,4,496
+tenant-022,Isuzu,NPR,2011,1,204
+tenant-048,Chevrolet,Silverado,2011,4,109
+tenant-016,Peterbilt,579,2012,1,176
+tenant-025,Peterbilt,579,2023,5,92
+tenant-030,Aston Martin,Vantage,2019,1,88
+tenant-030,Freightliner,Cascadia,2021,4,180
+tenant-035,Porsche,911,2013,3,79
+tenant-042,Aston Martin,DB6,2018,4,325
+tenant-014,Ford,F-150,2012,2,159
+tenant-028,Ford,F-150,2019,3,206
+tenant-026,Chevrolet,Silverado,2010,5,34
+tenant-004,Peterbilt,579,2024,3,353
+tenant-010,Honda,CR-V,2017,2,229
+tenant-046,Porsche,911,2023,2,21
+tenant-024,Porsche,911,2020,1,12
+tenant-026,Kenworth,T680,2015,4,37
+tenant-003,Volvo,VNL,2021,3,153
+tenant-044,Isuzu,NPR,2026,3,133
+tenant-019,Toyota,Tacoma,2024,2,425
+tenant-045,Volvo,VNL,2014,1,92
+tenant-010,Peterbilt,579,2016,3,368
+tenant-042,Peterbilt,579,2013,2,251
+tenant-012,Peterbilt,579,2012,1,3
+tenant-042,Mercedes-Benz,Sprinter,2016,1,112
+tenant-021,Mercedes-Benz,Sprinter,2018,1,245
+tenant-040,Aston Martin,DB6,2012,5,266
+tenant-016,Kenworth,T680,2011,4,382
+tenant-011,Ford,Mustang,2016,2,493
+tenant-038,Porsche,911,2016,5,220
+tenant-021,Toyota,Camry,2025,1,130
+tenant-046,Honda,CR-V,2025,4,110
+tenant-023,Freightliner,Cascadia,2016,1,185
+tenant-003,Mercedes-Benz,Sprinter,2017,2,197
+tenant-003,Ford,Mustang,2010,2,439
+tenant-044,Mercedes-Benz,Sprinter,2016,2,215
+tenant-037,Kenworth,T680,2022,2,57
+tenant-049,Aston Martin,Vantage,2020,2,232
+tenant-045,Volvo,VNL,2020,5,48
+tenant-026,Isuzu,NPR,2016,1,6
+tenant-014,Ford,Mustang,2017,4,78
+tenant-045,Aston Martin,DB6,2024,5,245
+tenant-002,Toyota,Camry,2011,1,26
+tenant-029,Kenworth,T680,2024,2,92
+tenant-030,Ford,F-150,2019,5,214
+tenant-001,Freightliner,Cascadia,2024,2,326
+tenant-039,Aston Martin,DB6,2014,3,168
+tenant-022,Mercedes-Benz,Sprinter,2015,2,328
+tenant-027,Ford,Mustang,2012,3,126
+tenant-011,Aston Martin,DB6,2014,3,5
+tenant-025,Ford,F-150,2015,5,495
+tenant-034,Ford,F-150,2014,2,184
+tenant-011,Chevrolet,Silverado,2010,3,4
+tenant-009,Ford,Mustang,2019,2,255
+tenant-002,Aston Martin,Vantage,2020,5,239
+tenant-033,Volvo,VNL,2025,4,69
+tenant-005,Peterbilt,579,2024,4,494
+tenant-005,Toyota,Camry,2021,2,221
+tenant-041,Aston Martin,Vantage,2020,4,447
+tenant-031,Isuzu,NPR,2013,1,214
+tenant-022,Mercedes-Benz,Sprinter,2010,3,65
+tenant-039,Isuzu,NPR,2017,4,366
+tenant-015,Aston Martin,Vantage,2014,1,63
+tenant-025,Porsche,911,2014,3,84
+tenant-009,Toyota,Tacoma,2013,3,66
+tenant-009,Mercedes-Benz,Sprinter,2026,4,107
+tenant-012,Peterbilt,579,2015,5,188
+tenant-022,Mercedes-Benz,Sprinter,2022,3,53
+tenant-017,Peterbilt,579,2020,1,142
+tenant-046,Ford,F-150,2011,3,380
+tenant-011,Mercedes-Benz,Sprinter,2021,3,87
+tenant-044,Honda,CR-V,2026,2,477
+tenant-015,Toyota,Camry,2012,4,192
+tenant-021,Chevrolet,Silverado,2021,5,318
+tenant-002,Mercedes-Benz,Sprinter,2016,5,216
+tenant-028,Ford,Mustang,2011,4,125
+tenant-012,Toyota,Camry,2012,1,306
+tenant-002,Ford,F-150,2026,4,205
+tenant-001,Peterbilt,579,2020,5,11
+tenant-006,Mercedes-Benz,Sprinter,2010,4,47
+tenant-008,Ford,F-150,2022,3,187
+tenant-011,Kenworth,T680,2016,2,204
+tenant-013,Chevrolet,Silverado,2023,1,364
+tenant-036,Mercedes-Benz,Sprinter,2019,4,74
+tenant-006,Porsche,911,2021,3,59
+tenant-025,Freightliner,Cascadia,2019,4,374
+tenant-041,Toyota,Camry,2015,1,361
+tenant-032,Volvo,VNL,2025,2,302
+tenant-018,Mercedes-Benz,Sprinter,2011,1,437
+tenant-010,Honda,CR-V,2026,2,168
+tenant-021,Mercedes-Benz,Sprinter,2012,3,142
+tenant-012,Toyota,Camry,2022,4,238
+tenant-040,Chevrolet,Silverado,2019,4,329
+tenant-044,Aston Martin,DB6,2010,5,309
+tenant-038,Volvo,VNL,2018,3,447
+tenant-003,Freightliner,Cascadia,2017,2,431
+tenant-025,Kenworth,T680,2023,2,208
+tenant-001,Toyota,Camry,2012,5,264
+tenant-039,Kenworth,T680,2017,5,192
+tenant-033,Kenworth,T680,2014,5,28
+tenant-046,Honda,CR-V,2024,3,343
+tenant-005,Freightliner,Cascadia,2010,3,425
+tenant-034,Toyota,Camry,2013,1,429
+tenant-004,Freightliner,Cascadia,2016,3,218
+tenant-023,Aston Martin,Vantage,2018,5,185
+tenant-027,Isuzu,NPR,2019,1,200
+tenant-034,Aston Martin,Vantage,2025,1,347
+tenant-016,Toyota,Tacoma,2018,3,164
+tenant-044,Porsche,911,2022,2,254
+tenant-014,Peterbilt,579,2013,3,117
+tenant-050,Aston Martin,DB6,2021,5,35
+tenant-006,Honda,CR-V,2013,3,382
+tenant-021,Peterbilt,579,2018,2,114
+tenant-036,Aston Martin,DB6,2024,3,44
+tenant-040,Honda,CR-V,2016,1,329
+tenant-048,Honda,CR-V,2016,5,78
+tenant-006,Isuzu,NPR,2020,3,344
+tenant-025,Mercedes-Benz,Sprinter,2022,3,282
+tenant-012,Aston Martin,DB6,2024,4,164
+tenant-033,Chevrolet,Silverado,2013,5,434
+tenant-021,Aston Martin,DB6,2015,2,52
+tenant-009,Porsche,911,2010,1,42
+tenant-035,Toyota,Camry,2010,4,424
+tenant-004,Mercedes-Benz,Sprinter,2019,3,305
+tenant-006,Peterbilt,579,2024,1,47
+tenant-008,Aston Martin,DB6,2025,5,270
+tenant-044,Aston Martin,DB6,2013,2,467
+tenant-012,Volvo,VNL,2016,5,231
+tenant-016,Volvo,VNL,2020,1,134
+tenant-017,Ford,F-150,2021,1,288
+tenant-041,Mercedes-Benz,Sprinter,2025,4,47
+tenant-023,Mercedes-Benz,Sprinter,2022,5,259
+tenant-013,Toyota,Camry,2016,5,322
+tenant-033,Chevrolet,Silverado,2021,5,364
+tenant-011,Honda,CR-V,2022,4,194
+tenant-025,Toyota,Tacoma,2016,3,452
+tenant-035,Toyota,Camry,2022,4,396
+tenant-009,Volvo,VNL,2022,3,27
+tenant-017,Aston Martin,Vantage,2016,4,85
+tenant-023,Toyota,Tacoma,2024,5,478
+tenant-014,Ford,Mustang,2017,5,460
+tenant-046,Volvo,VNL,2022,4,32
+tenant-037,Mercedes-Benz,Sprinter,2020,3,160
+tenant-029,Volvo,VNL,2019,4,219
+tenant-023,Ford,F-150,2020,2,477
+tenant-012,Porsche,911,2024,5,317
+tenant-037,Kenworth,T680,2014,5,409
+tenant-008,Peterbilt,579,2025,1,306
+tenant-033,Toyota,Tacoma,2020,2,233
+tenant-019,Ford,F-150,2018,1,75
+tenant-003,Aston Martin,Vantage,2023,3,130
+tenant-017,Kenworth,T680,2020,3,210
+tenant-014,Aston Martin,DB6,2012,5,298
+tenant-013,Freightliner,Cascadia,2020,4,425
+tenant-016,Aston Martin,DB6,2012,1,281
+tenant-039,Aston Martin,DB6,2011,3,123
+tenant-001,Ford,Mustang,2022,1,41
+tenant-018,Ford,F-150,2024,4,487
+tenant-050,Volvo,VNL,2021,5,397
+tenant-012,Freightliner,Cascadia,2024,1,185
+tenant-038,Chevrolet,Silverado,2020,4,140
+tenant-050,Ford,F-150,2024,2,22
+tenant-036,Toyota,Tacoma,2026,1,399
+tenant-048,Volvo,VNL,2016,4,240
+tenant-010,Porsche,911,2026,3,104
+tenant-010,Toyota,Tacoma,2017,1,274
+tenant-035,Aston Martin,Vantage,2021,5,233
+tenant-029,Aston Martin,DB6,2023,2,446
+tenant-047,Peterbilt,579,2025,4,433
+tenant-021,Toyota,Camry,2012,2,312
+tenant-010,Chevrolet,Silverado,2023,4,273
+tenant-017,Aston Martin,Vantage,2012,3,67
+tenant-005,Chevrolet,Silverado,2023,5,481
+tenant-049,Toyota,Camry,2025,1,299
+tenant-023,Volvo,VNL,2022,4,337
+tenant-036,Chevrolet,Silverado,2023,1,226
+tenant-008,Kenworth,T680,2013,1,396
+tenant-001,Ford,Mustang,2013,4,446
+tenant-045,Peterbilt,579,2013,5,40
+tenant-021,Kenworth,T680,2026,2,147
+tenant-047,Ford,Mustang,2022,2,4
+tenant-046,Isuzu,NPR,2014,1,13
+tenant-025,Peterbilt,579,2024,3,325
+tenant-003,Chevrolet,Silverado,2013,5,222
+tenant-007,Chevrolet,Silverado,2021,4,284
+tenant-038,Peterbilt,579,2010,2,426
+tenant-043,Aston Martin,Vantage,2017,1,348
+tenant-017,Mercedes-Benz,Sprinter,2016,1,439
+tenant-038,Aston Martin,DB6,2022,1,106
+tenant-006,Honda,CR-V,2020,3,341
+tenant-015,Toyota,Camry,2016,4,413
+tenant-012,Porsche,911,2014,2,154
+tenant-046,Aston Martin,Vantage,2017,3,359
+tenant-004,Porsche,911,2024,3,37
+tenant-040,Toyota,Tacoma,2021,1,23
+tenant-009,Freightliner,Cascadia,2025,5,110
+tenant-021,Aston Martin,DB6,2017,3,315
+tenant-039,Ford,Mustang,2022,1,146
+tenant-044,Aston Martin,DB6,2016,2,380
+tenant-002,Aston Martin,Vantage,2023,4,499
+tenant-029,Toyota,Camry,2024,5,317
+tenant-046,Freightliner,Cascadia,2019,5,258
+tenant-014,Toyota,Tacoma,2017,4,238
+tenant-038,Chevrolet,Silverado,2017,4,136
+tenant-037,Kenworth,T680,2020,1,175
+tenant-045,Mercedes-Benz,Sprinter,2016,4,206
+tenant-033,Toyota,Camry,2023,5,458
+tenant-032,Toyota,Tacoma,2022,3,412
+tenant-009,Kenworth,T680,2018,5,286
+tenant-036,Aston Martin,DB6,2026,1,442
+tenant-041,Honda,CR-V,2019,1,376
+tenant-001,Chevrolet,Silverado,2012,3,387
+tenant-046,Ford,Mustang,2014,2,482
+tenant-004,Volvo,VNL,2018,2,482
+tenant-023,Isuzu,NPR,2022,3,98
+tenant-044,Isuzu,NPR,2010,2,86
+tenant-038,Aston Martin,Vantage,2012,4,152
+tenant-004,Aston Martin,DB6,2023,1,251
+tenant-002,Isuzu,NPR,2010,5,156
+tenant-023,Aston Martin,Vantage,2026,3,195
+tenant-032,Freightliner,Cascadia,2011,5,252
+tenant-019,Aston Martin,DB6,2019,1,450
+tenant-002,Toyota,Camry,2011,3,461
+tenant-018,Toyota,Camry,2010,2,442
+tenant-021,Kenworth,T680,2020,1,210
+tenant-028,Chevrolet,Silverado,2013,2,74
+tenant-035,Honda,CR-V,2026,5,378
+tenant-034,Toyota,Camry,2012,5,138
+tenant-029,Mercedes-Benz,Sprinter,2012,5,288
+tenant-046,Peterbilt,579,2025,2,21
+tenant-027,Honda,CR-V,2014,3,44
+tenant-047,Peterbilt,579,2021,5,363
+tenant-009,Isuzu,NPR,2020,4,340
+tenant-023,Mercedes-Benz,Sprinter,2025,2,47
+tenant-037,Chevrolet,Silverado,2017,3,491
+tenant-027,Volvo,VNL,2020,4,274
+tenant-013,Honda,CR-V,2014,1,295
+tenant-021,Honda,CR-V,2010,2,412
+tenant-011,Porsche,911,2021,4,137
+tenant-001,Toyota,Camry,2021,1,310
+tenant-048,Toyota,Tacoma,2020,2,303
+tenant-012,Peterbilt,579,2015,5,477
+tenant-022,Kenworth,T680,2012,4,227
+tenant-005,Porsche,911,2025,4,496
+tenant-007,Aston Martin,DB6,2014,1,121
+tenant-026,Mercedes-Benz,Sprinter,2019,5,394
+tenant-034,Aston Martin,DB6,2014,1,64
+tenant-049,Kenworth,T680,2021,1,327
+tenant-015,Freightliner,Cascadia,2024,2,453
+tenant-006,Chevrolet,Silverado,2021,2,263
+tenant-036,Kenworth,T680,2022,2,174
+tenant-027,Chevrolet,Silverado,2012,3,73
+tenant-019,Mercedes-Benz,Sprinter,2015,5,114
+tenant-045,Toyota,Camry,2020,5,15
+tenant-020,Porsche,911,2023,4,12
+tenant-021,Toyota,Camry,2026,4,275
+tenant-034,Toyota,Camry,2010,5,53
+tenant-026,Volvo,VNL,2020,2,193
+tenant-037,Ford,Mustang,2012,1,276
+tenant-040,Aston Martin,DB6,2023,3,390
+tenant-048,Toyota,Tacoma,2022,3,139
+tenant-041,Kenworth,T680,2025,1,249
+tenant-032,Honda,CR-V,2024,1,236
+tenant-033,Kenworth,T680,2015,5,19
+tenant-042,Isuzu,NPR,2022,1,173
+tenant-027,Ford,F-150,2012,1,379
+tenant-033,Kenworth,T680,2015,1,469
+tenant-050,Isuzu,NPR,2026,3,108
+tenant-034,Volvo,VNL,2026,1,393
+tenant-003,Volvo,VNL,2017,1,244
+tenant-033,Ford,Mustang,2011,4,298
+tenant-012,Toyota,Tacoma,2016,2,235
+tenant-006,Ford,Mustang,2012,2,165
+tenant-046,Ford,Mustang,2011,3,318
+tenant-007,Freightliner,Cascadia,2011,1,181
+tenant-029,Chevrolet,Silverado,2024,4,396
+tenant-049,Chevrolet,Silverado,2019,4,3
+tenant-028,Honda,CR-V,2022,3,433
+tenant-011,Chevrolet,Silverado,2011,1,288
+tenant-030,Toyota,Camry,2012,3,168
+tenant-050,Mercedes-Benz,Sprinter,2020,3,302
+tenant-004,Freightliner,Cascadia,2014,5,475
+tenant-044,Kenworth,T680,2014,2,23
+tenant-044,Toyota,Tacoma,2024,5,418
+tenant-009,Isuzu,NPR,2025,4,447
+tenant-023,Aston Martin,Vantage,2023,5,423
+tenant-027,Mercedes-Benz,Sprinter,2026,5,442
+tenant-046,Volvo,VNL,2016,4,445
+tenant-013,Honda,CR-V,2016,4,353
+tenant-019,Aston Martin,Vantage,2026,3,244
+tenant-047,Ford,Mustang,2015,1,235
+tenant-012,Toyota,Tacoma,2017,2,167
+tenant-028,Peterbilt,579,2024,1,180
+tenant-011,Isuzu,NPR,2011,5,92
+tenant-007,Kenworth,T680,2014,4,447
+tenant-012,Volvo,VNL,2016,5,106
+tenant-006,Mercedes-Benz,Sprinter,2011,3,301
+tenant-046,Porsche,911,2010,3,80
+tenant-046,Peterbilt,579,2023,3,260
+tenant-026,Isuzu,NPR,2019,2,290
+tenant-013,Aston Martin,DB6,2023,2,85
+tenant-035,Ford,Mustang,2019,4,370
+tenant-008,Ford,F-150,2019,5,315
+tenant-024,Freightliner,Cascadia,2025,4,319
+tenant-032,Chevrolet,Silverado,2026,2,416
+tenant-010,Mercedes-Benz,Sprinter,2024,2,332
+tenant-042,Aston Martin,Vantage,2017,5,141
+tenant-045,Ford,Mustang,2024,4,284
+tenant-007,Ford,Mustang,2019,2,199
+tenant-018,Toyota,Tacoma,2017,5,141
+tenant-007,Ford,Mustang,2013,4,365
+tenant-032,Chevrolet,Silverado,2023,4,217
+tenant-033,Toyota,Tacoma,2024,4,44
+tenant-039,Kenworth,T680,2026,3,23
+tenant-016,Ford,Mustang,2017,3,244
+tenant-026,Toyota,Camry,2025,3,376
+tenant-041,Freightliner,Cascadia,2022,5,31
+tenant-029,Aston Martin,DB6,2016,5,71
+tenant-024,Isuzu,NPR,2026,1,285
+tenant-001,Peterbilt,579,2016,1,120
+tenant-009,Volvo,VNL,2024,4,161
+tenant-005,Kenworth,T680,2022,3,293
+tenant-035,Peterbilt,579,2013,2,422
+tenant-050,Porsche,911,2025,3,193
+tenant-002,Ford,Mustang,2014,3,280
+tenant-043,Isuzu,NPR,2013,2,149
+tenant-002,Ford,F-150,2010,1,497
+tenant-010,Toyota,Camry,2026,3,227
+tenant-018,Isuzu,NPR,2015,5,355
+tenant-043,Honda,CR-V,2018,1,28
+tenant-011,Aston Martin,DB6,2021,5,28
+tenant-028,Porsche,911,2016,5,392
+tenant-023,Honda,CR-V,2010,5,372
+tenant-038,Toyota,Camry,2026,3,356
+tenant-022,Ford,F-150,2018,5,212
+tenant-007,Toyota,Tacoma,2026,2,197
+tenant-030,Kenworth,T680,2011,2,341
+tenant-033,Freightliner,Cascadia,2016,2,44
+tenant-008,Porsche,911,2025,1,23
+tenant-005,Toyota,Camry,2019,3,359
+tenant-044,Isuzu,NPR,2018,2,457
+tenant-012,Isuzu,NPR,2023,5,491
+tenant-004,Porsche,911,2023,2,157
+tenant-029,Mercedes-Benz,Sprinter,2015,1,344
+tenant-044,Mercedes-Benz,Sprinter,2015,5,419
+tenant-035,Toyota,Camry,2017,5,413
+tenant-034,Ford,F-150,2018,3,182
+tenant-034,Ford,F-150,2024,4,320
+tenant-013,Porsche,911,2026,3,461
+tenant-021,Toyota,Tacoma,2023,1,132
+tenant-039,Aston Martin,DB6,2011,4,429
+tenant-026,Aston Martin,Vantage,2019,2,362
+tenant-035,Ford,Mustang,2018,2,183
+tenant-011,Toyota,Tacoma,2017,4,357
+tenant-027,Mercedes-Benz,Sprinter,2019,2,32
+tenant-036,Toyota,Tacoma,2020,4,93
+tenant-003,Ford,Mustang,2023,3,276
+tenant-002,Toyota,Tacoma,2026,5,60
+tenant-037,Isuzu,NPR,2024,2,2
+tenant-013,Volvo,VNL,2018,2,116
+tenant-039,Chevrolet,Silverado,2012,2,423
+tenant-041,Porsche,911,2024,5,162
+tenant-048,Peterbilt,579,2018,4,393
+tenant-040,Chevrolet,Silverado,2011,4,472
+tenant-037,Peterbilt,579,2019,2,414
+tenant-012,Toyota,Tacoma,2023,5,200
+tenant-035,Kenworth,T680,2019,1,354
+tenant-029,Volvo,VNL,2011,3,241
+tenant-015,Isuzu,NPR,2021,4,115
+tenant-015,Mercedes-Benz,Sprinter,2013,3,127
+tenant-007,Peterbilt,579,2022,1,446
+tenant-035,Volvo,VNL,2020,4,200
+tenant-026,Toyota,Camry,2018,4,73
+tenant-018,Isuzu,NPR,2010,3,423
+tenant-029,Kenworth,T680,2023,1,129
+tenant-034,Peterbilt,579,2020,1,14
+tenant-010,Toyota,Tacoma,2025,3,47
+tenant-030,Freightliner,Cascadia,2014,1,460
+tenant-049,Kenworth,T680,2026,2,258
+tenant-006,Aston Martin,DB6,2013,2,437
+tenant-044,Mercedes-Benz,Sprinter,2012,5,219
+tenant-010,Ford,F-150,2017,1,27
+tenant-018,Volvo,VNL,2013,1,417
+tenant-045,Peterbilt,579,2020,1,61
+tenant-009,Toyota,Tacoma,2014,1,88
+tenant-016,Mercedes-Benz,Sprinter,2016,3,414
+tenant-022,Kenworth,T680,2018,2,244
+tenant-008,Chevrolet,Silverado,2015,2,416
+tenant-032,Ford,F-150,2021,1,393
+tenant-004,Isuzu,NPR,2010,4,337
+tenant-001,Volvo,VNL,2013,4,476
+tenant-013,Ford,F-150,2012,4,361
+tenant-024,Aston Martin,Vantage,2020,1,179
+tenant-020,Kenworth,T680,2015,4,332
+tenant-026,Porsche,911,2020,1,473
+tenant-008,Volvo,VNL,2014,3,435
+tenant-048,Kenworth,T680,2012,1,111
+tenant-026,Ford,F-150,2025,1,470
+tenant-039,Ford,F-150,2026,4,329
+tenant-039,Ford,F-150,2022,1,391
+tenant-002,Porsche,911,2015,1,36
+tenant-003,Porsche,911,2024,3,94
+tenant-032,Porsche,911,2022,5,413
+tenant-003,Ford,Mustang,2018,5,285
+tenant-044,Toyota,Camry,2024,2,323
+tenant-039,Honda,CR-V,2016,5,235
+tenant-015,Volvo,VNL,2019,1,134
+tenant-044,Ford,Mustang,2011,1,94
+tenant-033,Porsche,911,2018,3,148
+tenant-019,Freightliner,Cascadia,2023,4,199
+tenant-009,Porsche,911,2011,4,362
+tenant-013,Porsche,911,2024,1,251
+tenant-011,Porsche,911,2022,5,347
+tenant-017,Volvo,VNL,2013,5,335
+tenant-019,Volvo,VNL,2010,5,294
+tenant-038,Aston Martin,Vantage,2021,2,339
+tenant-018,Ford,Mustang,2025,2,58
+tenant-007,Aston Martin,Vantage,2015,4,140
+tenant-038,Ford,Mustang,2018,2,369
+tenant-034,Volvo,VNL,2016,2,84
+tenant-026,Ford,F-150,2024,2,457
+tenant-047,Freightliner,Cascadia,2018,2,451
+tenant-003,Mercedes-Benz,Sprinter,2024,3,471
+tenant-045,Aston Martin,DB6,2014,3,194
+tenant-048,Ford,F-150,2026,5,232
+tenant-017,Kenworth,T680,2019,3,216
+tenant-032,Isuzu,NPR,2015,1,260
+tenant-020,Kenworth,T680,2011,3,343
+tenant-015,Peterbilt,579,2026,4,441
+tenant-025,Honda,CR-V,2010,1,474
+tenant-003,Freightliner,Cascadia,2020,5,144
+tenant-031,Kenworth,T680,2016,1,408
+tenant-011,Aston Martin,Vantage,2020,5,16
+tenant-047,Aston Martin,Vantage,2016,5,489
+tenant-006,Honda,CR-V,2013,3,161
+tenant-034,Toyota,Tacoma,2024,4,388
+tenant-011,Isuzu,NPR,2020,3,132
+tenant-017,Porsche,911,2014,3,71
+tenant-020,Toyota,Tacoma,2010,4,257
+tenant-031,Toyota,Tacoma,2021,3,181
+tenant-031,Ford,F-150,2021,2,15
+tenant-003,Porsche,911,2023,5,422
+tenant-009,Toyota,Camry,2011,2,26
+tenant-043,Ford,F-150,2020,4,220
+tenant-006,Volvo,VNL,2021,1,405
+tenant-001,Toyota,Tacoma,2012,4,44
+tenant-018,Ford,Mustang,2022,5,215
+tenant-043,Kenworth,T680,2015,2,39
+tenant-039,Kenworth,T680,2013,5,183
+tenant-041,Porsche,911,2017,2,482
+tenant-026,Ford,F-150,2013,1,378
+tenant-032,Chevrolet,Silverado,2012,5,122
+tenant-046,Kenworth,T680,2020,4,291
+tenant-045,Honda,CR-V,2016,5,139
+tenant-009,Ford,Mustang,2010,4,306
+tenant-009,Peterbilt,579,2011,2,149
+tenant-048,Honda,CR-V,2017,2,296
+tenant-020,Toyota,Camry,2011,3,113
+tenant-050,Peterbilt,579,2025,1,13
+tenant-021,Aston Martin,DB6,2017,4,410
+tenant-035,Kenworth,T680,2016,1,286
+tenant-018,Ford,F-150,2013,5,396
+tenant-050,Ford,F-150,2019,1,369
+tenant-019,Porsche,911,2012,4,383
+tenant-041,Toyota,Camry,2020,2,162
+tenant-034,Isuzu,NPR,2010,3,59
+tenant-045,Toyota,Tacoma,2015,1,348
+tenant-023,Honda,CR-V,2020,2,8
+tenant-050,Ford,F-150,2020,3,236
+tenant-048,Mercedes-Benz,Sprinter,2020,3,442
+tenant-005,Toyota,Camry,2021,5,32
+tenant-047,Peterbilt,579,2022,3,432
+tenant-015,Ford,F-150,2026,2,128
+tenant-029,Ford,Mustang,2024,5,45
+tenant-006,Ford,F-150,2016,1,329
+tenant-046,Ford,F-150,2010,5,190
+tenant-029,Isuzu,NPR,2010,4,355
+tenant-002,Mercedes-Benz,Sprinter,2018,1,237
+tenant-045,Volvo,VNL,2023,4,77
+tenant-027,Aston Martin,DB6,2022,2,321
+tenant-005,Peterbilt,579,2024,5,466
+tenant-022,Porsche,911,2013,2,231
+tenant-049,Isuzu,NPR,2025,2,58
+tenant-030,Porsche,911,2026,4,172
+tenant-011,Isuzu,NPR,2023,2,152
+tenant-012,Chevrolet,Silverado,2017,5,409
+tenant-037,Aston Martin,Vantage,2024,4,29
+tenant-047,Isuzu,NPR,2022,2,99
+tenant-007,Toyota,Camry,2013,2,286
+tenant-014,Aston Martin,Vantage,2016,4,376
+tenant-005,Porsche,911,2022,2,318
+tenant-015,Kenworth,T680,2022,3,182
+tenant-018,Ford,F-150,2012,1,465
+tenant-022,Honda,CR-V,2016,1,75
+tenant-040,Aston Martin,Vantage,2022,3,219
+tenant-046,Toyota,Camry,2025,3,109
+tenant-004,Ford,F-150,2021,1,243
+tenant-001,Aston Martin,Vantage,2015,1,358
+tenant-005,Toyota,Camry,2025,1,362
+tenant-048,Chevrolet,Silverado,2013,2,425
+tenant-034,Ford,F-150,2018,1,305
+tenant-049,Aston Martin,Vantage,2022,4,217
+tenant-005,Toyota,Tacoma,2021,4,375
+tenant-032,Ford,F-150,2015,3,452
+tenant-039,Ford,F-150,2024,4,249
+tenant-009,Isuzu,NPR,2010,2,434
+tenant-043,Volvo,VNL,2016,5,47
+tenant-010,Ford,Mustang,2026,3,229
+tenant-025,Volvo,VNL,2015,3,233
+tenant-035,Kenworth,T680,2015,1,311
+tenant-047,Honda,CR-V,2017,3,51
+tenant-001,Freightliner,Cascadia,2011,1,374
+tenant-018,Ford,Mustang,2023,2,226
+tenant-015,Honda,CR-V,2015,2,182
+tenant-021,Mercedes-Benz,Sprinter,2013,2,383
+tenant-042,Peterbilt,579,2026,3,429
+tenant-003,Aston Martin,Vantage,2013,1,399
+tenant-008,Mercedes-Benz,Sprinter,2023,5,258
+tenant-012,Aston Martin,DB6,2024,3,483
+tenant-003,Toyota,Camry,2022,3,371
+tenant-046,Aston Martin,Vantage,2010,2,74
+tenant-021,Aston Martin,Vantage,2013,5,62
+tenant-002,Ford,F-150,2023,3,425
+tenant-006,Kenworth,T680,2017,1,169
+tenant-037,Porsche,911,2011,5,217
+tenant-036,Porsche,911,2011,2,214
+tenant-018,Honda,CR-V,2011,4,475
+tenant-010,Peterbilt,579,2024,3,158
+tenant-026,Porsche,911,2016,4,366
+tenant-017,Aston Martin,DB6,2016,2,176
+tenant-003,Toyota,Camry,2020,2,458
+tenant-024,Peterbilt,579,2010,4,150
+tenant-033,Porsche,911,2020,2,368
+tenant-018,Ford,Mustang,2023,5,430
+tenant-044,Ford,F-150,2026,3,498
+tenant-031,Kenworth,T680,2014,1,258
+tenant-009,Isuzu,NPR,2022,4,76
+tenant-029,Aston Martin,Vantage,2018,4,358
+tenant-034,Porsche,911,2011,2,411
+tenant-010,Kenworth,T680,2012,5,52
+tenant-030,Isuzu,NPR,2024,4,115
+tenant-042,Aston Martin,DB6,2015,2,335
+tenant-032,Peterbilt,579,2023,5,460
+tenant-013,Aston Martin,DB6,2017,2,153
+tenant-009,Honda,CR-V,2014,4,212
+tenant-010,Chevrolet,Silverado,2026,3,361
+tenant-011,Honda,CR-V,2023,1,286
+tenant-015,Toyota,Tacoma,2017,2,332
+tenant-012,Honda,CR-V,2024,1,286
+tenant-001,Honda,CR-V,2011,1,16
+tenant-014,Peterbilt,579,2026,5,69
+tenant-034,Kenworth,T680,2010,4,108
+tenant-047,Toyota,Camry,2021,4,248
+tenant-050,Ford,F-150,2013,4,105
+tenant-037,Volvo,VNL,2011,4,194
+tenant-013,Aston Martin,DB6,2019,3,149
+tenant-031,Chevrolet,Silverado,2024,5,104
+tenant-030,Toyota,Camry,2023,5,326
+tenant-010,Volvo,VNL,2010,4,153
+tenant-027,Aston Martin,DB6,2017,5,195
+tenant-048,Porsche,911,2022,4,97
+tenant-033,Ford,Mustang,2011,1,431
+tenant-016,Honda,CR-V,2013,5,349
+tenant-049,Isuzu,NPR,2020,3,428
+tenant-031,Peterbilt,579,2016,2,301
+tenant-007,Toyota,Camry,2013,5,430
+tenant-037,Freightliner,Cascadia,2017,3,56
+tenant-007,Aston Martin,Vantage,2024,1,349
+tenant-050,Toyota,Camry,2026,3,200
+tenant-012,Honda,CR-V,2022,1,399
+tenant-006,Aston Martin,DB6,2023,1,270
+tenant-012,Chevrolet,Silverado,2014,3,325
+tenant-038,Mercedes-Benz,Sprinter,2026,2,410
+tenant-043,Honda,CR-V,2017,5,317
+tenant-006,Freightliner,Cascadia,2019,3,181
+tenant-040,Ford,F-150,2014,5,134
+tenant-039,Volvo,VNL,2010,5,173
+tenant-030,Aston Martin,DB6,2010,1,150
+tenant-004,Freightliner,Cascadia,2015,4,300
+tenant-040,Freightliner,Cascadia,2010,5,87
+tenant-043,Mercedes-Benz,Sprinter,2021,4,383
+tenant-003,Volvo,VNL,2011,3,488
+tenant-009,Aston Martin,Vantage,2022,1,153
+tenant-025,Volvo,VNL,2013,5,293
+tenant-038,Ford,F-150,2025,1,356
+tenant-016,Volvo,VNL,2022,5,26
+tenant-005,Peterbilt,579,2024,1,52
+tenant-006,Porsche,911,2013,3,180
+tenant-006,Porsche,911,2016,1,301
+tenant-018,Honda,CR-V,2023,3,19
+tenant-032,Toyota,Tacoma,2017,4,208
+tenant-007,Volvo,VNL,2023,5,28
+tenant-035,Honda,CR-V,2010,3,126
+tenant-031,Honda,CR-V,2016,3,264
+tenant-018,Toyota,Tacoma,2024,2,93
+tenant-046,Freightliner,Cascadia,2010,1,183
+tenant-047,Honda,CR-V,2022,1,146
+tenant-019,Toyota,Camry,2024,2,364
+tenant-038,Chevrolet,Silverado,2024,5,437
+tenant-007,Kenworth,T680,2014,3,80
+tenant-021,Ford,Mustang,2012,5,347
+tenant-025,Porsche,911,2019,2,237
+tenant-024,Ford,Mustang,2019,1,4
+tenant-006,Mercedes-Benz,Sprinter,2014,4,290
+tenant-013,Isuzu,NPR,2010,5,313
+tenant-007,Freightliner,Cascadia,2011,4,329
+tenant-047,Aston Martin,DB6,2020,2,172
+tenant-010,Toyota,Tacoma,2011,5,229
+tenant-033,Porsche,911,2018,5,383
+tenant-005,Toyota,Tacoma,2017,5,332
+tenant-015,Isuzu,NPR,2025,3,177
+tenant-039,Ford,Mustang,2012,3,358
+tenant-007,Aston Martin,Vantage,2025,1,238
+tenant-022,Toyota,Tacoma,2015,2,400
+tenant-018,Peterbilt,579,2011,4,460
+tenant-016,Ford,Mustang,2012,3,45
+tenant-039,Ford,Mustang,2019,3,342
+tenant-045,Honda,CR-V,2014,1,458
+tenant-043,Mercedes-Benz,Sprinter,2014,1,74
+tenant-039,Aston Martin,DB6,2022,4,87
+tenant-050,Freightliner,Cascadia,2025,4,225
+tenant-038,Ford,F-150,2013,2,174
+tenant-040,Porsche,911,2022,2,267
+tenant-044,Peterbilt,579,2010,3,333
+tenant-032,Porsche,911,2019,4,331
+tenant-033,Toyota,Tacoma,2013,3,8
+tenant-036,Chevrolet,Silverado,2020,2,401
+tenant-024,Ford,F-150,2010,3,395
+tenant-037,Toyota,Camry,2016,5,500
+tenant-028,Toyota,Tacoma,2017,4,474
+tenant-012,Freightliner,Cascadia,2012,5,296
+tenant-046,Ford,F-150,2020,5,8
+tenant-028,Aston Martin,Vantage,2019,3,332
+tenant-015,Aston Martin,DB6,2021,3,468
+tenant-036,Ford,Mustang,2025,5,140
+tenant-016,Kenworth,T680,2016,1,210
+tenant-003,Aston Martin,Vantage,2025,5,239
+tenant-028,Porsche,911,2013,5,59
+tenant-007,Honda,CR-V,2015,4,419
+tenant-042,Aston Martin,Vantage,2016,1,377
+tenant-028,Honda,CR-V,2020,2,132
+tenant-033,Chevrolet,Silverado,2018,5,84
+tenant-002,Freightliner,Cascadia,2015,4,298
+tenant-011,Chevrolet,Silverado,2021,2,158
+tenant-030,Toyota,Tacoma,2019,4,253
+tenant-049,Freightliner,Cascadia,2019,4,306
+tenant-006,Ford,Mustang,2010,1,142
+tenant-001,Toyota,Tacoma,2020,2,109
+tenant-001,Ford,F-150,2015,2,274
+tenant-021,Honda,CR-V,2026,2,147
+tenant-007,Toyota,Tacoma,2010,5,464
+tenant-005,Isuzu,NPR,2022,1,234
+tenant-046,Freightliner,Cascadia,2024,4,20
+tenant-025,Honda,CR-V,2020,3,231
+tenant-023,Toyota,Camry,2014,2,360
+tenant-046,Porsche,911,2012,2,256
+tenant-023,Ford,Mustang,2011,1,443
+tenant-020,Ford,F-150,2012,2,431
+tenant-042,Peterbilt,579,2013,5,90
+tenant-008,Toyota,Camry,2015,1,426
+tenant-049,Aston Martin,Vantage,2023,5,46
+tenant-030,Ford,F-150,2013,3,158
+tenant-047,Aston Martin,Vantage,2011,1,342
+tenant-006,Freightliner,Cascadia,2020,4,398
+tenant-010,Porsche,911,2010,4,382
+tenant-042,Chevrolet,Silverado,2022,2,141
+tenant-028,Mercedes-Benz,Sprinter,2023,5,87
+tenant-010,Aston Martin,Vantage,2023,5,315
+tenant-023,Aston Martin,Vantage,2011,4,185
+tenant-001,Chevrolet,Silverado,2016,5,277
+tenant-009,Toyota,Camry,2025,3,266
+tenant-013,Toyota,Tacoma,2014,2,402
+tenant-041,Aston Martin,DB6,2017,2,189
+tenant-005,Volvo,VNL,2011,5,156
+tenant-046,Ford,F-150,2018,4,95
+tenant-042,Toyota,Camry,2012,3,366
+tenant-017,Toyota,Tacoma,2014,5,215
+tenant-035,Peterbilt,579,2026,4,283
+tenant-029,Mercedes-Benz,Sprinter,2025,1,314
+tenant-013,Honda,CR-V,2023,1,96
+tenant-003,Porsche,911,2015,4,494
+tenant-036,Mercedes-Benz,Sprinter,2010,3,293
+tenant-012,Porsche,911,2020,4,332
+tenant-009,Volvo,VNL,2025,4,88
+tenant-040,Chevrolet,Silverado,2016,4,80
+tenant-021,Kenworth,T680,2010,1,364
+tenant-037,Toyota,Camry,2026,4,407
+tenant-037,Peterbilt,579,2017,3,101
+tenant-042,Isuzu,NPR,2024,3,72
+tenant-033,Porsche,911,2017,1,440
+tenant-033,Isuzu,NPR,2025,4,477
+tenant-049,Isuzu,NPR,2025,1,379
+tenant-034,Ford,F-150,2023,5,213
+tenant-005,Aston Martin,Vantage,2011,2,151
+tenant-018,Toyota,Tacoma,2024,3,46
+tenant-044,Aston Martin,DB6,2025,2,390
+tenant-045,Freightliner,Cascadia,2017,1,472
+tenant-036,Porsche,911,2026,5,145
+tenant-046,Mercedes-Benz,Sprinter,2025,2,50
+tenant-001,Chevrolet,Silverado,2014,5,217
+tenant-028,Toyota,Tacoma,2016,1,487
+tenant-032,Ford,F-150,2024,3,138
+tenant-036,Peterbilt,579,2022,5,358
+tenant-004,Kenworth,T680,2013,5,237
+tenant-035,Volvo,VNL,2024,3,75
+tenant-016,Isuzu,NPR,2023,2,495
+tenant-019,Aston Martin,Vantage,2011,1,184
+tenant-003,Ford,F-150,2020,5,7
+tenant-001,Honda,CR-V,2020,1,143
+tenant-031,Toyota,Camry,2010,5,488
+tenant-029,Mercedes-Benz,Sprinter,2016,1,74
+tenant-019,Chevrolet,Silverado,2015,2,350
+tenant-001,Ford,F-150,2013,1,13
+tenant-039,Honda,CR-V,2013,5,119
+tenant-038,Chevrolet,Silverado,2012,3,86
+tenant-021,Aston Martin,Vantage,2022,1,180
+tenant-003,Toyota,Camry,2016,3,233
+tenant-024,Mercedes-Benz,Sprinter,2019,5,353
+tenant-027,Chevrolet,Silverado,2017,3,365
+tenant-007,Mercedes-Benz,Sprinter,2012,1,91
+tenant-012,Toyota,Tacoma,2020,1,443
+tenant-005,Aston Martin,DB6,2023,5,301
+tenant-017,Volvo,VNL,2010,4,321
+tenant-002,Porsche,911,2011,4,440
+tenant-040,Kenworth,T680,2011,2,325
+tenant-042,Chevrolet,Silverado,2019,1,460
+tenant-005,Aston Martin,Vantage,2023,1,175
+tenant-012,Aston Martin,Vantage,2018,1,53
+tenant-004,Isuzu,NPR,2022,2,231
+tenant-009,Aston Martin,DB6,2020,1,376
+tenant-025,Honda,CR-V,2011,3,394
+tenant-048,Volvo,VNL,2014,3,54
+tenant-038,Ford,Mustang,2026,3,192
+tenant-046,Ford,Mustang,2022,2,123
+tenant-014,Kenworth,T680,2021,4,326
+tenant-026,Porsche,911,2020,5,233
+tenant-003,Aston Martin,Vantage,2024,2,314
+tenant-016,Ford,Mustang,2011,3,258
+tenant-047,Honda,CR-V,2021,1,181
+tenant-038,Honda,CR-V,2010,4,92
+tenant-021,Freightliner,Cascadia,2021,2,397
+tenant-016,Freightliner,Cascadia,2024,2,239
+tenant-025,Freightliner,Cascadia,2024,2,204
+tenant-040,Volvo,VNL,2017,1,473
+tenant-014,Toyota,Camry,2010,4,389
+tenant-040,Aston Martin,DB6,2015,1,129
+tenant-044,Volvo,VNL,2014,3,483
+tenant-001,Ford,F-150,2020,3,58
+tenant-048,Porsche,911,2020,1,102
+tenant-023,Isuzu,NPR,2025,3,393
+tenant-004,Aston Martin,DB6,2024,1,139
+tenant-013,Porsche,911,2014,3,128
+tenant-023,Honda,CR-V,2019,1,480
+tenant-043,Toyota,Camry,2015,3,206
+tenant-035,Kenworth,T680,2024,4,358
+tenant-034,Honda,CR-V,2025,2,138
+tenant-008,Honda,CR-V,2013,4,135
+tenant-022,Porsche,911,2015,3,15
+tenant-041,Porsche,911,2016,1,96
+tenant-023,Aston Martin,DB6,2011,1,102
+tenant-025,Volvo,VNL,2021,1,41
+tenant-003,Honda,CR-V,2016,1,368
+tenant-035,Chevrolet,Silverado,2026,3,407
+tenant-002,Ford,Mustang,2024,1,147
+tenant-015,Isuzu,NPR,2022,5,52
+tenant-046,Honda,CR-V,2012,4,153
+tenant-016,Aston Martin,Vantage,2015,5,34
+tenant-027,Toyota,Tacoma,2019,2,471
+tenant-002,Toyota,Camry,2013,5,369
+tenant-030,Mercedes-Benz,Sprinter,2025,5,465
+tenant-048,Chevrolet,Silverado,2025,3,500
+tenant-019,Peterbilt,579,2016,4,276
+tenant-040,Kenworth,T680,2023,1,388
+tenant-014,Honda,CR-V,2012,4,450
+tenant-016,Honda,CR-V,2013,3,213
+tenant-049,Toyota,Tacoma,2014,4,350
+tenant-018,Volvo,VNL,2017,4,433
+tenant-019,Isuzu,NPR,2012,3,486
+tenant-031,Toyota,Tacoma,2026,1,391
+tenant-041,Toyota,Camry,2020,2,413
+tenant-039,Aston Martin,DB6,2019,2,201
+tenant-035,Peterbilt,579,2014,5,365
+tenant-030,Peterbilt,579,2018,5,253
+tenant-041,Toyota,Camry,2023,2,173
+tenant-016,Aston Martin,Vantage,2022,2,242
+tenant-044,Peterbilt,579,2014,1,323
+tenant-029,Toyota,Camry,2018,2,104
+tenant-030,Ford,Mustang,2025,2,394
+tenant-024,Ford,F-150,2017,5,214
+tenant-046,Chevrolet,Silverado,2012,1,454
+tenant-003,Freightliner,Cascadia,2017,1,413
+tenant-049,Volvo,VNL,2017,2,296
+tenant-030,Ford,Mustang,2019,2,497
+tenant-032,Honda,CR-V,2022,3,129
+tenant-020,Isuzu,NPR,2010,2,340
+tenant-041,Ford,F-150,2024,3,87
+tenant-018,Ford,F-150,2026,5,69
+tenant-016,Toyota,Camry,2018,3,267
+tenant-044,Mercedes-Benz,Sprinter,2018,1,486
+tenant-026,Mercedes-Benz,Sprinter,2012,5,417
+tenant-022,Chevrolet,Silverado,2024,4,500
+tenant-027,Isuzu,NPR,2013,1,421
+tenant-010,Peterbilt,579,2023,1,170
+tenant-043,Aston Martin,DB6,2017,1,157
+tenant-033,Honda,CR-V,2013,2,423
+tenant-012,Honda,CR-V,2022,3,38
+tenant-048,Volvo,VNL,2019,3,39
+tenant-037,Aston Martin,DB6,2017,3,25
+tenant-035,Ford,F-150,2021,3,172
+tenant-027,Ford,Mustang,2019,4,373
+tenant-018,Freightliner,Cascadia,2018,1,238
+tenant-036,Kenworth,T680,2023,5,493
+tenant-034,Aston Martin,Vantage,2011,2,381
+tenant-045,Porsche,911,2019,2,179
+tenant-016,Chevrolet,Silverado,2011,5,471
+tenant-013,Freightliner,Cascadia,2014,5,196
+tenant-015,Volvo,VNL,2018,5,108
+tenant-020,Isuzu,NPR,2026,5,351
+tenant-038,Ford,F-150,2014,2,195
+tenant-033,Chevrolet,Silverado,2014,5,285
+tenant-029,Porsche,911,2016,3,303
+tenant-007,Freightliner,Cascadia,2020,1,114
+tenant-030,Ford,Mustang,2018,3,101
+tenant-001,Freightliner,Cascadia,2014,3,127
+tenant-011,Ford,F-150,2010,4,360
+tenant-012,Ford,F-150,2021,3,86
+tenant-031,Kenworth,T680,2019,2,65
+tenant-008,Ford,F-150,2022,1,192
+tenant-034,Chevrolet,Silverado,2024,2,454
+tenant-043,Peterbilt,579,2014,5,206
+tenant-010,Toyota,Tacoma,2017,3,113
+tenant-010,Porsche,911,2022,4,193
+tenant-003,Kenworth,T680,2021,5,409
+tenant-008,Ford,Mustang,2012,5,34
+tenant-006,Isuzu,NPR,2017,2,485
+tenant-027,Ford,Mustang,2025,3,337
+tenant-010,Kenworth,T680,2012,4,24
+tenant-046,Aston Martin,DB6,2014,5,166
+tenant-007,Ford,F-150,2023,3,261
+tenant-035,Isuzu,NPR,2011,2,260
+tenant-004,Mercedes-Benz,Sprinter,2022,5,98
+tenant-020,Honda,CR-V,2010,4,450
+tenant-046,Ford,Mustang,2024,2,333
+tenant-017,Honda,CR-V,2026,1,11
+tenant-045,Freightliner,Cascadia,2012,5,292
+tenant-041,Porsche,911,2022,2,372
+tenant-036,Honda,CR-V,2018,1,300
+tenant-019,Aston Martin,DB6,2018,2,104
+tenant-026,Toyota,Tacoma,2013,2,443
+tenant-049,Freightliner,Cascadia,2014,4,180
+tenant-048,Peterbilt,579,2012,4,498
+tenant-045,Mercedes-Benz,Sprinter,2021,1,336
+tenant-038,Toyota,Tacoma,2016,2,438
+tenant-003,Freightliner,Cascadia,2017,2,140
+tenant-043,Toyota,Camry,2014,2,264
+tenant-036,Honda,CR-V,2018,3,47
+tenant-021,Peterbilt,579,2014,2,242
+tenant-001,Aston Martin,DB6,2013,3,350
+tenant-013,Peterbilt,579,2018,2,397
+tenant-038,Aston Martin,Vantage,2018,5,5
+tenant-022,Porsche,911,2018,4,281
+tenant-038,Porsche,911,2026,4,263
+tenant-012,Honda,CR-V,2020,1,185
+tenant-017,Freightliner,Cascadia,2023,2,208
+tenant-014,Isuzu,NPR,2014,2,143
+tenant-043,Kenworth,T680,2019,4,21
+tenant-037,Isuzu,NPR,2018,2,99
+tenant-013,Peterbilt,579,2015,4,226
+tenant-012,Ford,F-150,2023,5,203
+tenant-033,Mercedes-Benz,Sprinter,2018,4,87
+tenant-043,Ford,Mustang,2019,3,476
+tenant-024,Toyota,Camry,2025,4,202
+tenant-043,Ford,Mustang,2026,2,463
+tenant-014,Aston Martin,Vantage,2018,3,86
+tenant-019,Volvo,VNL,2022,1,75
+tenant-043,Mercedes-Benz,Sprinter,2022,4,216
+tenant-006,Mercedes-Benz,Sprinter,2018,4,360
+tenant-002,Toyota,Camry,2016,3,350
+tenant-043,Aston Martin,DB6,2020,4,462
+tenant-011,Toyota,Tacoma,2011,1,448
+tenant-013,Kenworth,T680,2022,3,251
+tenant-023,Toyota,Camry,2020,3,375
+tenant-016,Chevrolet,Silverado,2018,4,460
+tenant-013,Mercedes-Benz,Sprinter,2012,1,290
+tenant-046,Ford,Mustang,2022,5,422
+tenant-045,Porsche,911,2023,3,125
+tenant-017,Isuzu,NPR,2011,5,305
+tenant-012,Freightliner,Cascadia,2019,1,138
+tenant-036,Toyota,Tacoma,2026,3,97
+tenant-013,Ford,F-150,2019,4,82
+tenant-004,Peterbilt,579,2017,3,332
+tenant-048,Aston Martin,DB6,2021,3,418
+tenant-048,Toyota,Camry,2023,3,116
+tenant-043,Mercedes-Benz,Sprinter,2016,5,438
+tenant-021,Freightliner,Cascadia,2018,3,356
+tenant-004,Honda,CR-V,2025,4,497
+tenant-037,Peterbilt,579,2011,4,287
+tenant-028,Kenworth,T680,2019,3,357
+tenant-003,Ford,Mustang,2022,3,245
+tenant-039,Isuzu,NPR,2010,1,88
+tenant-029,Ford,Mustang,2020,4,272
+tenant-027,Mercedes-Benz,Sprinter,2011,4,337
+tenant-014,Ford,F-150,2015,2,62
+tenant-016,Mercedes-Benz,Sprinter,2019,2,42
+tenant-025,Ford,Mustang,2024,2,444
+tenant-002,Toyota,Camry,2016,3,352
+tenant-001,Volvo,VNL,2017,4,450
+tenant-012,Honda,CR-V,2022,5,301
+tenant-027,Mercedes-Benz,Sprinter,2011,4,356
+tenant-026,Porsche,911,2019,3,111
+tenant-025,Aston Martin,Vantage,2011,2,312
+tenant-034,Isuzu,NPR,2025,5,119
+tenant-021,Isuzu,NPR,2023,5,245
+tenant-013,Isuzu,NPR,2019,2,87
+tenant-038,Kenworth,T680,2016,2,273
+tenant-006,Toyota,Tacoma,2011,2,373
+tenant-010,Isuzu,NPR,2015,1,209
+tenant-015,Volvo,VNL,2011,1,426
+tenant-006,Kenworth,T680,2022,5,307
+tenant-008,Isuzu,NPR,2019,4,457
+tenant-038,Ford,F-150,2012,4,184
+tenant-011,Peterbilt,579,2016,1,412
+tenant-012,Aston Martin,DB6,2012,3,420
+tenant-044,Ford,F-150,2020,1,109
+tenant-017,Freightliner,Cascadia,2023,3,28
+tenant-043,Aston Martin,DB6,2017,5,114
+tenant-009,Toyota,Camry,2020,3,84
+tenant-037,Ford,F-150,2020,1,326
+tenant-027,Peterbilt,579,2020,1,107
+tenant-042,Aston Martin,Vantage,2016,3,495
+tenant-013,Aston Martin,Vantage,2023,3,471
+tenant-004,Mercedes-Benz,Sprinter,2019,2,44
+tenant-032,Honda,CR-V,2016,2,255
+tenant-015,Ford,Mustang,2022,5,180
+tenant-032,Aston Martin,Vantage,2020,5,169
+tenant-031,Aston Martin,DB6,2015,3,226
+tenant-006,Toyota,Camry,2021,4,4
+tenant-043,Ford,Mustang,2025,1,414
+tenant-047,Toyota,Tacoma,2022,2,425
+tenant-024,Aston Martin,DB6,2022,1,41
+tenant-027,Mercedes-Benz,Sprinter,2016,2,285
+tenant-049,Toyota,Tacoma,2013,3,222
+tenant-038,Honda,CR-V,2021,4,412
+tenant-050,Porsche,911,2026,1,228
+tenant-047,Honda,CR-V,2021,1,91
+tenant-027,Ford,F-150,2022,5,243
+tenant-033,Freightliner,Cascadia,2015,3,26
+tenant-014,Honda,CR-V,2023,2,360
+tenant-004,Aston Martin,Vantage,2023,2,311
+tenant-018,Ford,F-150,2017,3,247
+tenant-039,Toyota,Camry,2020,5,288
+tenant-019,Honda,CR-V,2011,2,220
+tenant-045,Kenworth,T680,2010,5,388
+tenant-022,Freightliner,Cascadia,2018,2,310
+tenant-006,Ford,Mustang,2018,4,15
+tenant-020,Peterbilt,579,2010,5,104
+tenant-022,Mercedes-Benz,Sprinter,2014,3,270
+tenant-024,Aston Martin,Vantage,2022,2,28
+tenant-034,Freightliner,Cascadia,2024,5,76
+tenant-029,Peterbilt,579,2019,1,179
+tenant-036,Isuzu,NPR,2011,2,491
+tenant-004,Isuzu,NPR,2017,1,354
+tenant-015,Mercedes-Benz,Sprinter,2012,2,464
+tenant-050,Porsche,911,2025,5,257
+tenant-048,Kenworth,T680,2011,2,411
+tenant-047,Freightliner,Cascadia,2013,1,45
+tenant-001,Isuzu,NPR,2015,3,260
+tenant-029,Porsche,911,2017,3,127
+tenant-032,Toyota,Camry,2011,2,236
+tenant-048,Ford,Mustang,2023,1,350
+tenant-005,Isuzu,NPR,2024,1,8
+tenant-006,Chevrolet,Silverado,2026,2,310
+tenant-007,Kenworth,T680,2015,1,309
+tenant-001,Ford,F-150,2017,2,396
+tenant-031,Peterbilt,579,2026,5,393
+tenant-042,Mercedes-Benz,Sprinter,2024,1,357
+tenant-050,Mercedes-Benz,Sprinter,2024,2,452
+tenant-044,Honda,CR-V,2017,1,164
+tenant-041,Kenworth,T680,2011,1,384
+tenant-041,Aston Martin,DB6,2018,4,341
+tenant-049,Volvo,VNL,2011,1,295
+tenant-048,Toyota,Tacoma,2011,2,202
+tenant-048,Mercedes-Benz,Sprinter,2020,1,63
+tenant-032,Porsche,911,2021,1,179
+tenant-036,Ford,F-150,2019,3,288
+tenant-029,Ford,Mustang,2021,5,455
+tenant-010,Isuzu,NPR,2019,5,120
+tenant-019,Volvo,VNL,2019,2,252
+tenant-016,Mercedes-Benz,Sprinter,2022,1,83
+tenant-028,Volvo,VNL,2012,1,7
+tenant-024,Toyota,Tacoma,2022,1,292
+tenant-040,Aston Martin,DB6,2021,4,357
+tenant-042,Ford,Mustang,2015,3,208
+tenant-050,Toyota,Tacoma,2013,1,267
+tenant-032,Porsche,911,2012,4,325
+tenant-038,Mercedes-Benz,Sprinter,2026,3,496
+tenant-010,Honda,CR-V,2015,4,394
+tenant-039,Aston Martin,DB6,2016,3,466
+tenant-008,Aston Martin,DB6,2024,3,180
+tenant-034,Freightliner,Cascadia,2013,1,202
+tenant-037,Honda,CR-V,2013,4,174
+tenant-029,Honda,CR-V,2021,2,70
+tenant-021,Toyota,Camry,2022,5,441
+tenant-017,Ford,Mustang,2022,1,437
+tenant-015,Volvo,VNL,2020,3,306
+tenant-022,Chevrolet,Silverado,2018,5,359
+tenant-010,Aston Martin,DB6,2025,3,388
+tenant-039,Toyota,Camry,2025,2,236
+tenant-032,Toyota,Tacoma,2026,3,233
+tenant-013,Ford,F-150,2015,5,226
+tenant-013,Peterbilt,579,2014,5,386
+tenant-028,Mercedes-Benz,Sprinter,2010,5,451
+tenant-029,Toyota,Camry,2017,5,277
+tenant-025,Porsche,911,2024,3,47
+tenant-024,Ford,F-150,2010,2,325
+tenant-032,Ford,F-150,2012,2,431
+tenant-038,Ford,Mustang,2012,4,151
+tenant-014,Ford,F-150,2011,4,92
+tenant-018,Aston Martin,DB6,2010,3,53
+tenant-026,Aston Martin,Vantage,2012,5,499
+tenant-014,Ford,Mustang,2020,1,68
+tenant-018,Porsche,911,2020,2,94
+tenant-007,Aston Martin,Vantage,2014,3,306
+tenant-025,Mercedes-Benz,Sprinter,2019,5,313
+tenant-020,Isuzu,NPR,2014,2,229
+tenant-017,Mercedes-Benz,Sprinter,2013,4,197
+tenant-037,Aston Martin,Vantage,2016,5,464
+tenant-040,Toyota,Tacoma,2015,4,100
+tenant-017,Ford,F-150,2013,1,247
+tenant-029,Peterbilt,579,2025,5,378
+tenant-022,Volvo,VNL,2021,4,441
+tenant-027,Isuzu,NPR,2012,3,268
+tenant-048,Aston Martin,Vantage,2015,1,184
+tenant-049,Ford,Mustang,2021,5,240
+tenant-038,Honda,CR-V,2015,1,423
+tenant-018,Chevrolet,Silverado,2015,3,39
+tenant-010,Honda,CR-V,2025,1,96
+tenant-001,Toyota,Camry,2022,2,138
+tenant-002,Chevrolet,Silverado,2013,2,38
+tenant-010,Chevrolet,Silverado,2011,4,147
+tenant-025,Kenworth,T680,2016,5,314
+tenant-003,Volvo,VNL,2017,4,103
+tenant-045,Mercedes-Benz,Sprinter,2013,1,115
+tenant-035,Toyota,Tacoma,2021,1,230
+tenant-006,Freightliner,Cascadia,2016,4,387
+tenant-023,Volvo,VNL,2025,2,353
+tenant-035,Toyota,Camry,2018,5,322
+tenant-032,Isuzu,NPR,2015,4,330
+tenant-009,Chevrolet,Silverado,2026,4,193
+tenant-007,Honda,CR-V,2020,2,348
+tenant-036,Ford,Mustang,2010,3,62
+tenant-036,Ford,F-150,2013,3,330
+tenant-007,Peterbilt,579,2026,2,331
+tenant-027,Ford,F-150,2020,5,493
+tenant-020,Toyota,Camry,2013,4,339
+tenant-050,Peterbilt,579,2013,3,256
+tenant-005,Aston Martin,Vantage,2024,3,462
+tenant-044,Ford,Mustang,2026,3,234
+tenant-031,Mercedes-Benz,Sprinter,2010,5,51
+tenant-023,Kenworth,T680,2026,4,50
+tenant-017,Aston Martin,DB6,2018,1,217
+tenant-046,Peterbilt,579,2022,3,394
+tenant-039,Peterbilt,579,2019,2,331
+tenant-007,Chevrolet,Silverado,2011,4,211
+tenant-002,Ford,F-150,2019,2,478
+tenant-022,Aston Martin,Vantage,2020,2,216
+tenant-030,Porsche,911,2017,3,229
+tenant-026,Kenworth,T680,2016,4,147
+tenant-034,Ford,F-150,2022,4,412
+tenant-048,Porsche,911,2013,5,76
+tenant-048,Ford,Mustang,2011,3,57
+tenant-013,Toyota,Camry,2021,5,452
+tenant-011,Aston Martin,DB6,2013,2,383
+tenant-047,Peterbilt,579,2021,2,496
+tenant-029,Chevrolet,Silverado,2024,3,215
+tenant-026,Isuzu,NPR,2019,3,12
+tenant-006,Honda,CR-V,2023,4,233
+tenant-036,Freightliner,Cascadia,2016,2,94
+tenant-015,Toyota,Tacoma,2010,3,361
+tenant-050,Aston Martin,Vantage,2016,4,45
+tenant-026,Volvo,VNL,2020,1,180
+tenant-023,Aston Martin,DB6,2015,3,453
+tenant-024,Aston Martin,Vantage,2023,3,166
+tenant-016,Toyota,Camry,2016,5,141
+tenant-031,Porsche,911,2024,4,116
+tenant-006,Mercedes-Benz,Sprinter,2025,3,115
+tenant-046,Isuzu,NPR,2015,5,495
+tenant-038,Freightliner,Cascadia,2022,3,327
+tenant-024,Freightliner,Cascadia,2016,4,405
+tenant-001,Ford,Mustang,2017,2,351
+tenant-002,Ford,F-150,2022,5,347
+tenant-016,Porsche,911,2025,2,103
+tenant-036,Peterbilt,579,2011,1,218
+tenant-028,Honda,CR-V,2015,2,331
+tenant-021,Aston Martin,DB6,2011,2,485
+tenant-028,Toyota,Camry,2015,1,161
+tenant-033,Aston Martin,Vantage,2013,1,274
+tenant-022,Peterbilt,579,2022,2,315
+tenant-033,Porsche,911,2014,2,134
+tenant-004,Freightliner,Cascadia,2017,1,208
+tenant-042,Porsche,911,2025,5,49
+tenant-036,Isuzu,NPR,2018,5,450
+tenant-003,Aston Martin,DB6,2026,5,495
+tenant-022,Freightliner,Cascadia,2021,4,212
+tenant-026,Honda,CR-V,2022,4,92
+tenant-008,Chevrolet,Silverado,2026,5,177
+tenant-019,Porsche,911,2023,1,414
+tenant-050,Peterbilt,579,2017,1,105
+tenant-049,Chevrolet,Silverado,2019,3,34
+tenant-024,Honda,CR-V,2026,2,223
+tenant-045,Peterbilt,579,2017,3,186
+tenant-009,Honda,CR-V,2023,2,128
+tenant-007,Chevrolet,Silverado,2019,4,386
+tenant-047,Mercedes-Benz,Sprinter,2019,4,135
+tenant-030,Aston Martin,DB6,2013,3,375
+tenant-046,Ford,Mustang,2023,4,176
+tenant-017,Freightliner,Cascadia,2026,5,499
+tenant-040,Ford,Mustang,2014,1,171
+tenant-022,Toyota,Camry,2020,2,335
+tenant-013,Kenworth,T680,2019,1,60
+tenant-022,Peterbilt,579,2023,5,321
+tenant-004,Volvo,VNL,2023,5,48
+tenant-020,Toyota,Camry,2019,1,250
+tenant-015,Toyota,Camry,2014,4,500
+tenant-029,Aston Martin,Vantage,2010,2,249
+tenant-038,Toyota,Tacoma,2025,3,108
+tenant-029,Toyota,Camry,2024,5,249
+tenant-024,Volvo,VNL,2018,5,450
+tenant-020,Peterbilt,579,2018,3,190
+tenant-040,Freightliner,Cascadia,2016,1,78
+tenant-026,Toyota,Tacoma,2017,1,363
+tenant-039,Honda,CR-V,2025,2,82
+tenant-006,Ford,F-150,2016,2,221
+tenant-012,Isuzu,NPR,2017,4,229
+tenant-020,Aston Martin,Vantage,2025,4,455
+tenant-023,Volvo,VNL,2016,4,55
+tenant-013,Mercedes-Benz,Sprinter,2026,1,199
+tenant-046,Peterbilt,579,2015,3,375
+tenant-002,Freightliner,Cascadia,2011,5,56
+tenant-001,Kenworth,T680,2013,2,195
+tenant-010,Ford,Mustang,2015,1,479
+tenant-023,Isuzu,NPR,2023,4,421
+tenant-029,Kenworth,T680,2012,2,242
+tenant-002,Toyota,Tacoma,2026,2,162
+tenant-041,Isuzu,NPR,2018,2,487
+tenant-037,Volvo,VNL,2024,1,345
+tenant-039,Ford,F-150,2013,4,200
+tenant-048,Chevrolet,Silverado,2018,5,190
+tenant-033,Isuzu,NPR,2022,1,159
+tenant-004,Ford,F-150,2011,2,78
+tenant-014,Porsche,911,2017,2,30
+tenant-026,Toyota,Tacoma,2023,1,212
+tenant-001,Peterbilt,579,2022,1,50
+tenant-015,Toyota,Tacoma,2013,5,480
+tenant-005,Honda,CR-V,2013,5,427
+tenant-024,Isuzu,NPR,2026,4,385
+tenant-028,Toyota,Tacoma,2022,1,237
+tenant-020,Chevrolet,Silverado,2020,1,316
+tenant-005,Freightliner,Cascadia,2023,3,354
+tenant-026,Freightliner,Cascadia,2016,1,1
+tenant-042,Aston Martin,DB6,2016,4,366
+tenant-042,Toyota,Camry,2015,3,217
+tenant-049,Peterbilt,579,2018,3,450
+tenant-040,Peterbilt,579,2016,1,211
+tenant-023,Honda,CR-V,2010,1,63
+tenant-018,Volvo,VNL,2012,2,134
+tenant-040,Honda,CR-V,2023,4,482
+tenant-005,Honda,CR-V,2015,4,103
+tenant-036,Aston Martin,Vantage,2014,5,156
+tenant-004,Chevrolet,Silverado,2011,5,105
+tenant-048,Freightliner,Cascadia,2023,2,62
+tenant-002,Isuzu,NPR,2014,3,221
+tenant-003,Volvo,VNL,2018,3,195
+tenant-022,Aston Martin,DB6,2015,4,303
+tenant-036,Isuzu,NPR,2021,1,472
+tenant-031,Porsche,911,2012,4,459
+tenant-016,Porsche,911,2023,5,380
+tenant-025,Chevrolet,Silverado,2021,5,477
+tenant-044,Mercedes-Benz,Sprinter,2025,5,389
+tenant-028,Toyota,Camry,2022,5,167
+tenant-028,Ford,F-150,2014,4,380
+tenant-027,Volvo,VNL,2012,2,332
+tenant-021,Aston Martin,DB6,2010,1,296
+tenant-040,Porsche,911,2019,2,385
+tenant-023,Toyota,Camry,2020,5,282
+tenant-002,Ford,F-150,2020,2,123
+tenant-013,Volvo,VNL,2025,1,70
+tenant-021,Kenworth,T680,2017,4,429
+tenant-036,Toyota,Camry,2024,4,284
+tenant-004,Volvo,VNL,2016,5,266
+tenant-013,Kenworth,T680,2016,2,413
+tenant-019,Mercedes-Benz,Sprinter,2018,2,3
+tenant-031,Toyota,Camry,2020,1,424
+tenant-026,Porsche,911,2020,2,237
+tenant-026,Peterbilt,579,2019,1,154
+tenant-030,Ford,Mustang,2018,4,213
+tenant-013,Peterbilt,579,2010,5,110
+tenant-038,Mercedes-Benz,Sprinter,2013,1,233
+tenant-025,Chevrolet,Silverado,2014,5,63
+tenant-002,Ford,Mustang,2017,4,443
+tenant-002,Aston Martin,Vantage,2013,1,26
+tenant-040,Isuzu,NPR,2016,2,121
+tenant-005,Aston Martin,Vantage,2022,4,8
+tenant-021,Kenworth,T680,2024,2,401
+tenant-023,Aston Martin,DB6,2018,4,26
+tenant-014,Mercedes-Benz,Sprinter,2017,1,142
+tenant-035,Aston Martin,Vantage,2026,3,216
+tenant-040,Mercedes-Benz,Sprinter,2021,1,256
+tenant-036,Isuzu,NPR,2014,1,249
+tenant-049,Aston Martin,DB6,2023,2,185
+tenant-003,Mercedes-Benz,Sprinter,2023,5,91
+tenant-017,Ford,F-150,2011,5,193
+tenant-030,Mercedes-Benz,Sprinter,2019,1,491
+tenant-034,Volvo,VNL,2024,1,167
+tenant-022,Isuzu,NPR,2018,1,122
+tenant-044,Mercedes-Benz,Sprinter,2019,5,170
+tenant-040,Isuzu,NPR,2012,2,219
+tenant-016,Mercedes-Benz,Sprinter,2018,4,207
+tenant-046,Honda,CR-V,2015,3,292
+tenant-035,Freightliner,Cascadia,2026,3,88
+tenant-032,Mercedes-Benz,Sprinter,2017,4,78
+tenant-021,Ford,F-150,2020,4,39
+tenant-030,Toyota,Camry,2021,2,76
+tenant-040,Isuzu,NPR,2017,1,258
+tenant-022,Freightliner,Cascadia,2025,1,491
+tenant-033,Peterbilt,579,2025,2,242
+tenant-049,Ford,Mustang,2022,3,328
+tenant-002,Volvo,VNL,2013,4,450
+tenant-005,Aston Martin,DB6,2019,5,333
+tenant-015,Ford,F-150,2012,1,299
+tenant-022,Peterbilt,579,2012,3,480
+tenant-040,Porsche,911,2025,3,41
+tenant-008,Mercedes-Benz,Sprinter,2025,4,266
+tenant-015,Porsche,911,2020,1,76
+tenant-023,Toyota,Camry,2017,4,311
+tenant-036,Porsche,911,2013,4,27
+tenant-003,Mercedes-Benz,Sprinter,2024,1,342
+tenant-045,Honda,CR-V,2021,3,28
+tenant-025,Kenworth,T680,2010,4,319
+tenant-015,Peterbilt,579,2018,2,197
+tenant-043,Peterbilt,579,2025,3,4
+tenant-042,Honda,CR-V,2015,4,205
+tenant-002,Volvo,VNL,2016,4,205
+tenant-010,Ford,Mustang,2014,2,436
+tenant-018,Kenworth,T680,2020,3,497
+tenant-048,Isuzu,NPR,2017,3,296
+tenant-026,Aston Martin,DB6,2020,5,404
+tenant-011,Toyota,Camry,2022,1,403
+tenant-022,Aston Martin,DB6,2023,4,269
+tenant-015,Honda,CR-V,2018,3,93
+tenant-022,Kenworth,T680,2023,1,439
+tenant-008,Toyota,Camry,2012,1,489
+tenant-026,Mercedes-Benz,Sprinter,2018,2,431
+tenant-048,Honda,CR-V,2013,5,349
+tenant-009,Kenworth,T680,2016,2,299
+tenant-046,Toyota,Camry,2019,2,206
+tenant-045,Toyota,Camry,2018,2,416
+tenant-008,Isuzu,NPR,2015,3,488
+tenant-017,Peterbilt,579,2011,4,153
+tenant-043,Toyota,Tacoma,2023,1,362
+tenant-006,Peterbilt,579,2026,3,109
+tenant-039,Chevrolet,Silverado,2023,3,391
+tenant-030,Porsche,911,2019,4,428
+tenant-017,Volvo,VNL,2026,4,87
+tenant-010,Chevrolet,Silverado,2019,4,371
+tenant-026,Ford,F-150,2011,4,55
+tenant-008,Mercedes-Benz,Sprinter,2017,4,405
+tenant-007,Isuzu,NPR,2012,1,159
+tenant-047,Peterbilt,579,2025,4,408
+tenant-042,Volvo,VNL,2016,4,73
+tenant-018,Porsche,911,2023,4,55
+tenant-015,Mercedes-Benz,Sprinter,2019,1,424
+tenant-032,Kenworth,T680,2023,4,137
+tenant-034,Toyota,Camry,2014,1,15
+tenant-047,Isuzu,NPR,2022,5,473
+tenant-046,Ford,Mustang,2021,4,405
+tenant-049,Ford,Mustang,2023,5,50
+tenant-016,Peterbilt,579,2011,1,202
+tenant-010,Ford,F-150,2021,2,355
+tenant-014,Ford,Mustang,2010,3,172
+tenant-037,Peterbilt,579,2020,5,97
+tenant-040,Aston Martin,DB6,2025,4,326
+tenant-016,Honda,CR-V,2012,2,151
+tenant-009,Kenworth,T680,2025,5,163
+tenant-038,Chevrolet,Silverado,2020,1,414
+tenant-006,Chevrolet,Silverado,2017,2,212
+tenant-021,Aston Martin,Vantage,2022,3,181
+tenant-030,Toyota,Camry,2019,2,234
+tenant-048,Volvo,VNL,2017,5,491
+tenant-049,Honda,CR-V,2013,1,113
+tenant-036,Peterbilt,579,2021,2,35
+tenant-024,Aston Martin,DB6,2022,5,267
+tenant-031,Volvo,VNL,2025,1,179
+tenant-033,Volvo,VNL,2017,3,465
+tenant-032,Peterbilt,579,2020,5,280
+tenant-029,Volvo,VNL,2023,3,377
+tenant-011,Kenworth,T680,2026,3,234
+tenant-004,Aston Martin,DB6,2018,5,213
+tenant-025,Toyota,Camry,2024,2,455
+tenant-046,Aston Martin,DB6,2017,1,453
+tenant-044,Aston Martin,Vantage,2011,3,329
+tenant-029,Chevrolet,Silverado,2016,2,324
+tenant-020,Ford,F-150,2026,5,136
+tenant-040,Mercedes-Benz,Sprinter,2020,1,436
+tenant-039,Peterbilt,579,2013,3,259
+tenant-011,Chevrolet,Silverado,2021,1,48
+tenant-038,Kenworth,T680,2019,3,218
+tenant-042,Honda,CR-V,2025,1,179
+tenant-002,Chevrolet,Silverado,2017,4,103
+tenant-047,Ford,F-150,2010,1,316
+tenant-021,Kenworth,T680,2025,1,405
+tenant-013,Kenworth,T680,2012,5,460
+tenant-039,Isuzu,NPR,2015,1,17
+tenant-029,Kenworth,T680,2013,2,122
+tenant-003,Aston Martin,Vantage,2026,2,249
+tenant-049,Mercedes-Benz,Sprinter,2026,5,227
+tenant-045,Ford,Mustang,2019,5,97
+tenant-046,Toyota,Tacoma,2020,3,192
+tenant-021,Volvo,VNL,2022,1,336
+tenant-013,Aston Martin,DB6,2017,4,220
+tenant-044,Freightliner,Cascadia,2017,3,152
+tenant-030,Isuzu,NPR,2020,1,211
+tenant-044,Ford,Mustang,2013,1,221
+tenant-008,Mercedes-Benz,Sprinter,2024,3,486
+tenant-049,Ford,Mustang,2014,3,239
+tenant-035,Freightliner,Cascadia,2023,4,206
+tenant-028,Toyota,Tacoma,2015,5,428
+tenant-012,Ford,F-150,2022,4,496
+tenant-014,Volvo,VNL,2023,4,13
+tenant-025,Peterbilt,579,2013,1,95
+tenant-037,Chevrolet,Silverado,2020,3,3
+tenant-010,Ford,Mustang,2019,1,449
+tenant-032,Isuzu,NPR,2025,1,244
+tenant-012,Porsche,911,2014,4,179
+tenant-040,Toyota,Camry,2010,1,312
+tenant-044,Volvo,VNL,2013,5,424
+tenant-021,Toyota,Tacoma,2014,5,28
+tenant-049,Kenworth,T680,2019,5,157
+tenant-046,Peterbilt,579,2021,3,239
+tenant-017,Ford,F-150,2020,1,442
+tenant-004,Ford,F-150,2017,3,474
+tenant-010,Mercedes-Benz,Sprinter,2022,4,271
+tenant-008,Aston Martin,DB6,2015,4,407
+tenant-010,Ford,Mustang,2012,4,479
+tenant-017,Ford,F-150,2015,2,151
+tenant-037,Aston Martin,DB6,2017,2,120
+tenant-043,Toyota,Tacoma,2011,1,44
+tenant-023,Volvo,VNL,2025,3,362
+tenant-036,Mercedes-Benz,Sprinter,2023,4,458
+tenant-004,Kenworth,T680,2012,1,124
+tenant-042,Freightliner,Cascadia,2014,5,445
+tenant-024,Volvo,VNL,2024,1,183
+tenant-027,Kenworth,T680,2015,2,244
+tenant-038,Mercedes-Benz,Sprinter,2020,3,365
+tenant-043,Ford,Mustang,2014,5,219
+tenant-015,Mercedes-Benz,Sprinter,2011,2,315
+tenant-025,Mercedes-Benz,Sprinter,2015,1,14
+tenant-031,Isuzu,NPR,2012,4,62
+tenant-028,Volvo,VNL,2015,5,172
+tenant-016,Porsche,911,2020,4,138
+tenant-035,Aston Martin,Vantage,2015,5,12
+tenant-044,Aston Martin,DB6,2022,4,485
+tenant-017,Peterbilt,579,2022,3,272
+tenant-011,Aston Martin,DB6,2012,5,257
+tenant-050,Kenworth,T680,2016,5,293
+tenant-039,Aston Martin,DB6,2012,2,200
+tenant-043,Freightliner,Cascadia,2025,2,151
+tenant-029,Peterbilt,579,2025,5,364
+tenant-036,Mercedes-Benz,Sprinter,2010,5,31
+tenant-012,Ford,F-150,2014,3,367
+tenant-042,Aston Martin,DB6,2012,2,399
+tenant-024,Freightliner,Cascadia,2015,3,180
+tenant-029,Toyota,Tacoma,2010,4,500
+tenant-050,Freightliner,Cascadia,2025,1,354
+tenant-041,Toyota,Camry,2019,5,258
+tenant-044,Kenworth,T680,2016,3,274
+tenant-010,Ford,Mustang,2022,4,230
+tenant-010,Ford,Mustang,2011,1,429
+tenant-012,Porsche,911,2025,5,271
+tenant-047,Kenworth,T680,2017,3,372
+tenant-050,Ford,Mustang,2015,4,373
+tenant-031,Volvo,VNL,2025,2,61
+tenant-002,Isuzu,NPR,2019,2,314
+tenant-042,Isuzu,NPR,2019,5,302
+tenant-005,Honda,CR-V,2015,2,88
+tenant-025,Ford,F-150,2011,2,98
+tenant-029,Kenworth,T680,2016,1,61
+tenant-008,Toyota,Camry,2011,2,444
+tenant-007,Freightliner,Cascadia,2014,3,171
+tenant-002,Honda,CR-V,2016,5,131
+tenant-024,Freightliner,Cascadia,2020,5,230
+tenant-002,Volvo,VNL,2022,1,136
+tenant-001,Chevrolet,Silverado,2013,1,499
+tenant-001,Toyota,Tacoma,2023,3,460
+tenant-050,Honda,CR-V,2012,3,470
+tenant-033,Isuzu,NPR,2023,5,73
+tenant-030,Aston Martin,DB6,2026,2,170
+tenant-014,Freightliner,Cascadia,2012,5,23
+tenant-022,Aston Martin,Vantage,2014,1,243
+tenant-017,Porsche,911,2022,2,339
+tenant-026,Volvo,VNL,2019,3,478
+tenant-042,Honda,CR-V,2015,1,475
+tenant-030,Peterbilt,579,2022,1,460
+tenant-026,Volvo,VNL,2018,2,212
+tenant-010,Isuzu,NPR,2017,5,212
+tenant-037,Honda,CR-V,2016,3,172
+tenant-020,Toyota,Tacoma,2015,4,69
+tenant-039,Kenworth,T680,2022,1,33
+tenant-028,Mercedes-Benz,Sprinter,2012,2,142
+tenant-031,Toyota,Camry,2016,4,174
+tenant-004,Isuzu,NPR,2026,1,177
+tenant-020,Toyota,Tacoma,2021,1,414
+tenant-035,Isuzu,NPR,2025,2,376
+tenant-017,Peterbilt,579,2013,5,255
+tenant-048,Porsche,911,2026,1,181
+tenant-019,Volvo,VNL,2026,1,55
+tenant-038,Mercedes-Benz,Sprinter,2022,5,117
+tenant-018,Kenworth,T680,2019,5,352
+tenant-006,Isuzu,NPR,2010,3,312
+tenant-040,Honda,CR-V,2018,5,355
+tenant-049,Kenworth,T680,2012,3,100
+tenant-030,Toyota,Tacoma,2024,3,174
+tenant-038,Toyota,Tacoma,2023,2,450
+tenant-047,Peterbilt,579,2014,3,322
+tenant-015,Porsche,911,2012,2,12
+tenant-044,Honda,CR-V,2012,1,455
+tenant-010,Freightliner,Cascadia,2020,1,147
+tenant-020,Mercedes-Benz,Sprinter,2020,5,473
+tenant-016,Toyota,Camry,2011,5,264
+tenant-037,Peterbilt,579,2021,1,498
+tenant-021,Volvo,VNL,2018,4,128
+tenant-016,Toyota,Tacoma,2026,3,410
+tenant-004,Volvo,VNL,2011,2,284
+tenant-024,Aston Martin,Vantage,2018,1,471
+tenant-027,Aston Martin,Vantage,2018,3,239
+tenant-016,Honda,CR-V,2016,3,422
+tenant-005,Ford,Mustang,2020,1,446
+tenant-032,Volvo,VNL,2020,2,194
+tenant-033,Volvo,VNL,2014,5,256
+tenant-013,Honda,CR-V,2019,4,372
+tenant-036,Porsche,911,2019,5,335
+tenant-039,Ford,Mustang,2024,2,178
+tenant-014,Toyota,Tacoma,2011,2,159
+tenant-027,Mercedes-Benz,Sprinter,2014,5,429
+tenant-018,Aston Martin,DB6,2017,2,490
+tenant-045,Toyota,Tacoma,2026,4,157
+tenant-020,Freightliner,Cascadia,2022,3,499
+tenant-036,Kenworth,T680,2010,4,138
+tenant-029,Kenworth,T680,2020,2,118
+tenant-033,Volvo,VNL,2015,2,323
+tenant-023,Aston Martin,DB6,2025,3,98
+tenant-021,Kenworth,T680,2011,2,402
+tenant-009,Ford,Mustang,2025,2,147
+tenant-046,Toyota,Camry,2026,3,433
+tenant-045,Honda,CR-V,2018,2,75
+tenant-045,Toyota,Camry,2022,5,424
+tenant-013,Peterbilt,579,2024,4,9
+tenant-047,Ford,F-150,2023,4,193
+tenant-042,Mercedes-Benz,Sprinter,2023,4,421
+tenant-048,Chevrolet,Silverado,2025,2,24
+tenant-032,Kenworth,T680,2021,4,237
+tenant-031,Mercedes-Benz,Sprinter,2022,4,206
+tenant-049,Honda,CR-V,2017,2,338
+tenant-005,Freightliner,Cascadia,2015,3,38
+tenant-023,Toyota,Tacoma,2014,2,191
+tenant-021,Toyota,Camry,2018,1,349
+tenant-011,Peterbilt,579,2019,5,84
+tenant-015,Mercedes-Benz,Sprinter,2010,5,486
+tenant-003,Ford,F-150,2022,4,204
+tenant-050,Ford,F-150,2010,4,473
+tenant-041,Mercedes-Benz,Sprinter,2025,3,408
+tenant-033,Volvo,VNL,2018,1,444
+tenant-007,Freightliner,Cascadia,2025,5,357
+tenant-028,Isuzu,NPR,2010,1,345
+tenant-046,Isuzu,NPR,2014,4,486
+tenant-016,Volvo,VNL,2017,5,17
+tenant-010,Aston Martin,Vantage,2012,1,334
+tenant-027,Aston Martin,DB6,2017,5,249
+tenant-046,Mercedes-Benz,Sprinter,2024,5,479
+tenant-030,Aston Martin,DB6,2013,5,192
+tenant-046,Ford,F-150,2023,5,135
+tenant-034,Toyota,Tacoma,2019,5,19
+tenant-009,Volvo,VNL,2012,2,484
+tenant-005,Isuzu,NPR,2011,2,317
+tenant-008,Mercedes-Benz,Sprinter,2012,2,367
+tenant-042,Toyota,Camry,2018,4,66
+tenant-049,Chevrolet,Silverado,2021,2,280
+tenant-019,Volvo,VNL,2011,1,103
+tenant-050,Isuzu,NPR,2025,1,70
+tenant-033,Porsche,911,2017,3,11
+tenant-041,Porsche,911,2025,5,324
+tenant-009,Toyota,Camry,2022,3,188
+tenant-010,Mercedes-Benz,Sprinter,2022,3,352
+tenant-028,Ford,Mustang,2018,1,172
+tenant-003,Volvo,VNL,2025,5,436
+tenant-031,Ford,F-150,2013,3,93
+tenant-041,Aston Martin,DB6,2013,5,141
+tenant-040,Peterbilt,579,2022,4,478
+tenant-028,Isuzu,NPR,2020,3,42
+tenant-043,Freightliner,Cascadia,2021,3,220
+tenant-004,Porsche,911,2012,2,206
+tenant-032,Volvo,VNL,2011,1,91
+tenant-041,Isuzu,NPR,2017,3,125
+tenant-004,Freightliner,Cascadia,2022,3,483
+tenant-041,Ford,Mustang,2024,3,489
+tenant-014,Isuzu,NPR,2019,1,399
+tenant-006,Chevrolet,Silverado,2023,5,90
+tenant-044,Volvo,VNL,2010,4,422
+tenant-041,Kenworth,T680,2012,4,330
+tenant-008,Aston Martin,Vantage,2026,2,137
+tenant-041,Porsche,911,2014,2,14
+tenant-043,Ford,Mustang,2017,2,426
+tenant-017,Mercedes-Benz,Sprinter,2016,4,376
+tenant-010,Chevrolet,Silverado,2021,5,80
+tenant-044,Freightliner,Cascadia,2013,1,50
+tenant-021,Volvo,VNL,2022,2,477
+tenant-026,Aston Martin,DB6,2019,4,294
+tenant-006,Mercedes-Benz,Sprinter,2013,1,339
+tenant-029,Aston Martin,DB6,2024,4,440
+tenant-036,Isuzu,NPR,2026,4,198
+tenant-043,Ford,Mustang,2011,3,479
+tenant-050,Volvo,VNL,2014,5,458
+tenant-045,Mercedes-Benz,Sprinter,2010,4,203
+tenant-022,Kenworth,T680,2026,5,392
+tenant-028,Ford,F-150,2016,1,267
+tenant-029,Aston Martin,DB6,2023,4,487
+tenant-035,Mercedes-Benz,Sprinter,2019,1,372
+tenant-024,Kenworth,T680,2026,4,157
+tenant-033,Honda,CR-V,2023,3,308
+tenant-047,Chevrolet,Silverado,2012,4,108
+tenant-042,Chevrolet,Silverado,2023,2,153
+tenant-047,Porsche,911,2013,1,359
+tenant-014,Aston Martin,Vantage,2014,2,275
+tenant-001,Ford,Mustang,2024,3,74
+tenant-002,Chevrolet,Silverado,2023,3,288
+tenant-040,Porsche,911,2025,2,36
+tenant-012,Ford,Mustang,2023,3,279
+tenant-050,Peterbilt,579,2012,5,66
+tenant-044,Aston Martin,DB6,2023,4,189
+tenant-016,Peterbilt,579,2013,4,403
+tenant-005,Ford,F-150,2016,3,318
+tenant-050,Ford,Mustang,2014,5,411
+tenant-012,Aston Martin,Vantage,2020,4,495
+tenant-016,Porsche,911,2017,4,69
+tenant-046,Honda,CR-V,2026,4,110
+tenant-002,Porsche,911,2017,1,207
+tenant-012,Chevrolet,Silverado,2025,3,299
+tenant-021,Porsche,911,2021,3,178
+tenant-008,Chevrolet,Silverado,2010,5,185
+tenant-001,Mercedes-Benz,Sprinter,2016,1,491
+tenant-005,Freightliner,Cascadia,2013,4,233
+tenant-019,Ford,Mustang,2016,3,165
+tenant-049,Mercedes-Benz,Sprinter,2014,2,397
+tenant-031,Kenworth,T680,2026,3,436
+tenant-001,Ford,F-150,2021,4,225
+tenant-008,Toyota,Camry,2021,3,228
+tenant-042,Aston Martin,DB6,2023,4,39
+tenant-015,Aston Martin,DB6,2022,5,436
+tenant-004,Aston Martin,DB6,2019,3,360
+tenant-045,Chevrolet,Silverado,2014,3,428
+tenant-031,Kenworth,T680,2023,3,58
+tenant-001,Porsche,911,2011,2,413
+tenant-030,Isuzu,NPR,2022,3,100
+tenant-048,Kenworth,T680,2026,4,264
+tenant-044,Peterbilt,579,2018,4,370
+tenant-002,Kenworth,T680,2021,2,146
+tenant-040,Ford,Mustang,2019,3,305
+tenant-018,Peterbilt,579,2022,2,205
+tenant-023,Isuzu,NPR,2014,3,314
+tenant-024,Ford,F-150,2014,5,298
+tenant-046,Ford,F-150,2013,1,170
+tenant-038,Aston Martin,DB6,2020,1,437
+tenant-050,Isuzu,NPR,2020,5,12
+tenant-024,Isuzu,NPR,2018,5,116
+tenant-006,Aston Martin,DB6,2017,5,257
+tenant-043,Chevrolet,Silverado,2014,4,167
+tenant-013,Freightliner,Cascadia,2021,2,442
+tenant-006,Ford,F-150,2010,1,26
+tenant-026,Ford,Mustang,2016,4,165
+tenant-028,Toyota,Tacoma,2018,2,398
+tenant-049,Aston Martin,Vantage,2014,5,315
+tenant-026,Porsche,911,2016,1,410
+tenant-041,Mercedes-Benz,Sprinter,2026,1,486
+tenant-033,Toyota,Camry,2015,3,485
+tenant-043,Peterbilt,579,2018,5,359
+tenant-004,Ford,Mustang,2014,5,443
+tenant-023,Aston Martin,DB6,2012,4,7
+tenant-004,Peterbilt,579,2020,4,130
+tenant-005,Peterbilt,579,2011,4,159
+tenant-002,Isuzu,NPR,2016,2,260
+tenant-047,Freightliner,Cascadia,2023,1,109
+tenant-022,Mercedes-Benz,Sprinter,2024,5,373
+tenant-036,Honda,CR-V,2015,1,74
+tenant-030,Ford,F-150,2012,5,264
+tenant-009,Ford,F-150,2015,1,304
+tenant-042,Toyota,Tacoma,2019,5,283
+tenant-014,Freightliner,Cascadia,2016,1,21
+tenant-033,Mercedes-Benz,Sprinter,2020,5,378
+tenant-050,Honda,CR-V,2013,2,238
+tenant-030,Honda,CR-V,2021,3,7
+tenant-028,Chevrolet,Silverado,2018,2,394
+tenant-006,Porsche,911,2010,1,68
+tenant-007,Freightliner,Cascadia,2013,5,25
+tenant-004,Peterbilt,579,2016,1,162
+tenant-031,Isuzu,NPR,2018,5,278
+tenant-029,Aston Martin,DB6,2025,1,355
+tenant-030,Ford,Mustang,2010,2,208
+tenant-034,Toyota,Camry,2026,2,103
+tenant-015,Toyota,Tacoma,2020,5,472
+tenant-025,Chevrolet,Silverado,2018,1,78
+tenant-031,Aston Martin,Vantage,2011,5,221
+tenant-039,Toyota,Tacoma,2019,2,301
+tenant-033,Toyota,Camry,2023,5,145
+tenant-030,Porsche,911,2024,3,347
+tenant-038,Freightliner,Cascadia,2018,4,98
+tenant-001,Aston Martin,DB6,2011,5,118
+tenant-016,Freightliner,Cascadia,2024,4,397
+tenant-013,Aston Martin,Vantage,2024,2,290
+tenant-032,Kenworth,T680,2019,2,304
+tenant-003,Aston Martin,Vantage,2024,5,292
+tenant-019,Aston Martin,Vantage,2021,3,264
+tenant-046,Ford,F-150,2012,1,488
+tenant-028,Kenworth,T680,2011,1,13
+tenant-040,Toyota,Camry,2014,4,367
+tenant-043,Porsche,911,2011,5,195
+tenant-032,Freightliner,Cascadia,2024,5,210
+tenant-050,Ford,F-150,2022,5,448
+tenant-041,Peterbilt,579,2010,2,234
+tenant-038,Aston Martin,DB6,2024,1,308
+tenant-035,Ford,Mustang,2014,4,359
+tenant-002,Porsche,911,2024,4,180
+tenant-038,Aston Martin,Vantage,2019,5,145
+tenant-008,Freightliner,Cascadia,2015,5,83
+tenant-018,Peterbilt,579,2026,1,39
+tenant-027,Freightliner,Cascadia,2014,5,272
+tenant-048,Ford,F-150,2010,2,467
+tenant-003,Ford,F-150,2017,2,141
+tenant-037,Mercedes-Benz,Sprinter,2010,1,64
+tenant-033,Honda,CR-V,2022,3,484
+tenant-048,Mercedes-Benz,Sprinter,2012,3,98
+tenant-001,Ford,F-150,2025,4,485
+tenant-020,Mercedes-Benz,Sprinter,2015,5,320
+tenant-021,Toyota,Camry,2010,5,7
+tenant-020,Ford,F-150,2020,1,450
+tenant-033,Ford,Mustang,2022,1,475
+tenant-036,Volvo,VNL,2015,1,484
+tenant-002,Ford,F-150,2020,4,481
+tenant-027,Chevrolet,Silverado,2012,4,65
+tenant-049,Ford,F-150,2010,2,76
+tenant-030,Toyota,Tacoma,2014,4,103
+tenant-032,Porsche,911,2014,5,121
+tenant-043,Ford,Mustang,2016,4,57
+tenant-003,Porsche,911,2026,2,219
+tenant-006,Honda,CR-V,2013,2,407
+tenant-035,Porsche,911,2025,3,175
+tenant-040,Honda,CR-V,2015,5,425
+tenant-006,Toyota,Camry,2013,5,4
+tenant-011,Toyota,Camry,2022,5,222
+tenant-024,Toyota,Camry,2021,3,98
+tenant-034,Ford,F-150,2013,4,223
+tenant-042,Kenworth,T680,2012,4,323
+tenant-048,Mercedes-Benz,Sprinter,2019,4,488
+tenant-019,Isuzu,NPR,2010,3,59
+tenant-036,Isuzu,NPR,2013,4,127
+tenant-016,Aston Martin,DB6,2018,1,339
+tenant-020,Porsche,911,2023,5,308
+tenant-007,Aston Martin,Vantage,2019,4,399
+tenant-011,Mercedes-Benz,Sprinter,2022,5,44
+tenant-050,Peterbilt,579,2010,1,79
+tenant-002,Aston Martin,Vantage,2026,2,5
+tenant-011,Chevrolet,Silverado,2011,1,498
+tenant-034,Volvo,VNL,2026,3,175
+tenant-031,Porsche,911,2013,2,114
+tenant-003,Honda,CR-V,2020,2,278
+tenant-003,Aston Martin,DB6,2014,2,362
+tenant-014,Aston Martin,DB6,2010,1,435
+tenant-002,Ford,F-150,2018,3,259
+tenant-026,Toyota,Camry,2020,1,203
+tenant-015,Honda,CR-V,2024,1,285
+tenant-014,Ford,Mustang,2011,3,284
+tenant-003,Porsche,911,2010,4,319
+tenant-028,Aston Martin,Vantage,2011,2,196
+tenant-016,Porsche,911,2019,4,160
+tenant-015,Porsche,911,2020,2,63
+tenant-019,Honda,CR-V,2010,5,243
+tenant-036,Peterbilt,579,2026,5,105
+tenant-035,Chevrolet,Silverado,2013,1,254
+tenant-045,Toyota,Tacoma,2011,5,289
+tenant-042,Isuzu,NPR,2018,4,134
+tenant-048,Freightliner,Cascadia,2018,2,163
+tenant-044,Freightliner,Cascadia,2010,5,159
+tenant-038,Kenworth,T680,2017,1,239
+tenant-016,Porsche,911,2025,5,301
+tenant-017,Isuzu,NPR,2026,4,173
+tenant-034,Peterbilt,579,2011,3,263
+tenant-030,Freightliner,Cascadia,2025,5,499
+tenant-006,Toyota,Camry,2015,4,190
+tenant-022,Ford,Mustang,2012,2,41
+tenant-033,Freightliner,Cascadia,2020,2,295
+tenant-049,Volvo,VNL,2010,5,491
+tenant-009,Isuzu,NPR,2011,3,24
+tenant-035,Porsche,911,2016,3,225
+tenant-015,Aston Martin,DB6,2017,1,49
+tenant-042,Toyota,Camry,2026,4,310
+tenant-006,Kenworth,T680,2023,3,433
+tenant-016,Ford,Mustang,2012,1,174
+tenant-023,Kenworth,T680,2010,2,353
+tenant-005,Aston Martin,DB6,2014,1,210
+tenant-022,Volvo,VNL,2010,5,96
+tenant-040,Ford,Mustang,2012,5,56
+tenant-025,Isuzu,NPR,2012,5,150
+tenant-035,Freightliner,Cascadia,2026,4,313
+tenant-012,Toyota,Camry,2010,4,248
+tenant-043,Ford,F-150,2018,4,61
+tenant-034,Toyota,Camry,2015,2,223
+tenant-006,Aston Martin,DB6,2024,2,38
+tenant-021,Mercedes-Benz,Sprinter,2026,5,144
+tenant-013,Porsche,911,2018,4,48
+tenant-020,Honda,CR-V,2021,3,419
+tenant-013,Isuzu,NPR,2021,2,278
+tenant-043,Chevrolet,Silverado,2026,2,351
+tenant-043,Toyota,Camry,2010,3,316
+tenant-050,Toyota,Tacoma,2021,3,300
+tenant-009,Chevrolet,Silverado,2017,2,73
+tenant-018,Porsche,911,2011,1,5
+tenant-008,Honda,CR-V,2020,4,333
+tenant-049,Freightliner,Cascadia,2012,1,88
+tenant-017,Isuzu,NPR,2018,5,319
+tenant-025,Isuzu,NPR,2025,1,365
+tenant-030,Volvo,VNL,2016,3,299
+tenant-038,Chevrolet,Silverado,2024,4,222
+tenant-020,Ford,Mustang,2014,4,29
+tenant-017,Aston Martin,DB6,2017,4,116
+tenant-029,Ford,F-150,2012,4,318
+tenant-025,Aston Martin,DB6,2022,2,369
+tenant-001,Porsche,911,2010,1,389
+tenant-025,Ford,Mustang,2012,5,26
+tenant-020,Mercedes-Benz,Sprinter,2017,4,40
+tenant-038,Toyota,Tacoma,2023,2,326
+tenant-029,Isuzu,NPR,2019,5,232
+tenant-028,Toyota,Tacoma,2014,1,193
+tenant-001,Peterbilt,579,2023,5,182
+tenant-001,Aston Martin,DB6,2017,2,84
+tenant-034,Aston Martin,DB6,2014,1,109
+tenant-026,Kenworth,T680,2021,3,232
+tenant-033,Peterbilt,579,2024,3,102
+tenant-005,Peterbilt,579,2020,2,437
+tenant-011,Isuzu,NPR,2016,1,27
+tenant-005,Toyota,Tacoma,2020,1,446
+tenant-039,Volvo,VNL,2013,4,91
+tenant-036,Aston Martin,Vantage,2023,2,199
+tenant-007,Peterbilt,579,2019,3,433
+tenant-045,Porsche,911,2015,3,16
+tenant-034,Aston Martin,Vantage,2023,2,416
+tenant-019,Ford,Mustang,2026,4,55
+tenant-043,Aston Martin,Vantage,2022,4,257
+tenant-041,Porsche,911,2015,5,439
+tenant-020,Peterbilt,579,2022,2,187
+tenant-005,Ford,F-150,2017,2,255
+tenant-035,Volvo,VNL,2013,5,230
+tenant-023,Ford,Mustang,2016,4,336
+tenant-014,Toyota,Camry,2022,5,359
+tenant-008,Aston Martin,Vantage,2012,3,294
+tenant-021,Mercedes-Benz,Sprinter,2011,3,185
+tenant-048,Isuzu,NPR,2018,1,301
+tenant-038,Ford,Mustang,2011,1,254
+tenant-011,Mercedes-Benz,Sprinter,2012,4,256
+tenant-011,Aston Martin,Vantage,2025,3,495
+tenant-043,Aston Martin,Vantage,2017,4,27
+tenant-009,Ford,Mustang,2018,5,148
+tenant-047,Isuzu,NPR,2015,1,278
+tenant-039,Kenworth,T680,2022,5,481
+tenant-017,Aston Martin,DB6,2010,5,155
+tenant-017,Chevrolet,Silverado,2022,5,64
+tenant-027,Chevrolet,Silverado,2023,5,395
+tenant-039,Ford,F-150,2012,5,113
+tenant-008,Aston Martin,Vantage,2024,2,357
+tenant-047,Isuzu,NPR,2015,3,486
+tenant-008,Toyota,Camry,2012,5,231
+tenant-040,Volvo,VNL,2022,4,475
+tenant-029,Aston Martin,DB6,2011,3,144
+tenant-001,Chevrolet,Silverado,2010,3,489
+tenant-036,Kenworth,T680,2017,3,425
+tenant-048,Chevrolet,Silverado,2013,3,268
+tenant-033,Kenworth,T680,2016,3,422
+tenant-033,Isuzu,NPR,2025,5,235
+tenant-014,Chevrolet,Silverado,2012,1,271
+tenant-004,Aston Martin,DB6,2019,3,225
+tenant-031,Honda,CR-V,2013,2,40
+tenant-012,Peterbilt,579,2019,4,213
+tenant-044,Ford,F-150,2016,4,419
+tenant-016,Freightliner,Cascadia,2017,2,429
+tenant-022,Kenworth,T680,2012,5,94
+tenant-019,Aston Martin,DB6,2016,2,151
+tenant-007,Mercedes-Benz,Sprinter,2011,2,231
+tenant-042,Volvo,VNL,2025,2,141
+tenant-022,Toyota,Camry,2021,2,287
+tenant-030,Mercedes-Benz,Sprinter,2022,4,149
+tenant-018,Kenworth,T680,2025,1,170
+tenant-049,Freightliner,Cascadia,2017,1,34
+tenant-032,Porsche,911,2013,3,304
+tenant-015,Kenworth,T680,2015,2,141
+tenant-015,Chevrolet,Silverado,2020,1,209
+tenant-047,Toyota,Camry,2016,4,201
+tenant-049,Honda,CR-V,2018,3,159
+tenant-033,Aston Martin,Vantage,2014,1,186
+tenant-017,Toyota,Camry,2024,1,130
+tenant-020,Peterbilt,579,2016,5,230
+tenant-044,Aston Martin,Vantage,2026,3,197
+tenant-020,Kenworth,T680,2023,4,416
+tenant-045,Aston Martin,DB6,2025,2,418
+tenant-010,Kenworth,T680,2011,5,72
+tenant-012,Freightliner,Cascadia,2017,3,130
+tenant-049,Aston Martin,DB6,2020,5,258
+tenant-003,Ford,F-150,2010,1,458
+tenant-011,Porsche,911,2017,1,154
+tenant-001,Ford,F-150,2015,3,406
+tenant-036,Aston Martin,DB6,2020,2,46
+tenant-002,Mercedes-Benz,Sprinter,2013,4,196
+tenant-008,Aston Martin,Vantage,2020,4,342
+tenant-034,Honda,CR-V,2018,2,92
+tenant-026,Chevrolet,Silverado,2011,2,331
+tenant-030,Freightliner,Cascadia,2013,1,357
+tenant-013,Toyota,Tacoma,2017,5,266
+tenant-006,Aston Martin,DB6,2021,5,46
+tenant-005,Mercedes-Benz,Sprinter,2024,1,276
+tenant-016,Ford,F-150,2025,4,293
+tenant-020,Mercedes-Benz,Sprinter,2015,4,81
+tenant-003,Toyota,Tacoma,2011,4,178
+tenant-024,Aston Martin,Vantage,2014,2,391
+tenant-006,Isuzu,NPR,2013,4,177
+tenant-005,Aston Martin,Vantage,2023,1,23
+tenant-033,Honda,CR-V,2018,4,38
+tenant-012,Honda,CR-V,2015,1,72
+tenant-034,Ford,F-150,2026,3,43
+tenant-009,Kenworth,T680,2023,1,317
+tenant-041,Honda,CR-V,2019,3,311
+tenant-011,Aston Martin,Vantage,2014,5,405
+tenant-021,Toyota,Camry,2024,4,349
+tenant-043,Volvo,VNL,2018,5,99
+tenant-021,Toyota,Tacoma,2026,3,265
+tenant-022,Kenworth,T680,2017,3,378
+tenant-048,Porsche,911,2013,2,432
+tenant-035,Aston Martin,DB6,2014,4,267
+tenant-024,Ford,F-150,2012,3,58
+tenant-026,Aston Martin,Vantage,2020,3,74
+tenant-002,Isuzu,NPR,2016,5,187
+tenant-034,Ford,F-150,2013,2,427
+tenant-031,Freightliner,Cascadia,2013,5,390
+tenant-048,Chevrolet,Silverado,2020,1,461
+tenant-013,Porsche,911,2024,1,318
+tenant-041,Isuzu,NPR,2018,2,478
+tenant-016,Aston Martin,Vantage,2024,3,89
+tenant-045,Honda,CR-V,2026,1,172
+tenant-042,Porsche,911,2011,4,122
+tenant-050,Mercedes-Benz,Sprinter,2010,2,95
+tenant-042,Toyota,Tacoma,2014,2,51
+tenant-044,Isuzu,NPR,2020,2,155
+tenant-010,Ford,Mustang,2013,5,17
+tenant-035,Chevrolet,Silverado,2014,1,89
+tenant-036,Aston Martin,DB6,2024,1,67
+tenant-021,Honda,CR-V,2017,5,385
+tenant-008,Ford,Mustang,2022,2,381
+tenant-022,Ford,F-150,2019,4,466
+tenant-047,Kenworth,T680,2024,1,283
+tenant-045,Peterbilt,579,2014,4,31
+tenant-043,Volvo,VNL,2016,2,467
+tenant-049,Honda,CR-V,2021,4,339
+tenant-029,Kenworth,T680,2014,3,468
+tenant-045,Ford,Mustang,2011,5,124
+tenant-050,Mercedes-Benz,Sprinter,2020,4,56
+tenant-046,Aston Martin,DB6,2015,5,308
+tenant-042,Toyota,Camry,2026,4,467
+tenant-033,Ford,F-150,2021,1,463
+tenant-031,Peterbilt,579,2019,2,342
+tenant-012,Honda,CR-V,2020,2,150
+tenant-014,Toyota,Camry,2016,4,150
+tenant-003,Kenworth,T680,2023,2,200
+tenant-042,Aston Martin,Vantage,2022,5,93
+tenant-024,Toyota,Camry,2021,5,182
+tenant-017,Ford,Mustang,2014,1,332
+tenant-008,Isuzu,NPR,2019,5,434
+tenant-018,Kenworth,T680,2010,1,7
+tenant-029,Aston Martin,Vantage,2013,2,167
+tenant-014,Chevrolet,Silverado,2026,3,185
+tenant-030,Peterbilt,579,2021,5,298
+tenant-043,Chevrolet,Silverado,2020,3,153
+tenant-020,Isuzu,NPR,2013,2,90
+tenant-021,Porsche,911,2018,3,116
+tenant-044,Peterbilt,579,2015,3,115
+tenant-013,Isuzu,NPR,2018,3,356
+tenant-045,Toyota,Tacoma,2012,3,245
+tenant-013,Aston Martin,Vantage,2017,2,108
+tenant-036,Isuzu,NPR,2013,1,356
+tenant-050,Peterbilt,579,2022,2,6
+tenant-003,Ford,F-150,2020,1,48
+tenant-019,Toyota,Camry,2017,3,453
+tenant-004,Peterbilt,579,2015,3,123
+tenant-011,Mercedes-Benz,Sprinter,2017,4,99
+tenant-040,Ford,F-150,2017,2,312
+tenant-038,Chevrolet,Silverado,2026,3,238
+tenant-038,Porsche,911,2021,5,401
+tenant-008,Freightliner,Cascadia,2010,1,183
+tenant-038,Peterbilt,579,2012,4,185
+tenant-006,Peterbilt,579,2022,5,11
+tenant-034,Toyota,Tacoma,2018,4,447
+tenant-034,Mercedes-Benz,Sprinter,2025,4,236
+tenant-041,Chevrolet,Silverado,2025,2,264
+tenant-044,Honda,CR-V,2012,2,248
+tenant-028,Kenworth,T680,2010,3,197
+tenant-020,Isuzu,NPR,2010,2,417
+tenant-034,Ford,Mustang,2012,1,127
+tenant-020,Ford,Mustang,2014,4,226
+tenant-019,Ford,F-150,2011,1,475
+tenant-012,Aston Martin,Vantage,2019,1,409
+tenant-042,Freightliner,Cascadia,2023,4,482
+tenant-049,Volvo,VNL,2013,1,95
+tenant-021,Ford,Mustang,2018,4,94
+tenant-001,Ford,F-150,2026,4,312
+tenant-010,Aston Martin,DB6,2011,1,468
+tenant-017,Kenworth,T680,2017,4,373
+tenant-022,Kenworth,T680,2023,1,359
+tenant-029,Chevrolet,Silverado,2020,2,215
+tenant-011,Porsche,911,2017,2,256
+tenant-049,Mercedes-Benz,Sprinter,2021,2,255
+tenant-016,Chevrolet,Silverado,2026,5,445
+tenant-035,Chevrolet,Silverado,2013,2,500
+tenant-047,Toyota,Camry,2013,5,311
+tenant-015,Kenworth,T680,2010,3,459
+tenant-010,Aston Martin,DB6,2025,1,52
+tenant-019,Kenworth,T680,2021,2,387
+tenant-036,Peterbilt,579,2023,1,57
+tenant-040,Toyota,Tacoma,2024,3,496
+tenant-039,Honda,CR-V,2015,3,358
+tenant-024,Porsche,911,2012,4,96
+tenant-037,Kenworth,T680,2013,4,53
+tenant-032,Volvo,VNL,2018,4,405
+tenant-014,Peterbilt,579,2015,5,231
+tenant-049,Kenworth,T680,2015,1,403
+tenant-038,Kenworth,T680,2010,1,328
+tenant-008,Toyota,Tacoma,2023,1,96
+tenant-028,Freightliner,Cascadia,2018,2,92
+tenant-045,Porsche,911,2011,1,53
+tenant-011,Ford,F-150,2018,5,402
+tenant-033,Mercedes-Benz,Sprinter,2023,3,439
+tenant-011,Ford,Mustang,2010,2,109
+tenant-024,Aston Martin,Vantage,2014,5,336
+tenant-049,Porsche,911,2021,2,155
+tenant-004,Aston Martin,DB6,2025,5,63
+tenant-040,Aston Martin,DB6,2010,5,358
+tenant-026,Freightliner,Cascadia,2018,1,405
+tenant-037,Volvo,VNL,2020,3,431
+tenant-018,Peterbilt,579,2019,3,456
+tenant-008,Chevrolet,Silverado,2016,4,314
+tenant-036,Volvo,VNL,2023,4,325
+tenant-012,Volvo,VNL,2013,4,133
+tenant-045,Volvo,VNL,2018,1,322
+tenant-033,Peterbilt,579,2025,5,21
+tenant-001,Freightliner,Cascadia,2023,3,81
+tenant-041,Ford,F-150,2014,4,267
+tenant-028,Aston Martin,DB6,2025,3,63
+tenant-014,Volvo,VNL,2015,2,255
+tenant-001,Isuzu,NPR,2019,1,425
+tenant-035,Kenworth,T680,2025,1,177
+tenant-001,Kenworth,T680,2023,1,113
+tenant-049,Aston Martin,Vantage,2024,3,291
+tenant-004,Peterbilt,579,2014,5,256
+tenant-038,Chevrolet,Silverado,2025,3,243
+tenant-024,Aston Martin,DB6,2018,4,28
+tenant-030,Chevrolet,Silverado,2014,5,183
+tenant-001,Kenworth,T680,2010,5,37
+tenant-011,Isuzu,NPR,2023,3,7
+tenant-021,Volvo,VNL,2011,5,435
+tenant-019,Volvo,VNL,2020,3,196
+tenant-028,Freightliner,Cascadia,2013,5,234
+tenant-004,Toyota,Tacoma,2017,2,398
+tenant-015,Mercedes-Benz,Sprinter,2023,2,103
+tenant-010,Toyota,Tacoma,2022,2,424
+tenant-009,Peterbilt,579,2020,2,124
+tenant-024,Mercedes-Benz,Sprinter,2024,3,23
+tenant-028,Mercedes-Benz,Sprinter,2011,5,464
+tenant-008,Aston Martin,Vantage,2021,3,186
+tenant-027,Mercedes-Benz,Sprinter,2014,1,232
+tenant-021,Ford,F-150,2022,3,208
+tenant-025,Ford,Mustang,2022,5,420
+tenant-047,Porsche,911,2021,4,59
+tenant-026,Porsche,911,2018,5,468
+tenant-040,Aston Martin,Vantage,2011,2,267
+tenant-040,Ford,F-150,2016,3,140
+tenant-038,Mercedes-Benz,Sprinter,2020,2,434
+tenant-008,Aston Martin,Vantage,2011,3,39
+tenant-015,Aston Martin,DB6,2011,1,111
+tenant-033,Honda,CR-V,2019,4,203
+tenant-020,Aston Martin,Vantage,2025,3,119
+tenant-016,Freightliner,Cascadia,2021,4,450
+tenant-026,Peterbilt,579,2024,3,260
+tenant-050,Isuzu,NPR,2016,2,244
+tenant-017,Peterbilt,579,2025,3,171
+tenant-004,Freightliner,Cascadia,2024,5,451
+tenant-042,Mercedes-Benz,Sprinter,2020,1,386
+tenant-043,Chevrolet,Silverado,2015,2,346
+tenant-031,Aston Martin,DB6,2013,3,474
+tenant-049,Kenworth,T680,2011,4,243
+tenant-044,Toyota,Tacoma,2011,2,407
+tenant-035,Peterbilt,579,2018,3,191
+tenant-008,Chevrolet,Silverado,2022,2,174
+tenant-026,Toyota,Camry,2022,5,94
+tenant-030,Mercedes-Benz,Sprinter,2023,3,190
+tenant-050,Honda,CR-V,2012,4,32
+tenant-028,Ford,Mustang,2011,5,69
+tenant-033,Kenworth,T680,2022,4,363
+tenant-003,Ford,Mustang,2012,5,143
+tenant-005,Chevrolet,Silverado,2021,5,344
+tenant-027,Ford,Mustang,2023,2,368
+tenant-003,Aston Martin,Vantage,2026,1,238
+tenant-001,Toyota,Camry,2021,2,108
+tenant-013,Aston Martin,DB6,2013,5,53
+tenant-006,Isuzu,NPR,2021,5,37
+tenant-048,Volvo,VNL,2020,1,353
+tenant-040,Chevrolet,Silverado,2019,3,193
+tenant-010,Toyota,Tacoma,2013,3,32
+tenant-039,Porsche,911,2016,2,159
+tenant-030,Ford,F-150,2020,1,249
+tenant-045,Ford,Mustang,2022,1,352
+tenant-045,Porsche,911,2014,3,151
+tenant-035,Mercedes-Benz,Sprinter,2023,4,32
+tenant-041,Aston Martin,Vantage,2021,4,409
+tenant-038,Freightliner,Cascadia,2024,1,100
+tenant-018,Chevrolet,Silverado,2020,4,287
+tenant-046,Chevrolet,Silverado,2013,5,19
+tenant-002,Volvo,VNL,2011,1,383
+tenant-011,Kenworth,T680,2021,2,161
+tenant-029,Mercedes-Benz,Sprinter,2011,1,306
+tenant-030,Toyota,Tacoma,2026,3,484
+tenant-015,Ford,F-150,2017,3,137
+tenant-040,Mercedes-Benz,Sprinter,2016,2,65
+tenant-044,Peterbilt,579,2015,3,225
+tenant-020,Aston Martin,DB6,2018,3,297
+tenant-048,Freightliner,Cascadia,2016,5,207
+tenant-003,Kenworth,T680,2012,2,213
+tenant-019,Mercedes-Benz,Sprinter,2020,2,306
+tenant-001,Aston Martin,Vantage,2025,5,414
+tenant-008,Aston Martin,Vantage,2024,1,33
+tenant-050,Toyota,Camry,2021,5,317
+tenant-045,Peterbilt,579,2023,3,270
+tenant-025,Kenworth,T680,2026,2,276
+tenant-035,Ford,Mustang,2019,1,371
+tenant-041,Honda,CR-V,2010,4,160
+tenant-003,Volvo,VNL,2017,1,470
+tenant-046,Mercedes-Benz,Sprinter,2025,5,443
+tenant-020,Ford,F-150,2017,1,52
+tenant-010,Volvo,VNL,2010,1,153
+tenant-015,Volvo,VNL,2024,2,26
+tenant-040,Mercedes-Benz,Sprinter,2025,3,11
+tenant-005,Aston Martin,DB6,2012,2,223
+tenant-013,Volvo,VNL,2020,5,419
+tenant-050,Toyota,Tacoma,2013,1,421
+tenant-031,Honda,CR-V,2011,2,101
+tenant-025,Toyota,Tacoma,2011,3,354
+tenant-038,Kenworth,T680,2016,5,243
+tenant-011,Kenworth,T680,2018,1,105
+tenant-014,Chevrolet,Silverado,2012,1,9
+tenant-026,Aston Martin,Vantage,2023,2,476
+tenant-048,Ford,Mustang,2010,3,479
+tenant-015,Volvo,VNL,2012,4,29
+tenant-014,Honda,CR-V,2013,1,124
+tenant-034,Ford,Mustang,2019,3,431
+tenant-015,Kenworth,T680,2012,5,180
+tenant-044,Ford,F-150,2011,1,156
+tenant-044,Volvo,VNL,2013,4,370
+tenant-045,Ford,Mustang,2011,4,310
+tenant-015,Ford,F-150,2012,5,421
+tenant-011,Isuzu,NPR,2025,4,29
+tenant-016,Mercedes-Benz,Sprinter,2026,5,451
+tenant-032,Porsche,911,2011,4,494
+tenant-026,Kenworth,T680,2021,4,282
+tenant-023,Peterbilt,579,2022,2,405
+tenant-023,Freightliner,Cascadia,2020,3,210
+tenant-008,Toyota,Tacoma,2012,5,65
+tenant-035,Freightliner,Cascadia,2024,2,391
+tenant-018,Porsche,911,2020,5,365
+tenant-030,Chevrolet,Silverado,2011,3,72
+tenant-001,Peterbilt,579,2011,5,441
+tenant-035,Aston Martin,DB6,2020,4,466
+tenant-047,Volvo,VNL,2010,2,79
+tenant-037,Peterbilt,579,2014,2,133
+tenant-006,Ford,F-150,2023,5,149
+tenant-048,Isuzu,NPR,2017,4,338
+tenant-042,Aston Martin,DB6,2014,4,275
+tenant-040,Peterbilt,579,2015,2,304
+tenant-028,Chevrolet,Silverado,2017,5,33
+tenant-009,Kenworth,T680,2018,5,478
+tenant-010,Toyota,Camry,2019,1,233
+tenant-045,Ford,Mustang,2025,2,339
+tenant-027,Freightliner,Cascadia,2010,4,147
+tenant-040,Porsche,911,2025,5,1
+tenant-042,Toyota,Camry,2012,5,186
+tenant-011,Porsche,911,2014,1,413
+tenant-024,Freightliner,Cascadia,2026,2,22
+tenant-044,Volvo,VNL,2013,5,278
+tenant-028,Ford,Mustang,2016,2,313
+tenant-029,Aston Martin,Vantage,2016,5,386
+tenant-026,Aston Martin,Vantage,2015,1,453
+tenant-027,Isuzu,NPR,2011,5,50
+tenant-038,Aston Martin,Vantage,2021,5,174
+tenant-027,Ford,Mustang,2021,2,46
+tenant-006,Peterbilt,579,2012,3,48
+tenant-025,Chevrolet,Silverado,2025,4,438
+tenant-035,Aston Martin,DB6,2012,1,342
+tenant-022,Kenworth,T680,2015,5,367
+tenant-014,Freightliner,Cascadia,2018,5,436
+tenant-032,Kenworth,T680,2013,4,77
+tenant-011,Kenworth,T680,2025,4,139
+tenant-017,Aston Martin,Vantage,2015,3,251
+tenant-041,Ford,Mustang,2020,3,463
+tenant-004,Toyota,Camry,2025,5,321
+tenant-025,Toyota,Tacoma,2017,1,306
+tenant-004,Freightliner,Cascadia,2018,1,119
+tenant-037,Volvo,VNL,2012,5,304
+tenant-008,Porsche,911,2025,2,130
+tenant-023,Isuzu,NPR,2013,2,65
+tenant-045,Aston Martin,Vantage,2015,4,241
+tenant-021,Toyota,Camry,2021,4,112
+tenant-040,Mercedes-Benz,Sprinter,2025,3,226
+tenant-008,Toyota,Camry,2026,4,115
+tenant-032,Toyota,Tacoma,2013,5,396
+tenant-045,Aston Martin,DB6,2012,5,419
+tenant-042,Ford,F-150,2010,3,128
+tenant-007,Mercedes-Benz,Sprinter,2014,5,20
+tenant-033,Peterbilt,579,2017,1,153
+tenant-015,Freightliner,Cascadia,2019,5,66
+tenant-045,Chevrolet,Silverado,2014,1,125
+tenant-036,Ford,Mustang,2024,5,22
+tenant-040,Kenworth,T680,2022,5,358
+tenant-042,Honda,CR-V,2025,2,155
+tenant-047,Aston Martin,Vantage,2013,1,46
+tenant-024,Mercedes-Benz,Sprinter,2020,5,460
+tenant-023,Aston Martin,DB6,2023,5,383
+tenant-039,Chevrolet,Silverado,2011,2,378
+tenant-021,Aston Martin,Vantage,2015,2,328
+tenant-043,Toyota,Tacoma,2014,1,133
+tenant-017,Toyota,Camry,2010,4,457
+tenant-038,Freightliner,Cascadia,2017,4,51
+tenant-023,Kenworth,T680,2016,5,193
+tenant-013,Mercedes-Benz,Sprinter,2018,3,322
+tenant-041,Honda,CR-V,2025,3,338
+tenant-028,Isuzu,NPR,2019,4,256
+tenant-023,Freightliner,Cascadia,2022,1,37
+tenant-034,Honda,CR-V,2011,3,43
+tenant-028,Toyota,Tacoma,2013,2,468
+tenant-004,Ford,F-150,2018,4,296
+tenant-037,Honda,CR-V,2024,4,408
+tenant-038,Ford,Mustang,2022,3,293
+tenant-050,Ford,F-150,2013,2,492
+tenant-039,Mercedes-Benz,Sprinter,2013,1,346
+tenant-043,Aston Martin,DB6,2026,2,351
+tenant-023,Chevrolet,Silverado,2019,3,278
+tenant-009,Honda,CR-V,2019,3,304
+tenant-031,Toyota,Camry,2015,1,53
+tenant-011,Isuzu,NPR,2011,4,118
+tenant-049,Kenworth,T680,2011,3,297
+tenant-028,Peterbilt,579,2022,5,399
+tenant-002,Aston Martin,DB6,2015,5,316
+tenant-028,Peterbilt,579,2016,4,414
+tenant-035,Ford,Mustang,2023,3,460
+tenant-024,Porsche,911,2019,3,8
+tenant-045,Peterbilt,579,2013,2,296
+tenant-034,Kenworth,T680,2022,2,46
+tenant-043,Chevrolet,Silverado,2024,4,83
+tenant-050,Kenworth,T680,2026,1,74
+tenant-019,Mercedes-Benz,Sprinter,2018,4,286
+tenant-026,Porsche,911,2026,3,159
+tenant-017,Isuzu,NPR,2018,5,243
+tenant-047,Volvo,VNL,2013,3,57
+tenant-046,Aston Martin,DB6,2023,5,182
+tenant-014,Aston Martin,DB6,2012,3,255
+tenant-001,Kenworth,T680,2016,5,275
+tenant-008,Toyota,Tacoma,2015,3,280
+tenant-009,Freightliner,Cascadia,2017,5,483
+tenant-043,Toyota,Camry,2026,4,7
+tenant-018,Aston Martin,Vantage,2017,4,2
+tenant-017,Freightliner,Cascadia,2015,2,431
+tenant-002,Volvo,VNL,2013,3,39
+tenant-045,Toyota,Tacoma,2017,3,360
+tenant-037,Toyota,Camry,2011,3,421
+tenant-039,Ford,F-150,2024,2,142
+tenant-015,Peterbilt,579,2016,2,463
+tenant-032,Honda,CR-V,2016,5,74
+tenant-017,Ford,F-150,2026,1,423
+tenant-029,Chevrolet,Silverado,2017,3,43
+tenant-015,Toyota,Camry,2015,4,363
+tenant-010,Mercedes-Benz,Sprinter,2017,4,428
+tenant-005,Ford,F-150,2017,5,242
+tenant-037,Isuzu,NPR,2018,5,182
+tenant-049,Toyota,Camry,2012,1,86
+tenant-039,Aston Martin,Vantage,2019,1,167
+tenant-044,Ford,F-150,2022,5,52
+tenant-016,Honda,CR-V,2020,4,354
+tenant-046,Honda,CR-V,2014,2,226
+tenant-016,Isuzu,NPR,2025,2,294
+tenant-020,Aston Martin,Vantage,2023,5,268
+tenant-041,Freightliner,Cascadia,2014,5,383
+tenant-031,Porsche,911,2019,1,139
+tenant-018,Peterbilt,579,2022,4,111
+tenant-045,Peterbilt,579,2020,2,66
+tenant-021,Isuzu,NPR,2011,2,83
+tenant-050,Porsche,911,2018,5,200
+tenant-020,Honda,CR-V,2022,5,68
+tenant-035,Honda,CR-V,2023,5,42
+tenant-001,Freightliner,Cascadia,2010,3,349
+tenant-034,Peterbilt,579,2010,4,357
+tenant-031,Kenworth,T680,2016,3,494
+tenant-024,Porsche,911,2022,4,119
+tenant-044,Freightliner,Cascadia,2025,1,144
+tenant-025,Aston Martin,DB6,2018,5,169
+tenant-021,Toyota,Tacoma,2021,5,80
+tenant-011,Peterbilt,579,2025,2,390
+tenant-012,Porsche,911,2022,2,412
+tenant-040,Volvo,VNL,2013,1,159
+tenant-005,Peterbilt,579,2013,2,228
+tenant-003,Isuzu,NPR,2012,2,71
+tenant-037,Peterbilt,579,2013,3,15
+tenant-028,Freightliner,Cascadia,2018,1,411
+tenant-044,Aston Martin,DB6,2018,3,283
+tenant-010,Toyota,Tacoma,2011,5,126
+tenant-029,Chevrolet,Silverado,2016,1,142
+tenant-004,Freightliner,Cascadia,2010,4,47
+tenant-005,Toyota,Tacoma,2022,2,333
+tenant-031,Porsche,911,2024,1,456
+tenant-031,Aston Martin,Vantage,2020,3,64
+tenant-032,Aston Martin,Vantage,2010,1,392
+tenant-030,Kenworth,T680,2019,4,244
+tenant-007,Aston Martin,DB6,2020,5,406
+tenant-038,Kenworth,T680,2023,5,218
+tenant-020,Toyota,Tacoma,2014,1,290
+tenant-005,Aston Martin,Vantage,2024,4,18
+tenant-011,Volvo,VNL,2012,3,484
+tenant-016,Honda,CR-V,2018,4,197
+tenant-002,Ford,F-150,2017,4,137
+tenant-012,Honda,CR-V,2010,1,150
+tenant-040,Ford,F-150,2021,5,417
+tenant-037,Isuzu,NPR,2025,2,88
+tenant-049,Kenworth,T680,2026,5,192
+tenant-019,Peterbilt,579,2016,4,344
+tenant-050,Aston Martin,Vantage,2017,4,396
+tenant-006,Isuzu,NPR,2018,1,409
+tenant-013,Aston Martin,DB6,2025,2,282
+tenant-028,Aston Martin,Vantage,2016,5,219
+tenant-010,Toyota,Camry,2012,3,470
+tenant-020,Volvo,VNL,2018,2,279
+tenant-005,Porsche,911,2014,2,39
+tenant-022,Freightliner,Cascadia,2012,3,108
+tenant-037,Kenworth,T680,2012,4,398
+tenant-047,Mercedes-Benz,Sprinter,2022,2,463
+tenant-005,Honda,CR-V,2021,5,56
+tenant-001,Toyota,Tacoma,2022,3,186
+tenant-031,Volvo,VNL,2013,2,401
+tenant-041,Ford,F-150,2015,1,41
+tenant-006,Volvo,VNL,2010,5,105
+tenant-045,Volvo,VNL,2021,3,286
+tenant-042,Freightliner,Cascadia,2013,5,273
+tenant-025,Aston Martin,Vantage,2016,1,55
+tenant-034,Ford,F-150,2014,3,477
+tenant-028,Porsche,911,2023,1,313
+tenant-028,Peterbilt,579,2011,4,377
+tenant-047,Toyota,Camry,2026,3,82
+tenant-024,Kenworth,T680,2014,5,219
+tenant-033,Kenworth,T680,2018,1,451
+tenant-015,Freightliner,Cascadia,2025,2,211
+tenant-036,Mercedes-Benz,Sprinter,2026,2,326
+tenant-030,Ford,F-150,2010,1,151
+tenant-017,Kenworth,T680,2017,1,347
+tenant-018,Porsche,911,2014,1,340
+tenant-007,Aston Martin,Vantage,2025,3,99
+tenant-045,Ford,Mustang,2015,4,140
+tenant-048,Peterbilt,579,2011,5,333
+tenant-007,Aston Martin,Vantage,2013,3,260
+tenant-025,Ford,F-150,2015,4,61
+tenant-006,Mercedes-Benz,Sprinter,2022,5,273
+tenant-034,Ford,F-150,2010,1,169
+tenant-033,Peterbilt,579,2020,5,364
+tenant-037,Honda,CR-V,2018,3,63
+tenant-003,Aston Martin,DB6,2016,4,39
+tenant-032,Mercedes-Benz,Sprinter,2018,4,70
+tenant-013,Ford,Mustang,2015,4,27
+tenant-023,Volvo,VNL,2012,4,428
+tenant-011,Ford,Mustang,2025,2,239
+tenant-004,Aston Martin,DB6,2017,1,157
+tenant-001,Aston Martin,DB6,2018,1,126
+tenant-047,Honda,CR-V,2010,3,381
+tenant-006,Aston Martin,Vantage,2018,3,294
+tenant-049,Honda,CR-V,2013,4,458
+tenant-020,Porsche,911,2021,1,69
+tenant-049,Isuzu,NPR,2013,1,142
+tenant-043,Aston Martin,DB6,2014,2,246
+tenant-046,Kenworth,T680,2014,1,394
+tenant-026,Toyota,Camry,2014,5,261
+tenant-013,Isuzu,NPR,2026,1,335
+tenant-035,Freightliner,Cascadia,2010,5,233
+tenant-035,Aston Martin,DB6,2026,4,499
+tenant-012,Peterbilt,579,2016,3,304
+tenant-029,Isuzu,NPR,2017,3,45
+tenant-047,Porsche,911,2025,2,487
+tenant-023,Aston Martin,DB6,2011,1,382
+tenant-007,Freightliner,Cascadia,2012,2,331
+tenant-031,Ford,F-150,2021,1,50
+tenant-007,Peterbilt,579,2019,4,43
+tenant-026,Porsche,911,2020,2,364
+tenant-050,Aston Martin,DB6,2024,4,194
+tenant-031,Volvo,VNL,2025,4,345
+tenant-007,Chevrolet,Silverado,2021,5,477
+tenant-022,Porsche,911,2014,4,177
+tenant-010,Peterbilt,579,2019,3,189
+tenant-026,Peterbilt,579,2021,3,402
+tenant-032,Peterbilt,579,2023,1,177
+tenant-022,Aston Martin,DB6,2022,5,425
+tenant-002,Honda,CR-V,2019,5,284
+tenant-049,Ford,F-150,2019,2,428
+tenant-045,Aston Martin,DB6,2017,4,217
+tenant-024,Toyota,Tacoma,2014,1,49
+tenant-037,Peterbilt,579,2010,3,378
+tenant-022,Honda,CR-V,2026,3,392
+tenant-048,Ford,Mustang,2026,2,21
+tenant-027,Porsche,911,2014,2,69
+tenant-041,Peterbilt,579,2019,3,427
+tenant-037,Kenworth,T680,2026,5,420
+tenant-006,Ford,F-150,2025,5,270
+tenant-008,Ford,F-150,2018,5,65
+tenant-021,Isuzu,NPR,2011,5,258
+tenant-017,Honda,CR-V,2011,2,299
+tenant-040,Toyota,Tacoma,2024,5,484
+tenant-021,Toyota,Camry,2023,4,490
+tenant-041,Aston Martin,DB6,2016,4,382
+tenant-036,Chevrolet,Silverado,2014,2,444
+tenant-018,Toyota,Tacoma,2025,5,474
+tenant-019,Ford,Mustang,2026,3,421
+tenant-013,Chevrolet,Silverado,2020,3,298
+tenant-015,Ford,F-150,2024,2,415
+tenant-025,Porsche,911,2011,2,450
+tenant-013,Volvo,VNL,2021,1,488
+tenant-023,Aston Martin,DB6,2012,3,338
+tenant-046,Kenworth,T680,2021,4,483
+tenant-033,Aston Martin,Vantage,2023,1,405
+tenant-019,Chevrolet,Silverado,2022,4,222
+tenant-048,Aston Martin,Vantage,2023,2,371
+tenant-030,Toyota,Tacoma,2020,1,336
+tenant-006,Freightliner,Cascadia,2011,1,65
+tenant-023,Kenworth,T680,2010,2,497
+tenant-039,Kenworth,T680,2012,5,337
+tenant-018,Aston Martin,Vantage,2025,3,165
+tenant-015,Chevrolet,Silverado,2023,5,497
+tenant-003,Porsche,911,2012,3,241
+tenant-033,Peterbilt,579,2011,4,27
+tenant-048,Mercedes-Benz,Sprinter,2023,3,327
+tenant-030,Porsche,911,2017,1,428
+tenant-046,Volvo,VNL,2023,4,139
+tenant-049,Kenworth,T680,2022,1,201
+tenant-023,Freightliner,Cascadia,2018,3,278
+tenant-020,Ford,F-150,2014,5,462
+tenant-014,Chevrolet,Silverado,2018,5,120
+tenant-040,Toyota,Tacoma,2012,4,210
+tenant-039,Freightliner,Cascadia,2014,4,226
+tenant-025,Chevrolet,Silverado,2012,3,129
+tenant-014,Kenworth,T680,2026,5,122
+tenant-022,Chevrolet,Silverado,2015,1,293
+tenant-012,Aston Martin,DB6,2016,3,225
+tenant-040,Mercedes-Benz,Sprinter,2018,5,384
+tenant-032,Ford,F-150,2025,1,338
+tenant-023,Isuzu,NPR,2021,2,413
+tenant-029,Chevrolet,Silverado,2010,4,441
+tenant-019,Chevrolet,Silverado,2011,3,152
+tenant-028,Aston Martin,DB6,2011,4,208
+tenant-044,Ford,Mustang,2021,2,459
+tenant-017,Chevrolet,Silverado,2022,4,3
+tenant-032,Aston Martin,DB6,2017,5,479
+tenant-037,Porsche,911,2010,4,233
+tenant-015,Peterbilt,579,2017,1,496
+tenant-020,Toyota,Tacoma,2025,5,445
+tenant-035,Ford,F-150,2021,3,484
+tenant-024,Ford,F-150,2023,3,217
+tenant-037,Chevrolet,Silverado,2021,2,19
+tenant-046,Isuzu,NPR,2026,1,374
+tenant-050,Ford,F-150,2014,3,181
+tenant-007,Toyota,Camry,2017,4,497
+tenant-010,Peterbilt,579,2014,4,335
+tenant-002,Ford,Mustang,2014,2,136
+tenant-006,Mercedes-Benz,Sprinter,2018,5,149
+tenant-031,Aston Martin,DB6,2011,4,43
+tenant-030,Kenworth,T680,2013,2,22
+tenant-009,Freightliner,Cascadia,2025,1,126
+tenant-035,Aston Martin,Vantage,2017,3,71
+tenant-016,Aston Martin,DB6,2023,4,310
+tenant-038,Chevrolet,Silverado,2026,4,181
+tenant-024,Honda,CR-V,2026,4,364
+tenant-006,Honda,CR-V,2022,5,364
+tenant-016,Isuzu,NPR,2023,2,498
+tenant-018,Honda,CR-V,2025,2,411
+tenant-014,Ford,Mustang,2013,3,395
+tenant-034,Freightliner,Cascadia,2024,3,224
+tenant-041,Ford,F-150,2013,1,5
+tenant-024,Toyota,Tacoma,2026,4,23
+tenant-039,Ford,F-150,2016,4,227
+tenant-022,Ford,F-150,2026,2,250
+tenant-025,Freightliner,Cascadia,2023,1,114
+tenant-034,Aston Martin,DB6,2011,5,271
+tenant-030,Volvo,VNL,2022,3,317
+tenant-043,Peterbilt,579,2013,4,406
+tenant-038,Ford,Mustang,2011,3,107
+tenant-047,Aston Martin,Vantage,2018,3,429
+tenant-010,Aston Martin,DB6,2020,2,405
+tenant-029,Porsche,911,2025,1,255
+tenant-005,Mercedes-Benz,Sprinter,2019,2,463
+tenant-012,Ford,Mustang,2012,3,56
+tenant-034,Isuzu,NPR,2018,1,289
+tenant-004,Mercedes-Benz,Sprinter,2019,5,283
+tenant-004,Ford,Mustang,2024,2,153
+tenant-010,Kenworth,T680,2013,2,170
+tenant-048,Freightliner,Cascadia,2012,1,294
+tenant-035,Peterbilt,579,2016,2,467
+tenant-048,Peterbilt,579,2020,2,253
+tenant-009,Peterbilt,579,2017,5,125
+tenant-006,Aston Martin,Vantage,2017,1,302
+tenant-009,Ford,F-150,2020,1,432
+tenant-024,Toyota,Tacoma,2026,2,127
+tenant-021,Isuzu,NPR,2025,1,92
+tenant-027,Chevrolet,Silverado,2011,1,47
+tenant-004,Porsche,911,2025,5,242
+tenant-026,Isuzu,NPR,2020,1,393
+tenant-015,Mercedes-Benz,Sprinter,2023,5,253
+tenant-044,Toyota,Tacoma,2018,3,106
+tenant-039,Mercedes-Benz,Sprinter,2015,4,430
+tenant-006,Chevrolet,Silverado,2010,2,32
+tenant-041,Porsche,911,2020,4,489
+tenant-045,Ford,F-150,2019,2,320
+tenant-020,Toyota,Camry,2013,3,361
+tenant-013,Peterbilt,579,2021,4,341
+tenant-031,Peterbilt,579,2018,5,251
+tenant-033,Peterbilt,579,2021,2,216
+tenant-047,Volvo,VNL,2023,2,66
+tenant-045,Peterbilt,579,2026,4,194
+tenant-045,Isuzu,NPR,2013,1,11
+tenant-027,Kenworth,T680,2020,2,154
+tenant-046,Porsche,911,2024,4,447
+tenant-050,Aston Martin,DB6,2026,3,398
+tenant-028,Honda,CR-V,2020,2,31
+tenant-003,Volvo,VNL,2019,4,295
+tenant-018,Toyota,Tacoma,2018,1,450
+tenant-044,Honda,CR-V,2016,5,36
+tenant-027,Toyota,Tacoma,2021,5,28
+tenant-040,Aston Martin,DB6,2024,2,379
+tenant-001,Ford,F-150,2019,4,431
+tenant-039,Toyota,Tacoma,2013,3,202
+tenant-050,Volvo,VNL,2019,2,235
+tenant-044,Isuzu,NPR,2022,3,206
+tenant-042,Volvo,VNL,2013,2,264
+tenant-025,Aston Martin,DB6,2013,3,47
+tenant-016,Toyota,Tacoma,2014,3,62
+tenant-023,Aston Martin,Vantage,2024,1,127
+tenant-002,Ford,Mustang,2019,5,260
+tenant-017,Isuzu,NPR,2019,4,86
+tenant-006,Honda,CR-V,2011,5,224
+tenant-002,Peterbilt,579,2013,3,381
+tenant-041,Ford,F-150,2017,5,55
+tenant-026,Isuzu,NPR,2014,3,106
+tenant-014,Aston Martin,Vantage,2023,3,115
+tenant-002,Honda,CR-V,2025,1,247
+tenant-038,Aston Martin,Vantage,2023,5,108
+tenant-028,Volvo,VNL,2011,4,174
+tenant-026,Isuzu,NPR,2014,3,98
+tenant-011,Toyota,Tacoma,2017,5,291
+tenant-039,Kenworth,T680,2017,1,150
+tenant-017,Ford,F-150,2015,3,161
+tenant-013,Honda,CR-V,2022,3,232
+tenant-009,Freightliner,Cascadia,2025,2,306
+tenant-044,Freightliner,Cascadia,2015,4,132
+tenant-050,Chevrolet,Silverado,2016,1,59
+tenant-007,Aston Martin,DB6,2024,4,120
+tenant-005,Freightliner,Cascadia,2016,3,197
+tenant-015,Volvo,VNL,2011,5,198
+tenant-027,Isuzu,NPR,2012,4,436
+tenant-007,Chevrolet,Silverado,2024,2,20
+tenant-026,Aston Martin,Vantage,2024,5,50
+tenant-008,Aston Martin,Vantage,2012,1,177
+tenant-041,Aston Martin,DB6,2017,5,359
+tenant-018,Ford,F-150,2015,1,169
+tenant-007,Toyota,Tacoma,2012,3,159
+tenant-017,Kenworth,T680,2021,5,361
+tenant-029,Kenworth,T680,2022,2,457
+tenant-016,Peterbilt,579,2010,2,106
+tenant-033,Aston Martin,Vantage,2014,2,434
+tenant-009,Isuzu,NPR,2025,3,363
+tenant-025,Isuzu,NPR,2014,3,238
+tenant-003,Honda,CR-V,2010,3,43
+tenant-002,Kenworth,T680,2013,3,182
+tenant-041,Mercedes-Benz,Sprinter,2016,1,133
+tenant-046,Honda,CR-V,2025,4,244
+tenant-047,Toyota,Tacoma,2010,4,82
+tenant-022,Isuzu,NPR,2018,2,177
+tenant-048,Aston Martin,DB6,2025,4,116
+tenant-001,Peterbilt,579,2016,2,468
+tenant-024,Peterbilt,579,2020,1,406
+tenant-031,Mercedes-Benz,Sprinter,2010,1,71
+tenant-030,Toyota,Camry,2014,2,3
+tenant-006,Toyota,Tacoma,2024,4,213
+tenant-002,Volvo,VNL,2023,5,1
+tenant-014,Honda,CR-V,2012,2,328
+tenant-035,Peterbilt,579,2015,2,323
+tenant-001,Aston Martin,Vantage,2015,4,277
+tenant-050,Ford,F-150,2019,4,116
+tenant-042,Ford,F-150,2010,1,186
+tenant-004,Aston Martin,DB6,2025,3,150
+tenant-010,Kenworth,T680,2011,2,342
+tenant-038,Kenworth,T680,2026,5,301
+tenant-018,Toyota,Camry,2013,4,388
+tenant-047,Kenworth,T680,2018,5,493
+tenant-013,Chevrolet,Silverado,2010,4,491
+tenant-015,Ford,F-150,2025,4,333
+tenant-027,Mercedes-Benz,Sprinter,2018,5,401
+tenant-032,Peterbilt,579,2026,5,478
+tenant-017,Peterbilt,579,2017,2,182
+tenant-018,Aston Martin,DB6,2012,2,191
+tenant-016,Aston Martin,DB6,2026,3,401
+tenant-001,Ford,Mustang,2012,2,312
+tenant-037,Freightliner,Cascadia,2021,2,99
+tenant-049,Peterbilt,579,2013,2,156
+tenant-005,Aston Martin,Vantage,2021,3,113
+tenant-044,Aston Martin,DB6,2013,2,22
+tenant-028,Aston Martin,DB6,2021,4,250
+tenant-020,Ford,Mustang,2017,3,265
+tenant-047,Porsche,911,2023,2,345
+tenant-037,Porsche,911,2018,2,292
+tenant-039,Porsche,911,2016,5,349
+tenant-038,Porsche,911,2018,2,467
+tenant-040,Porsche,911,2012,3,389
+tenant-018,Honda,CR-V,2019,1,83
+tenant-013,Honda,CR-V,2024,5,441
+tenant-015,Mercedes-Benz,Sprinter,2020,4,31
+tenant-025,Ford,F-150,2021,4,19
+tenant-044,Chevrolet,Silverado,2021,1,172
+tenant-005,Aston Martin,DB6,2014,5,454
+tenant-009,Toyota,Camry,2026,3,425
+tenant-043,Aston Martin,Vantage,2018,3,56
+tenant-045,Peterbilt,579,2019,1,183
+tenant-029,Ford,Mustang,2020,4,377
+tenant-024,Chevrolet,Silverado,2010,4,35
+tenant-021,Aston Martin,DB6,2016,4,256
+tenant-044,Chevrolet,Silverado,2017,4,374
+tenant-037,Freightliner,Cascadia,2023,4,34
+tenant-050,Kenworth,T680,2015,4,223
+tenant-044,Toyota,Tacoma,2025,4,483
+tenant-030,Aston Martin,Vantage,2014,3,410
+tenant-009,Toyota,Tacoma,2016,3,186
+tenant-041,Ford,Mustang,2023,1,226
+tenant-039,Isuzu,NPR,2023,2,245
+tenant-032,Porsche,911,2026,5,129
+tenant-019,Mercedes-Benz,Sprinter,2026,2,62
+tenant-003,Kenworth,T680,2026,1,243
+tenant-016,Mercedes-Benz,Sprinter,2014,3,291
+tenant-046,Honda,CR-V,2012,3,115
+tenant-019,Isuzu,NPR,2019,1,355
+tenant-002,Peterbilt,579,2017,1,86
+tenant-036,Peterbilt,579,2014,4,158
+tenant-006,Aston Martin,Vantage,2020,1,125
+tenant-040,Aston Martin,DB6,2020,2,176
+tenant-006,Aston Martin,Vantage,2019,4,472
+tenant-043,Ford,Mustang,2014,3,211
+tenant-015,Kenworth,T680,2020,3,413
+tenant-009,Peterbilt,579,2022,5,459
+tenant-046,Toyota,Camry,2022,1,372
+tenant-012,Isuzu,NPR,2026,1,209
+tenant-018,Aston Martin,DB6,2026,2,393
+tenant-033,Mercedes-Benz,Sprinter,2020,2,410
+tenant-042,Aston Martin,DB6,2022,2,398
+tenant-009,Porsche,911,2015,2,417
+tenant-049,Freightliner,Cascadia,2015,4,289
+tenant-041,Toyota,Tacoma,2012,3,179
+tenant-029,Freightliner,Cascadia,2017,4,332
+tenant-014,Toyota,Camry,2014,3,384
+tenant-003,Toyota,Camry,2024,5,363
+tenant-015,Mercedes-Benz,Sprinter,2023,2,421
+tenant-023,Ford,F-150,2016,1,243
+tenant-006,Toyota,Tacoma,2013,2,232
+tenant-002,Toyota,Tacoma,2014,4,474
+tenant-025,Ford,Mustang,2014,4,492
+tenant-022,Honda,CR-V,2017,5,135
+tenant-002,Volvo,VNL,2015,1,195
+tenant-005,Ford,Mustang,2022,1,198
+tenant-008,Freightliner,Cascadia,2019,3,229
+tenant-013,Freightliner,Cascadia,2020,4,281
+tenant-009,Honda,CR-V,2026,3,231
+tenant-042,Porsche,911,2015,3,3
+tenant-033,Toyota,Camry,2024,4,68
+tenant-049,Ford,Mustang,2019,5,403
+tenant-024,Aston Martin,DB6,2014,4,356
+tenant-015,Isuzu,NPR,2011,3,392
+tenant-024,Aston Martin,Vantage,2012,3,58
+tenant-040,Kenworth,T680,2015,5,7
+tenant-027,Aston Martin,DB6,2013,4,310
+tenant-019,Toyota,Camry,2010,4,200
+tenant-034,Porsche,911,2025,5,378
+tenant-036,Aston Martin,DB6,2025,1,375
+tenant-031,Peterbilt,579,2025,5,348
+tenant-010,Ford,Mustang,2015,1,214
+tenant-028,Peterbilt,579,2024,4,377
+tenant-033,Ford,Mustang,2017,1,130
+tenant-018,Freightliner,Cascadia,2011,3,260
+tenant-039,Kenworth,T680,2022,3,20
+tenant-037,Volvo,VNL,2015,1,212
+tenant-001,Toyota,Camry,2011,2,118
+tenant-001,Freightliner,Cascadia,2022,4,344
+tenant-029,Ford,Mustang,2011,1,28
+tenant-043,Freightliner,Cascadia,2018,1,488
+tenant-049,Toyota,Camry,2023,5,239
+tenant-048,Freightliner,Cascadia,2020,3,353
+tenant-028,Chevrolet,Silverado,2018,2,53
+tenant-017,Volvo,VNL,2012,3,242
+tenant-042,Volvo,VNL,2013,1,183
+tenant-018,Isuzu,NPR,2021,4,360
+tenant-022,Ford,Mustang,2020,4,443
+tenant-019,Peterbilt,579,2015,3,498
+tenant-042,Ford,F-150,2013,3,93
+tenant-024,Toyota,Camry,2013,3,157
+tenant-039,Ford,Mustang,2015,3,141
+tenant-008,Toyota,Tacoma,2023,3,86
+tenant-028,Peterbilt,579,2012,1,439
+tenant-014,Aston Martin,DB6,2026,3,2
+tenant-027,Chevrolet,Silverado,2020,4,216
+tenant-007,Porsche,911,2012,2,315
+tenant-019,Ford,F-150,2021,3,229
+tenant-020,Kenworth,T680,2020,1,249
+tenant-012,Toyota,Camry,2015,2,494
+tenant-036,Aston Martin,Vantage,2023,2,25
+tenant-030,Freightliner,Cascadia,2019,5,490
+tenant-043,Toyota,Tacoma,2014,5,118
+tenant-027,Chevrolet,Silverado,2026,4,464
+tenant-049,Ford,Mustang,2019,4,403
+tenant-043,Volvo,VNL,2014,4,80
+tenant-047,Ford,F-150,2022,2,373
+tenant-042,Aston Martin,Vantage,2022,1,201
+tenant-022,Mercedes-Benz,Sprinter,2025,1,218
+tenant-032,Freightliner,Cascadia,2020,1,32
+tenant-022,Volvo,VNL,2023,4,409
+tenant-005,Freightliner,Cascadia,2014,4,322
+tenant-049,Ford,Mustang,2026,3,90
+tenant-004,Toyota,Camry,2013,4,497
+tenant-045,Aston Martin,Vantage,2015,4,258
+tenant-004,Honda,CR-V,2020,1,181
+tenant-042,Porsche,911,2022,1,50
+tenant-026,Isuzu,NPR,2012,5,406
+tenant-047,Ford,Mustang,2023,1,54
+tenant-049,Mercedes-Benz,Sprinter,2020,1,461
+tenant-043,Kenworth,T680,2018,5,393
+tenant-021,Porsche,911,2023,1,290
+tenant-042,Toyota,Tacoma,2013,3,386
+tenant-038,Volvo,VNL,2021,1,6
+tenant-021,Honda,CR-V,2017,4,347
+tenant-002,Freightliner,Cascadia,2014,2,478
+tenant-018,Honda,CR-V,2020,5,259
+tenant-024,Aston Martin,Vantage,2011,1,472
+tenant-001,Volvo,VNL,2020,4,251
+tenant-032,Porsche,911,2019,3,259
+tenant-021,Toyota,Tacoma,2013,5,167
+tenant-003,Chevrolet,Silverado,2010,3,200
+tenant-044,Aston Martin,DB6,2024,2,474
+tenant-047,Chevrolet,Silverado,2013,1,325
+tenant-034,Kenworth,T680,2023,5,432
+tenant-017,Kenworth,T680,2011,2,413
+tenant-018,Kenworth,T680,2022,3,207
+tenant-017,Ford,Mustang,2018,5,395
+tenant-040,Honda,CR-V,2024,3,157
+tenant-005,Chevrolet,Silverado,2013,5,50
+tenant-006,Peterbilt,579,2018,4,227
+tenant-001,Porsche,911,2011,5,345
+tenant-037,Isuzu,NPR,2025,1,391
+tenant-011,Ford,Mustang,2011,3,269
+tenant-050,Aston Martin,Vantage,2017,4,54
+tenant-009,Kenworth,T680,2020,1,311
+tenant-038,Aston Martin,Vantage,2024,5,370
+tenant-037,Freightliner,Cascadia,2023,5,263
+tenant-047,Volvo,VNL,2014,3,15
+tenant-030,Freightliner,Cascadia,2015,5,298
+tenant-020,Chevrolet,Silverado,2024,1,229
+tenant-014,Honda,CR-V,2023,1,188
+tenant-008,Mercedes-Benz,Sprinter,2012,3,121
+tenant-009,Toyota,Camry,2015,4,236
+tenant-019,Toyota,Tacoma,2016,2,398
+tenant-050,Aston Martin,DB6,2026,1,379
+tenant-044,Mercedes-Benz,Sprinter,2018,3,448
+tenant-003,Isuzu,NPR,2023,4,339
+tenant-040,Mercedes-Benz,Sprinter,2016,3,126
+tenant-039,Honda,CR-V,2017,2,270
+tenant-012,Peterbilt,579,2018,5,344
+tenant-022,Freightliner,Cascadia,2025,4,274
+tenant-023,Honda,CR-V,2016,5,99
+tenant-011,Kenworth,T680,2019,4,351
+tenant-034,Peterbilt,579,2015,5,463
+tenant-023,Honda,CR-V,2021,2,371
+tenant-024,Toyota,Camry,2021,3,305
+tenant-014,Aston Martin,Vantage,2018,3,376
+tenant-011,Freightliner,Cascadia,2022,1,95
+tenant-018,Mercedes-Benz,Sprinter,2014,5,212
+tenant-004,Toyota,Tacoma,2011,4,456
+tenant-024,Freightliner,Cascadia,2017,1,110
+tenant-009,Honda,CR-V,2014,1,390
+tenant-024,Ford,F-150,2021,3,80
+tenant-013,Isuzu,NPR,2013,2,294
+tenant-025,Porsche,911,2022,1,252
+tenant-007,Chevrolet,Silverado,2012,1,241
+tenant-040,Kenworth,T680,2012,1,31
+tenant-048,Toyota,Camry,2013,3,15
+tenant-035,Aston Martin,Vantage,2012,2,173
+tenant-032,Ford,Mustang,2012,5,161
+tenant-006,Porsche,911,2023,3,445
+tenant-046,Honda,CR-V,2026,1,100
+tenant-005,Volvo,VNL,2011,3,467
+tenant-012,Kenworth,T680,2026,4,383
+tenant-018,Freightliner,Cascadia,2024,5,413
+tenant-041,Kenworth,T680,2025,5,349
+tenant-040,Peterbilt,579,2020,1,324
+tenant-012,Porsche,911,2020,2,226
+tenant-015,Freightliner,Cascadia,2024,1,136
+tenant-027,Toyota,Tacoma,2024,1,101
+tenant-042,Ford,F-150,2015,1,296
+tenant-046,Mercedes-Benz,Sprinter,2014,1,350
+tenant-003,Aston Martin,Vantage,2022,3,437
+tenant-016,Aston Martin,Vantage,2017,2,284
+tenant-047,Ford,Mustang,2020,4,325
+tenant-050,Chevrolet,Silverado,2015,3,295
+tenant-012,Porsche,911,2023,3,345
+tenant-042,Peterbilt,579,2026,1,373
+tenant-020,Aston Martin,Vantage,2026,5,386
+tenant-034,Kenworth,T680,2016,5,151
+tenant-044,Peterbilt,579,2022,5,197
+tenant-002,Ford,F-150,2020,5,320
+tenant-020,Aston Martin,DB6,2012,2,373
+tenant-025,Toyota,Camry,2022,2,314
+tenant-020,Isuzu,NPR,2018,4,109
+tenant-029,Ford,Mustang,2011,4,264
+tenant-007,Aston Martin,Vantage,2026,3,20
+tenant-032,Mercedes-Benz,Sprinter,2025,3,110
+tenant-004,Aston Martin,Vantage,2010,1,48
+tenant-005,Mercedes-Benz,Sprinter,2012,2,313
+tenant-050,Toyota,Tacoma,2022,3,35
+tenant-030,Freightliner,Cascadia,2021,2,95
+tenant-032,Peterbilt,579,2015,5,110
+tenant-026,Toyota,Tacoma,2020,2,410
+tenant-032,Toyota,Tacoma,2019,5,444
+tenant-040,Toyota,Camry,2015,2,227
+tenant-042,Honda,CR-V,2022,5,14
+tenant-023,Chevrolet,Silverado,2023,5,453
+tenant-014,Honda,CR-V,2013,2,233
+tenant-016,Mercedes-Benz,Sprinter,2022,4,20
+tenant-047,Peterbilt,579,2014,5,138
+tenant-014,Toyota,Tacoma,2012,1,8
+tenant-046,Isuzu,NPR,2010,5,231
+tenant-016,Mercedes-Benz,Sprinter,2024,2,23
+tenant-044,Kenworth,T680,2024,5,466
+tenant-041,Honda,CR-V,2023,4,164
+tenant-043,Ford,Mustang,2021,1,363
+tenant-009,Chevrolet,Silverado,2014,3,311
+tenant-009,Aston Martin,Vantage,2015,2,256
+tenant-001,Ford,Mustang,2026,4,232
+tenant-049,Peterbilt,579,2018,4,74
+tenant-019,Peterbilt,579,2017,4,467
+tenant-032,Ford,F-150,2023,2,291
+tenant-027,Mercedes-Benz,Sprinter,2024,3,261
+tenant-015,Aston Martin,Vantage,2025,3,272
+tenant-033,Aston Martin,DB6,2022,4,352
+tenant-003,Ford,F-150,2018,2,393
+tenant-017,Chevrolet,Silverado,2018,3,108
+tenant-001,Freightliner,Cascadia,2012,2,438
+tenant-033,Honda,CR-V,2025,1,350
+tenant-017,Kenworth,T680,2024,1,155
+tenant-024,Mercedes-Benz,Sprinter,2014,1,136
+tenant-018,Toyota,Camry,2022,3,77
+tenant-013,Honda,CR-V,2016,4,254
+tenant-019,Honda,CR-V,2022,3,48
+tenant-039,Mercedes-Benz,Sprinter,2011,5,213
+tenant-015,Toyota,Camry,2017,3,499
+tenant-047,Toyota,Camry,2017,2,260
+tenant-039,Toyota,Tacoma,2015,2,213
+tenant-006,Peterbilt,579,2020,5,295
+tenant-016,Toyota,Tacoma,2025,1,79
+tenant-047,Porsche,911,2023,1,325
+tenant-020,Aston Martin,Vantage,2019,2,69
+tenant-011,Porsche,911,2013,4,459
+tenant-010,Toyota,Camry,2019,2,299
+tenant-049,Freightliner,Cascadia,2017,1,88
+tenant-018,Aston Martin,DB6,2013,1,464
+tenant-043,Peterbilt,579,2012,1,374
+tenant-027,Porsche,911,2018,4,8
+tenant-020,Toyota,Tacoma,2014,3,377
+tenant-022,Ford,Mustang,2026,1,274
+tenant-014,Kenworth,T680,2012,2,474
+tenant-007,Toyota,Camry,2019,3,496
+tenant-028,Kenworth,T680,2019,1,129
+tenant-049,Freightliner,Cascadia,2025,2,130
+tenant-007,Isuzu,NPR,2022,3,330
+tenant-008,Isuzu,NPR,2010,1,324
+tenant-047,Chevrolet,Silverado,2026,1,298
+tenant-046,Chevrolet,Silverado,2018,2,391
+tenant-047,Ford,F-150,2021,3,96
+tenant-014,Peterbilt,579,2019,2,41
+tenant-047,Isuzu,NPR,2019,5,240
+tenant-047,Ford,Mustang,2023,2,17
+tenant-035,Kenworth,T680,2019,4,44
+tenant-009,Porsche,911,2010,4,189
+tenant-025,Chevrolet,Silverado,2019,5,219
+tenant-040,Ford,Mustang,2016,5,449
+tenant-038,Aston Martin,DB6,2012,3,402
+tenant-047,Peterbilt,579,2016,4,311
+tenant-049,Honda,CR-V,2010,5,237
+tenant-022,Freightliner,Cascadia,2014,4,156
+tenant-014,Ford,Mustang,2017,1,254
+tenant-013,Mercedes-Benz,Sprinter,2020,3,425
+tenant-021,Honda,CR-V,2026,3,55
+tenant-013,Volvo,VNL,2012,3,375
+tenant-009,Aston Martin,DB6,2016,4,211
+tenant-010,Kenworth,T680,2012,3,270
+tenant-005,Chevrolet,Silverado,2021,3,301
+tenant-008,Ford,Mustang,2011,5,426
+tenant-031,Chevrolet,Silverado,2012,1,60
+tenant-023,Kenworth,T680,2018,1,419
+tenant-039,Kenworth,T680,2010,2,74
+tenant-036,Ford,Mustang,2014,1,244
+tenant-031,Chevrolet,Silverado,2013,3,267
+tenant-019,Porsche,911,2024,1,53
+tenant-036,Chevrolet,Silverado,2019,2,290
+tenant-046,Volvo,VNL,2016,5,40
+tenant-034,Toyota,Tacoma,2022,5,27
+tenant-018,Toyota,Camry,2021,4,425
+tenant-003,Toyota,Tacoma,2013,4,399
+tenant-036,Volvo,VNL,2018,3,403
+tenant-007,Porsche,911,2016,4,189
+tenant-021,Ford,Mustang,2023,2,46
+tenant-020,Toyota,Tacoma,2022,2,394
+tenant-021,Ford,Mustang,2018,5,252
+tenant-014,Isuzu,NPR,2026,1,97
+tenant-045,Aston Martin,DB6,2014,4,384
+tenant-020,Toyota,Tacoma,2010,5,460
+tenant-008,Chevrolet,Silverado,2011,3,373
+tenant-039,Ford,F-150,2026,1,36
+tenant-032,Ford,F-150,2011,4,104
+tenant-026,Chevrolet,Silverado,2013,4,140
+tenant-013,Toyota,Tacoma,2014,4,290
+tenant-021,Chevrolet,Silverado,2022,4,289
+tenant-023,Volvo,VNL,2019,5,306
+tenant-028,Mercedes-Benz,Sprinter,2025,4,335
+tenant-032,Toyota,Tacoma,2022,2,166
+tenant-014,Peterbilt,579,2016,5,70
+tenant-011,Kenworth,T680,2020,1,156
+tenant-022,Freightliner,Cascadia,2017,4,408
+tenant-011,Ford,Mustang,2020,5,9
+tenant-013,Porsche,911,2011,2,390
+tenant-027,Mercedes-Benz,Sprinter,2023,3,441
+tenant-034,Peterbilt,579,2026,3,218
+tenant-022,Porsche,911,2022,1,144
+tenant-020,Aston Martin,DB6,2019,4,485
+tenant-021,Aston Martin,DB6,2017,4,447
+tenant-050,Volvo,VNL,2012,4,227
+tenant-008,Aston Martin,Vantage,2024,2,19
+tenant-039,Toyota,Camry,2015,4,111
+tenant-021,Honda,CR-V,2016,1,212
+tenant-043,Porsche,911,2010,2,493
+tenant-033,Ford,F-150,2025,3,61
+tenant-035,Porsche,911,2014,3,63
+tenant-011,Porsche,911,2020,2,469
+tenant-042,Toyota,Camry,2026,4,108
+tenant-031,Isuzu,NPR,2019,1,191
+tenant-026,Aston Martin,DB6,2010,1,427
+tenant-035,Chevrolet,Silverado,2015,1,319
+tenant-025,Aston Martin,DB6,2025,1,69
+tenant-008,Peterbilt,579,2018,5,101
+tenant-027,Toyota,Camry,2022,2,208
+tenant-019,Aston Martin,Vantage,2019,1,105
+tenant-030,Isuzu,NPR,2017,3,401
+tenant-005,Ford,Mustang,2019,3,398
+tenant-047,Aston Martin,Vantage,2019,5,85
+tenant-048,Mercedes-Benz,Sprinter,2011,1,491
+tenant-001,Ford,F-150,2025,2,203
+tenant-033,Mercedes-Benz,Sprinter,2010,4,149
+tenant-013,Aston Martin,DB6,2024,2,280
+tenant-020,Peterbilt,579,2012,5,247
+tenant-025,Toyota,Camry,2015,3,368
+tenant-009,Ford,Mustang,2020,5,280
+tenant-025,Ford,F-150,2021,1,95
+tenant-023,Peterbilt,579,2017,2,325
+tenant-038,Honda,CR-V,2021,2,163
+tenant-009,Ford,F-150,2010,1,255
+tenant-020,Volvo,VNL,2011,3,333
+tenant-050,Ford,Mustang,2025,4,166
+tenant-019,Freightliner,Cascadia,2015,1,147
+tenant-035,Isuzu,NPR,2019,4,110
+tenant-020,Porsche,911,2021,3,250
+tenant-009,Ford,Mustang,2011,1,423
+tenant-043,Aston Martin,DB6,2022,4,68
+tenant-032,Chevrolet,Silverado,2022,1,316
+tenant-037,Aston Martin,DB6,2015,2,34
+tenant-047,Toyota,Tacoma,2021,5,192
+tenant-022,Mercedes-Benz,Sprinter,2010,5,253
+tenant-037,Chevrolet,Silverado,2010,1,462
+tenant-043,Volvo,VNL,2026,5,219
+tenant-020,Ford,F-150,2022,3,188
+tenant-024,Aston Martin,DB6,2015,5,10
+tenant-024,Mercedes-Benz,Sprinter,2023,5,466
+tenant-036,Peterbilt,579,2021,1,293
+tenant-010,Chevrolet,Silverado,2020,2,480
+tenant-034,Mercedes-Benz,Sprinter,2010,4,98
+tenant-041,Chevrolet,Silverado,2022,5,154
+tenant-031,Toyota,Tacoma,2020,5,79
+tenant-022,Ford,F-150,2022,3,139
+tenant-006,Freightliner,Cascadia,2021,3,489
+tenant-003,Toyota,Camry,2017,4,333
+tenant-008,Peterbilt,579,2016,4,406
+tenant-004,Ford,F-150,2022,4,417
+tenant-041,Honda,CR-V,2010,3,83
+tenant-023,Peterbilt,579,2026,4,338
+tenant-011,Ford,Mustang,2020,5,197
+tenant-039,Toyota,Camry,2023,2,201
+tenant-039,Toyota,Tacoma,2024,1,328
+tenant-045,Aston Martin,Vantage,2010,4,147
+tenant-019,Chevrolet,Silverado,2020,4,20
+tenant-048,Porsche,911,2020,4,390
+tenant-029,Isuzu,NPR,2013,2,37
+tenant-031,Peterbilt,579,2014,2,434
+tenant-033,Aston Martin,DB6,2010,2,391
+tenant-045,Toyota,Camry,2025,2,218
+tenant-042,Freightliner,Cascadia,2013,5,460
+tenant-046,Toyota,Camry,2021,2,46
+tenant-011,Volvo,VNL,2023,3,71
+tenant-032,Kenworth,T680,2012,3,368
+tenant-011,Freightliner,Cascadia,2022,1,345
+tenant-022,Ford,Mustang,2024,3,400
+tenant-024,Aston Martin,Vantage,2017,2,383
+tenant-036,Toyota,Tacoma,2011,3,491
+tenant-041,Aston Martin,DB6,2022,4,335
+tenant-046,Peterbilt,579,2024,2,161
+tenant-023,Chevrolet,Silverado,2011,1,170
+tenant-022,Mercedes-Benz,Sprinter,2019,5,57
+tenant-023,Chevrolet,Silverado,2026,4,320
+tenant-012,Peterbilt,579,2010,1,46
+tenant-003,Aston Martin,DB6,2019,4,436
+tenant-042,Ford,Mustang,2019,1,235
+tenant-014,Volvo,VNL,2025,3,440
+tenant-005,Toyota,Tacoma,2025,1,444
+tenant-026,Peterbilt,579,2010,4,491
+tenant-035,Aston Martin,DB6,2023,3,185
+tenant-002,Mercedes-Benz,Sprinter,2024,2,427
+tenant-034,Aston Martin,DB6,2025,1,233
+tenant-042,Freightliner,Cascadia,2019,1,357
+tenant-009,Isuzu,NPR,2024,2,256
+tenant-031,Ford,Mustang,2016,2,95
+tenant-049,Ford,F-150,2014,3,268
+tenant-038,Toyota,Tacoma,2010,5,242
+tenant-031,Aston Martin,DB6,2011,5,426
+tenant-027,Kenworth,T680,2014,1,455
+tenant-024,Chevrolet,Silverado,2011,2,281
+tenant-019,Peterbilt,579,2019,5,392
+tenant-034,Chevrolet,Silverado,2022,5,249
+tenant-042,Mercedes-Benz,Sprinter,2020,5,404
+tenant-009,Volvo,VNL,2018,1,334
+tenant-027,Aston Martin,Vantage,2010,4,241
+tenant-050,Volvo,VNL,2010,3,437
+tenant-045,Peterbilt,579,2017,4,40
+tenant-037,Volvo,VNL,2026,5,301
+tenant-012,Aston Martin,Vantage,2022,2,187
+tenant-007,Ford,Mustang,2020,1,443
+tenant-033,Ford,F-150,2021,4,68
+tenant-009,Aston Martin,Vantage,2018,3,423
+tenant-038,Isuzu,NPR,2012,4,403
+tenant-035,Kenworth,T680,2025,2,133
+tenant-036,Porsche,911,2010,3,175
+tenant-033,Kenworth,T680,2026,2,366
+tenant-028,Chevrolet,Silverado,2010,2,460
+tenant-041,Toyota,Tacoma,2013,2,445
+tenant-016,Chevrolet,Silverado,2010,3,403
+tenant-020,Chevrolet,Silverado,2015,5,113
+tenant-008,Volvo,VNL,2021,1,280
+tenant-047,Chevrolet,Silverado,2013,3,55
+tenant-022,Volvo,VNL,2010,3,395
+tenant-032,Aston Martin,DB6,2019,4,433
+tenant-027,Aston Martin,DB6,2026,3,440
+tenant-020,Chevrolet,Silverado,2012,5,118
+tenant-016,Honda,CR-V,2012,3,350
+tenant-016,Aston Martin,Vantage,2013,2,44
+tenant-045,Ford,Mustang,2013,1,252
+tenant-041,Chevrolet,Silverado,2013,4,341
+tenant-042,Ford,F-150,2026,2,116
+tenant-025,Honda,CR-V,2023,1,156
+tenant-034,Ford,Mustang,2015,4,109
+tenant-027,Honda,CR-V,2014,2,148
+tenant-015,Toyota,Camry,2022,1,263
+tenant-007,Aston Martin,DB6,2026,5,217
+tenant-026,Ford,F-150,2015,2,293
+tenant-020,Isuzu,NPR,2015,3,193
+tenant-017,Volvo,VNL,2016,4,375
+tenant-022,Aston Martin,DB6,2020,1,403
+tenant-044,Volvo,VNL,2010,1,27
+tenant-021,Ford,F-150,2025,5,315
+tenant-030,Ford,F-150,2012,3,500
+tenant-015,Aston Martin,DB6,2020,5,229
+tenant-040,Volvo,VNL,2017,2,411
+tenant-001,Ford,F-150,2023,3,306
+tenant-045,Peterbilt,579,2011,3,467
+tenant-007,Aston Martin,Vantage,2021,1,180
+tenant-042,Aston Martin,DB6,2013,2,407
+tenant-024,Honda,CR-V,2014,5,45
+tenant-009,Ford,F-150,2017,4,370
+tenant-002,Toyota,Tacoma,2025,1,258
+tenant-010,Kenworth,T680,2010,2,134
+tenant-046,Aston Martin,Vantage,2020,1,230
+tenant-011,Ford,F-150,2025,3,338
+tenant-044,Aston Martin,DB6,2012,5,104
+tenant-012,Peterbilt,579,2021,5,181
+tenant-025,Peterbilt,579,2023,5,432
+tenant-007,Honda,CR-V,2013,1,125
+tenant-047,Ford,F-150,2018,2,158
+tenant-045,Volvo,VNL,2014,2,399
+tenant-031,Freightliner,Cascadia,2015,3,462
+tenant-007,Aston Martin,DB6,2024,2,225
+tenant-013,Chevrolet,Silverado,2015,1,285
+tenant-046,Porsche,911,2021,5,9
+tenant-019,Ford,F-150,2015,1,258
+tenant-030,Chevrolet,Silverado,2021,2,498
+tenant-047,Isuzu,NPR,2018,4,475
+tenant-047,Ford,Mustang,2024,5,217
+tenant-042,Isuzu,NPR,2026,3,251
+tenant-024,Toyota,Camry,2014,2,168
+tenant-007,Mercedes-Benz,Sprinter,2026,3,48
+tenant-037,Kenworth,T680,2024,1,492
+tenant-013,Ford,Mustang,2021,3,233
+tenant-012,Toyota,Camry,2016,5,235
+tenant-030,Mercedes-Benz,Sprinter,2015,2,365
+tenant-015,Aston Martin,Vantage,2017,5,328
+tenant-046,Aston Martin,Vantage,2014,1,174
+tenant-016,Volvo,VNL,2021,1,2
+tenant-035,Porsche,911,2026,2,17
+tenant-044,Toyota,Camry,2021,4,167
+tenant-047,Aston Martin,Vantage,2020,1,59
+tenant-050,Mercedes-Benz,Sprinter,2026,5,255
+tenant-047,Toyota,Camry,2014,5,113
+tenant-006,Aston Martin,Vantage,2011,4,346
+tenant-041,Volvo,VNL,2022,2,309
+tenant-002,Ford,Mustang,2011,3,48
+tenant-025,Honda,CR-V,2011,2,286
+tenant-012,Peterbilt,579,2014,2,156
+tenant-040,Freightliner,Cascadia,2023,5,386
+tenant-041,Porsche,911,2016,5,254
+tenant-039,Ford,F-150,2016,5,320
+tenant-048,Freightliner,Cascadia,2020,3,396
+tenant-014,Volvo,VNL,2010,3,126
+tenant-019,Aston Martin,Vantage,2020,2,495
+tenant-036,Mercedes-Benz,Sprinter,2013,1,191
+tenant-013,Mercedes-Benz,Sprinter,2015,1,162
+tenant-015,Aston Martin,Vantage,2016,1,232
+tenant-011,Aston Martin,Vantage,2022,4,41
+tenant-032,Chevrolet,Silverado,2020,1,437
+tenant-033,Ford,Mustang,2018,1,155
+tenant-031,Chevrolet,Silverado,2022,5,249
+tenant-021,Toyota,Camry,2013,1,80
+tenant-040,Isuzu,NPR,2022,5,301
+tenant-050,Toyota,Tacoma,2019,2,18
+tenant-048,Freightliner,Cascadia,2024,4,336
+tenant-029,Mercedes-Benz,Sprinter,2013,3,437
+tenant-048,Chevrolet,Silverado,2013,5,382
+tenant-014,Mercedes-Benz,Sprinter,2018,3,396
+tenant-034,Chevrolet,Silverado,2017,3,332
+tenant-040,Volvo,VNL,2017,2,434
+tenant-043,Ford,Mustang,2015,3,275
+tenant-039,Porsche,911,2025,1,14
+tenant-043,Honda,CR-V,2025,3,102
+tenant-006,Ford,F-150,2019,5,24
+tenant-014,Toyota,Tacoma,2011,5,223
+tenant-027,Ford,F-150,2018,5,387
+tenant-017,Honda,CR-V,2013,5,340
+tenant-016,Porsche,911,2017,1,84
+tenant-049,Toyota,Camry,2022,3,302
+tenant-045,Volvo,VNL,2016,3,436
+tenant-036,Ford,F-150,2024,3,377
+tenant-031,Chevrolet,Silverado,2017,5,322
+tenant-024,Peterbilt,579,2020,4,249
+tenant-032,Aston Martin,DB6,2015,1,252
+tenant-011,Aston Martin,Vantage,2020,4,290
+tenant-050,Mercedes-Benz,Sprinter,2016,4,101
+tenant-005,Ford,F-150,2022,2,489
+tenant-006,Aston Martin,Vantage,2014,1,404
+tenant-018,Toyota,Camry,2013,3,255
+tenant-019,Isuzu,NPR,2020,1,364
+tenant-027,Ford,F-150,2019,4,314
+tenant-026,Aston Martin,DB6,2024,4,316
+tenant-021,Peterbilt,579,2026,5,236
+tenant-030,Mercedes-Benz,Sprinter,2024,2,476
+tenant-017,Aston Martin,DB6,2018,2,372
+tenant-015,Aston Martin,DB6,2012,5,122
+tenant-036,Kenworth,T680,2017,4,386
+tenant-032,Aston Martin,Vantage,2012,3,334
+tenant-030,Peterbilt,579,2022,4,46
+tenant-037,Kenworth,T680,2023,3,491
+tenant-012,Mercedes-Benz,Sprinter,2019,5,471
+tenant-003,Aston Martin,DB6,2017,3,250
+tenant-030,Mercedes-Benz,Sprinter,2024,4,364
+tenant-020,Ford,F-150,2025,4,246
+tenant-018,Toyota,Tacoma,2026,5,154
+tenant-001,Porsche,911,2013,5,128
+tenant-030,Toyota,Camry,2014,2,226
+tenant-038,Toyota,Tacoma,2020,1,316
+tenant-027,Isuzu,NPR,2018,3,211
+tenant-048,Ford,F-150,2021,1,191
+tenant-032,Volvo,VNL,2011,5,441
+tenant-030,Toyota,Camry,2024,2,277
+tenant-005,Freightliner,Cascadia,2011,5,354
+tenant-023,Kenworth,T680,2020,1,216
+tenant-030,Mercedes-Benz,Sprinter,2019,2,63
+tenant-011,Toyota,Camry,2022,4,236
+tenant-036,Aston Martin,Vantage,2025,3,258
+tenant-003,Honda,CR-V,2018,5,166
+tenant-042,Isuzu,NPR,2021,5,359
+tenant-049,Aston Martin,Vantage,2019,3,8
+tenant-022,Freightliner,Cascadia,2021,2,167
+tenant-046,Freightliner,Cascadia,2021,2,320
+tenant-028,Ford,F-150,2026,4,235
+tenant-039,Honda,CR-V,2020,5,7
+tenant-034,Mercedes-Benz,Sprinter,2024,5,494
+tenant-031,Porsche,911,2023,4,97
+tenant-050,Ford,F-150,2018,2,201
+tenant-003,Ford,F-150,2018,5,316
+tenant-041,Honda,CR-V,2016,2,2
+tenant-019,Kenworth,T680,2021,5,109
+tenant-038,Isuzu,NPR,2022,3,385
+tenant-038,Kenworth,T680,2011,2,391
+tenant-046,Porsche,911,2013,3,149
+tenant-025,Ford,Mustang,2018,4,318
+tenant-005,Toyota,Tacoma,2025,3,427
+tenant-027,Toyota,Camry,2011,2,1
+tenant-021,Volvo,VNL,2012,3,471
+tenant-019,Volvo,VNL,2014,5,64
+tenant-041,Volvo,VNL,2016,4,434
+tenant-010,Chevrolet,Silverado,2017,5,277
+tenant-019,Ford,F-150,2022,1,122
+tenant-025,Ford,Mustang,2025,4,122
+tenant-029,Peterbilt,579,2019,1,214
+tenant-011,Honda,CR-V,2023,1,77
+tenant-019,Freightliner,Cascadia,2019,5,311
+tenant-049,Porsche,911,2026,4,341
+tenant-039,Aston Martin,Vantage,2011,1,473
+tenant-009,Peterbilt,579,2022,3,192
+tenant-002,Freightliner,Cascadia,2022,2,68
+tenant-003,Chevrolet,Silverado,2013,4,289
+tenant-042,Freightliner,Cascadia,2016,4,491
+tenant-050,Volvo,VNL,2015,3,184
+tenant-014,Aston Martin,Vantage,2022,2,260
+tenant-009,Porsche,911,2021,1,500
+tenant-030,Aston Martin,Vantage,2018,1,117
+tenant-038,Chevrolet,Silverado,2017,2,190
+tenant-037,Aston Martin,DB6,2018,2,349
+tenant-010,Honda,CR-V,2017,5,127
+tenant-030,Freightliner,Cascadia,2024,4,448
+tenant-039,Mercedes-Benz,Sprinter,2014,1,488
+tenant-019,Ford,F-150,2013,4,274
+tenant-007,Mercedes-Benz,Sprinter,2015,4,370
+tenant-041,Chevrolet,Silverado,2025,2,388
+tenant-021,Ford,F-150,2015,5,235
+tenant-045,Isuzu,NPR,2016,5,327
+tenant-016,Chevrolet,Silverado,2024,5,91
+tenant-042,Peterbilt,579,2026,3,153
+tenant-033,Toyota,Tacoma,2023,2,406
+tenant-025,Aston Martin,Vantage,2024,4,148
+tenant-039,Porsche,911,2015,5,371
+tenant-045,Isuzu,NPR,2023,1,73
+tenant-016,Freightliner,Cascadia,2019,1,122
+tenant-004,Mercedes-Benz,Sprinter,2020,4,211
+tenant-029,Ford,F-150,2018,1,268
+tenant-020,Honda,CR-V,2017,2,457
+tenant-026,Freightliner,Cascadia,2020,4,396
+tenant-024,Mercedes-Benz,Sprinter,2020,2,43
+tenant-048,Aston Martin,Vantage,2022,4,97
+tenant-011,Aston Martin,Vantage,2025,2,469
+tenant-033,Freightliner,Cascadia,2026,4,318
+tenant-049,Aston Martin,DB6,2018,1,254
+tenant-001,Honda,CR-V,2023,5,240
+tenant-043,Honda,CR-V,2021,2,126
+tenant-030,Freightliner,Cascadia,2019,5,272
+tenant-034,Toyota,Tacoma,2023,2,47
+tenant-025,Aston Martin,Vantage,2026,3,314
+tenant-038,Kenworth,T680,2016,3,232
+tenant-021,Chevrolet,Silverado,2017,4,388
+tenant-026,Peterbilt,579,2025,2,450
+tenant-025,Toyota,Tacoma,2020,5,133
+tenant-006,Aston Martin,DB6,2026,4,111
+tenant-010,Toyota,Tacoma,2013,1,476
+tenant-026,Toyota,Tacoma,2022,2,96
+tenant-041,Mercedes-Benz,Sprinter,2019,5,429
+tenant-027,Aston Martin,DB6,2017,1,89
+tenant-008,Toyota,Camry,2012,4,282
+tenant-017,Peterbilt,579,2021,5,365
+tenant-043,Kenworth,T680,2025,4,492
+tenant-034,Peterbilt,579,2022,2,48
+tenant-048,Volvo,VNL,2020,1,110
+tenant-024,Kenworth,T680,2026,4,495
+tenant-046,Aston Martin,Vantage,2019,4,85
+tenant-005,Porsche,911,2010,1,145
+tenant-028,Volvo,VNL,2015,5,475
+tenant-008,Mercedes-Benz,Sprinter,2019,1,220
+tenant-027,Chevrolet,Silverado,2015,5,108
+tenant-034,Toyota,Camry,2012,1,105
+tenant-032,Freightliner,Cascadia,2013,2,173
+tenant-014,Peterbilt,579,2024,4,5
+tenant-049,Peterbilt,579,2010,3,256
+tenant-041,Aston Martin,DB6,2023,1,269
+tenant-012,Aston Martin,DB6,2017,5,265
+tenant-017,Ford,F-150,2020,2,336
+tenant-008,Freightliner,Cascadia,2026,2,204
+tenant-047,Aston Martin,DB6,2025,5,224
+tenant-019,Kenworth,T680,2015,3,267
+tenant-050,Freightliner,Cascadia,2012,5,274
+tenant-050,Kenworth,T680,2018,2,421
+tenant-031,Ford,Mustang,2013,5,197
+tenant-045,Mercedes-Benz,Sprinter,2022,2,181
+tenant-017,Ford,F-150,2011,3,3
+tenant-010,Isuzu,NPR,2024,2,140
+tenant-017,Mercedes-Benz,Sprinter,2010,1,115
+tenant-022,Honda,CR-V,2023,5,203
+tenant-022,Toyota,Tacoma,2025,5,97
+tenant-021,Freightliner,Cascadia,2020,3,485
+tenant-014,Honda,CR-V,2020,1,406
+tenant-027,Honda,CR-V,2020,1,279
+tenant-032,Toyota,Camry,2023,2,180
+tenant-026,Chevrolet,Silverado,2024,5,434
+tenant-038,Aston Martin,DB6,2012,2,61
+tenant-028,Ford,F-150,2015,2,459
+tenant-005,Volvo,VNL,2011,2,167
+tenant-026,Ford,Mustang,2024,5,291
+tenant-015,Chevrolet,Silverado,2014,5,170
+tenant-032,Volvo,VNL,2026,3,442
+tenant-014,Aston Martin,DB6,2022,1,152
+tenant-040,Honda,CR-V,2015,3,311
+tenant-036,Toyota,Tacoma,2018,5,430
+tenant-018,Freightliner,Cascadia,2021,1,411
+tenant-009,Aston Martin,Vantage,2014,5,149
+tenant-034,Honda,CR-V,2013,3,238
+tenant-015,Aston Martin,Vantage,2021,3,246
+tenant-050,Toyota,Tacoma,2010,4,323
+tenant-023,Toyota,Tacoma,2017,3,165
+tenant-050,Honda,CR-V,2012,5,175
+tenant-042,Volvo,VNL,2013,5,194
+tenant-032,Toyota,Camry,2012,5,204
+tenant-032,Freightliner,Cascadia,2011,3,153
+tenant-048,Ford,F-150,2016,4,356
+tenant-008,Ford,F-150,2020,2,140
+tenant-012,Honda,CR-V,2015,5,96
+tenant-024,Kenworth,T680,2025,2,203
+tenant-050,Aston Martin,Vantage,2019,3,473
+tenant-037,Honda,CR-V,2022,4,50
+tenant-048,Porsche,911,2022,2,19
+tenant-017,Freightliner,Cascadia,2018,2,336
+tenant-035,Volvo,VNL,2018,2,459
+tenant-006,Mercedes-Benz,Sprinter,2016,1,36
+tenant-025,Freightliner,Cascadia,2020,5,189
+tenant-016,Ford,F-150,2014,3,428
+tenant-041,Peterbilt,579,2021,4,66
+tenant-048,Ford,Mustang,2012,5,182
+tenant-043,Toyota,Camry,2024,1,258
+tenant-010,Chevrolet,Silverado,2011,4,287
+tenant-021,Isuzu,NPR,2013,1,267
+tenant-031,Aston Martin,Vantage,2010,3,499
+tenant-046,Chevrolet,Silverado,2024,3,56
+tenant-049,Freightliner,Cascadia,2013,4,28
+tenant-043,Mercedes-Benz,Sprinter,2018,3,116
+tenant-001,Ford,F-150,2013,5,32
+tenant-042,Ford,F-150,2020,2,304
+tenant-043,Aston Martin,DB6,2026,5,313
+tenant-018,Chevrolet,Silverado,2013,4,50
+tenant-024,Chevrolet,Silverado,2015,1,250
+tenant-015,Ford,F-150,2010,3,196
+tenant-026,Volvo,VNL,2012,3,171
+tenant-007,Ford,Mustang,2017,5,419
+tenant-050,Toyota,Tacoma,2018,4,59
+tenant-026,Toyota,Tacoma,2019,3,328
+tenant-007,Ford,F-150,2020,2,34
+tenant-002,Toyota,Tacoma,2011,2,318
+tenant-020,Aston Martin,Vantage,2017,1,365
+tenant-028,Kenworth,T680,2014,4,19
+tenant-019,Kenworth,T680,2017,3,491
+tenant-013,Aston Martin,Vantage,2014,5,329
+tenant-031,Ford,Mustang,2015,4,34
+tenant-012,Ford,F-150,2020,5,306
+tenant-013,Ford,F-150,2013,3,70
+tenant-036,Mercedes-Benz,Sprinter,2018,4,394
+tenant-022,Toyota,Camry,2025,4,277
+tenant-031,Toyota,Tacoma,2019,4,352
+tenant-009,Toyota,Tacoma,2026,3,206
+tenant-004,Aston Martin,Vantage,2016,3,321
+tenant-036,Freightliner,Cascadia,2025,2,15
+tenant-048,Peterbilt,579,2017,5,59
+tenant-020,Peterbilt,579,2015,5,244
+tenant-026,Kenworth,T680,2017,5,74
+tenant-004,Freightliner,Cascadia,2014,2,327
+tenant-024,Kenworth,T680,2012,3,137
+tenant-028,Aston Martin,Vantage,2017,1,376
+tenant-048,Aston Martin,Vantage,2021,2,205
+tenant-017,Toyota,Tacoma,2024,3,74
+tenant-011,Porsche,911,2011,3,392
+tenant-047,Ford,Mustang,2024,4,414
+tenant-028,Kenworth,T680,2015,3,284
+tenant-007,Kenworth,T680,2014,5,281
+tenant-038,Ford,F-150,2026,5,390
+tenant-022,Volvo,VNL,2021,5,97
+tenant-040,Freightliner,Cascadia,2025,1,53
+tenant-021,Kenworth,T680,2010,3,500
+tenant-043,Porsche,911,2010,2,366
+tenant-019,Isuzu,NPR,2012,5,157
+tenant-007,Volvo,VNL,2021,2,426
+tenant-044,Toyota,Camry,2017,1,333
+tenant-034,Honda,CR-V,2013,4,7
+tenant-037,Ford,F-150,2026,3,239
+tenant-014,Ford,F-150,2011,1,402
+tenant-014,Porsche,911,2020,5,163
+tenant-015,Porsche,911,2013,1,47
+tenant-001,Toyota,Tacoma,2024,3,271
+tenant-023,Peterbilt,579,2021,5,346
+tenant-020,Chevrolet,Silverado,2024,3,452
+tenant-016,Volvo,VNL,2017,5,191
+tenant-023,Freightliner,Cascadia,2025,1,327
+tenant-014,Isuzu,NPR,2012,3,135
+tenant-025,Ford,Mustang,2019,2,397
+tenant-035,Ford,F-150,2013,2,362
+tenant-018,Chevrolet,Silverado,2018,2,428
+tenant-048,Mercedes-Benz,Sprinter,2020,1,220
+tenant-038,Isuzu,NPR,2020,4,219
+tenant-034,Porsche,911,2024,5,300
+tenant-036,Toyota,Camry,2026,1,207
+tenant-048,Ford,Mustang,2021,4,198
+tenant-030,Ford,F-150,2025,5,64
+tenant-012,Aston Martin,Vantage,2013,4,12
+tenant-042,Kenworth,T680,2022,5,488
+tenant-003,Peterbilt,579,2011,4,387
+tenant-010,Ford,F-150,2025,1,245
+tenant-036,Isuzu,NPR,2012,3,99
+tenant-030,Mercedes-Benz,Sprinter,2025,1,78
+tenant-001,Isuzu,NPR,2015,4,136
+tenant-045,Honda,CR-V,2025,2,276
+tenant-010,Ford,F-150,2016,1,388
+tenant-004,Ford,Mustang,2026,5,383
+tenant-038,Volvo,VNL,2016,1,102
+tenant-027,Toyota,Tacoma,2023,1,123
+tenant-033,Toyota,Camry,2024,2,245
+tenant-025,Toyota,Camry,2012,3,269
+tenant-019,Honda,CR-V,2026,5,73
+tenant-011,Porsche,911,2012,5,175
+tenant-035,Aston Martin,Vantage,2026,3,484
+tenant-006,Mercedes-Benz,Sprinter,2018,2,320
+tenant-027,Mercedes-Benz,Sprinter,2024,5,205
+tenant-017,Kenworth,T680,2016,5,399
+tenant-033,Chevrolet,Silverado,2021,1,421
+tenant-001,Kenworth,T680,2016,4,366
+tenant-009,Aston Martin,Vantage,2020,3,286
+tenant-049,Aston Martin,DB6,2016,4,222
+tenant-039,Toyota,Tacoma,2023,3,235
+tenant-012,Peterbilt,579,2017,1,293
+tenant-041,Honda,CR-V,2010,5,276
+tenant-028,Volvo,VNL,2025,4,465
+tenant-008,Peterbilt,579,2020,3,339
+tenant-043,Chevrolet,Silverado,2015,1,225
+tenant-025,Mercedes-Benz,Sprinter,2014,4,29
+tenant-002,Honda,CR-V,2012,5,486
+tenant-028,Toyota,Tacoma,2021,3,171
+tenant-041,Kenworth,T680,2026,2,406
+tenant-012,Toyota,Camry,2016,2,246
+tenant-040,Porsche,911,2021,4,324
+tenant-032,Peterbilt,579,2026,5,341
+tenant-029,Peterbilt,579,2011,2,474
+tenant-041,Mercedes-Benz,Sprinter,2016,1,250
+tenant-036,Aston Martin,Vantage,2014,2,73
+tenant-018,Porsche,911,2014,5,54
+tenant-045,Aston Martin,DB6,2010,3,357
+tenant-009,Toyota,Camry,2018,5,313
+tenant-020,Kenworth,T680,2015,2,388
+tenant-024,Toyota,Tacoma,2024,3,320
+tenant-038,Mercedes-Benz,Sprinter,2020,3,127
+tenant-003,Chevrolet,Silverado,2024,1,346
+tenant-033,Ford,F-150,2011,4,3
+tenant-029,Mercedes-Benz,Sprinter,2020,3,113
+tenant-010,Isuzu,NPR,2015,5,321
+tenant-033,Aston Martin,Vantage,2024,3,424
+tenant-023,Aston Martin,Vantage,2017,1,198
+tenant-022,Aston Martin,Vantage,2021,1,187
+tenant-026,Mercedes-Benz,Sprinter,2025,2,80
+tenant-013,Freightliner,Cascadia,2015,3,166
+tenant-039,Aston Martin,DB6,2019,4,228
+tenant-024,Ford,F-150,2016,2,288
+tenant-008,Freightliner,Cascadia,2022,5,368
+tenant-033,Aston Martin,DB6,2026,3,223
+tenant-040,Peterbilt,579,2012,5,330
+tenant-018,Freightliner,Cascadia,2016,4,97
+tenant-035,Toyota,Camry,2021,2,394
+tenant-004,Freightliner,Cascadia,2025,2,246
+tenant-048,Aston Martin,Vantage,2023,1,163
+tenant-027,Aston Martin,Vantage,2018,4,130
+tenant-030,Chevrolet,Silverado,2020,3,309
+tenant-011,Toyota,Camry,2011,3,317
+tenant-031,Mercedes-Benz,Sprinter,2025,3,391
+tenant-050,Chevrolet,Silverado,2015,2,420
+tenant-001,Honda,CR-V,2016,5,49
+tenant-038,Isuzu,NPR,2010,5,192
+tenant-045,Kenworth,T680,2023,1,198
+tenant-037,Volvo,VNL,2019,4,436
+tenant-031,Porsche,911,2025,4,481
+tenant-027,Ford,Mustang,2025,1,59
+tenant-039,Mercedes-Benz,Sprinter,2016,1,36
+tenant-004,Porsche,911,2025,2,53
+tenant-030,Volvo,VNL,2023,4,328
+tenant-021,Toyota,Camry,2018,5,96
+tenant-042,Honda,CR-V,2014,2,322
+tenant-005,Ford,F-150,2014,1,254
+tenant-034,Honda,CR-V,2022,2,146
+tenant-045,Mercedes-Benz,Sprinter,2022,2,229
+tenant-048,Peterbilt,579,2017,5,9
+tenant-025,Aston Martin,DB6,2026,5,45
+tenant-007,Honda,CR-V,2022,1,269
+tenant-041,Chevrolet,Silverado,2014,5,308
+tenant-016,Chevrolet,Silverado,2018,2,47
+tenant-014,Volvo,VNL,2014,2,360
+tenant-004,Peterbilt,579,2015,1,99
+tenant-002,Ford,Mustang,2023,4,411
+tenant-019,Aston Martin,DB6,2011,4,359
+tenant-024,Aston Martin,Vantage,2022,2,76
+tenant-022,Chevrolet,Silverado,2023,3,86
+tenant-034,Honda,CR-V,2019,4,161
+tenant-037,Toyota,Camry,2023,3,433
+tenant-046,Toyota,Camry,2013,5,406
+tenant-034,Ford,F-150,2016,5,45
+tenant-010,Ford,F-150,2023,5,285
+tenant-026,Isuzu,NPR,2010,2,107
+tenant-029,Isuzu,NPR,2015,2,81
+tenant-019,Volvo,VNL,2012,4,388
+tenant-015,Chevrolet,Silverado,2013,1,412
+tenant-012,Ford,F-150,2025,2,305
+tenant-018,Aston Martin,Vantage,2025,4,367
+tenant-021,Aston Martin,DB6,2022,2,377
+tenant-026,Chevrolet,Silverado,2013,5,180
+tenant-006,Volvo,VNL,2024,5,472
+tenant-030,Isuzu,NPR,2025,4,22
+tenant-006,Toyota,Camry,2010,1,90
+tenant-004,Volvo,VNL,2017,5,364
+tenant-037,Honda,CR-V,2016,1,313
+tenant-004,Volvo,VNL,2023,3,231
+tenant-008,Toyota,Tacoma,2020,1,69
+tenant-048,Freightliner,Cascadia,2010,5,244
+tenant-047,Kenworth,T680,2010,2,461
+tenant-031,Kenworth,T680,2014,2,41
+tenant-022,Volvo,VNL,2025,4,485
+tenant-002,Toyota,Camry,2014,3,327
+tenant-030,Ford,Mustang,2021,5,25
+tenant-015,Kenworth,T680,2017,4,11
+tenant-036,Peterbilt,579,2014,5,372
+tenant-025,Mercedes-Benz,Sprinter,2023,3,151
+tenant-002,Chevrolet,Silverado,2018,3,464
+tenant-027,Porsche,911,2023,1,402
+tenant-013,Volvo,VNL,2017,1,150
+tenant-014,Toyota,Camry,2022,2,301
+tenant-019,Peterbilt,579,2015,2,493
+tenant-001,Aston Martin,DB6,2025,4,418
+tenant-045,Mercedes-Benz,Sprinter,2021,4,73
+tenant-048,Chevrolet,Silverado,2013,4,175
+tenant-013,Mercedes-Benz,Sprinter,2020,1,61
+tenant-036,Isuzu,NPR,2012,5,154
+tenant-011,Toyota,Tacoma,2022,5,497
+tenant-023,Mercedes-Benz,Sprinter,2018,2,300
+tenant-001,Honda,CR-V,2020,5,410
+tenant-034,Freightliner,Cascadia,2012,3,394
+tenant-048,Mercedes-Benz,Sprinter,2018,5,272
+tenant-013,Kenworth,T680,2022,1,494
+tenant-028,Toyota,Tacoma,2017,4,251
+tenant-014,Honda,CR-V,2025,5,493
+tenant-037,Peterbilt,579,2012,4,499
+tenant-046,Aston Martin,DB6,2015,1,494
+tenant-016,Ford,Mustang,2023,1,81
+tenant-037,Ford,F-150,2014,5,30
+tenant-037,Toyota,Tacoma,2014,5,327
+tenant-003,Porsche,911,2017,1,345
+tenant-016,Porsche,911,2011,1,151
+tenant-045,Kenworth,T680,2017,3,29
+tenant-021,Aston Martin,Vantage,2017,1,466
+tenant-036,Aston Martin,Vantage,2020,3,206
+tenant-005,Chevrolet,Silverado,2017,5,438
+tenant-044,Aston Martin,DB6,2026,5,71
+tenant-012,Honda,CR-V,2026,3,473
+tenant-020,Toyota,Tacoma,2025,1,488
+tenant-044,Volvo,VNL,2017,3,150
+tenant-039,Ford,Mustang,2016,2,67
+tenant-048,Aston Martin,DB6,2015,3,474
+tenant-036,Toyota,Tacoma,2017,4,253
+tenant-030,Volvo,VNL,2010,5,79
+tenant-026,Mercedes-Benz,Sprinter,2016,1,170
+tenant-034,Freightliner,Cascadia,2025,2,411
+tenant-022,Peterbilt,579,2018,1,412
+tenant-009,Ford,Mustang,2019,1,329
+tenant-011,Volvo,VNL,2026,3,370
+tenant-025,Kenworth,T680,2017,1,17
+tenant-029,Ford,F-150,2012,5,97
+tenant-014,Aston Martin,DB6,2019,5,54
+tenant-001,Ford,F-150,2018,2,360
+tenant-007,Ford,F-150,2020,1,78
+tenant-004,Porsche,911,2025,2,59
+tenant-046,Mercedes-Benz,Sprinter,2012,4,141
+tenant-036,Honda,CR-V,2015,4,31
+tenant-016,Toyota,Camry,2010,4,173
+tenant-032,Volvo,VNL,2022,1,135
+tenant-022,Aston Martin,Vantage,2025,4,154
+tenant-018,Ford,F-150,2020,2,7
+tenant-008,Peterbilt,579,2021,2,224
+tenant-033,Chevrolet,Silverado,2020,1,451
+tenant-005,Aston Martin,Vantage,2017,3,311
+tenant-015,Freightliner,Cascadia,2013,5,369
+tenant-049,Mercedes-Benz,Sprinter,2023,5,284
+tenant-035,Aston Martin,Vantage,2010,3,368
+tenant-014,Toyota,Camry,2025,4,396
+tenant-030,Isuzu,NPR,2024,1,235
+tenant-048,Mercedes-Benz,Sprinter,2026,4,55
+tenant-032,Isuzu,NPR,2021,5,359
+tenant-016,Ford,F-150,2022,2,95
+tenant-021,Isuzu,NPR,2012,3,258
+tenant-019,Kenworth,T680,2020,3,170
+tenant-033,Ford,Mustang,2018,5,314
+tenant-048,Volvo,VNL,2019,2,10
+tenant-025,Honda,CR-V,2024,4,41
+tenant-050,Ford,F-150,2013,2,222
+tenant-026,Aston Martin,DB6,2013,5,167
+tenant-031,Aston Martin,DB6,2018,2,486
+tenant-011,Ford,Mustang,2015,3,55
+tenant-018,Isuzu,NPR,2013,3,222
+tenant-045,Aston Martin,DB6,2018,4,471
+tenant-003,Porsche,911,2024,2,460
+tenant-032,Toyota,Tacoma,2011,3,268
+tenant-018,Toyota,Tacoma,2022,2,399
+tenant-017,Ford,Mustang,2016,3,257
+tenant-028,Aston Martin,DB6,2025,3,245
+tenant-037,Toyota,Camry,2012,4,401
+tenant-047,Volvo,VNL,2023,4,38
+tenant-001,Volvo,VNL,2013,3,79
+tenant-019,Ford,F-150,2016,4,443
+tenant-029,Toyota,Camry,2026,1,113
+tenant-016,Freightliner,Cascadia,2025,4,440
+tenant-039,Toyota,Tacoma,2010,1,291
+tenant-045,Aston Martin,Vantage,2017,2,197
+tenant-006,Ford,F-150,2013,2,252
+tenant-014,Porsche,911,2019,1,106
+tenant-007,Ford,F-150,2020,3,449
+tenant-001,Peterbilt,579,2022,3,196
+tenant-034,Ford,Mustang,2016,1,299
+tenant-033,Porsche,911,2024,5,28
+tenant-017,Aston Martin,Vantage,2015,3,296
+tenant-036,Aston Martin,DB6,2014,2,391
+tenant-027,Honda,CR-V,2017,5,339
+tenant-005,Volvo,VNL,2014,1,258
+tenant-031,Peterbilt,579,2015,1,279
+tenant-050,Mercedes-Benz,Sprinter,2017,2,88
+tenant-015,Kenworth,T680,2022,1,191
+tenant-004,Toyota,Tacoma,2011,2,313
+tenant-043,Mercedes-Benz,Sprinter,2026,5,96
+tenant-043,Chevrolet,Silverado,2012,5,390
+tenant-005,Mercedes-Benz,Sprinter,2017,2,272
+tenant-035,Honda,CR-V,2025,1,156
+tenant-022,Peterbilt,579,2015,1,31
+tenant-046,Freightliner,Cascadia,2015,4,43
+tenant-017,Isuzu,NPR,2025,2,465
+tenant-007,Ford,F-150,2024,4,237
+tenant-008,Mercedes-Benz,Sprinter,2025,2,355
+tenant-018,Porsche,911,2015,2,54
+tenant-011,Porsche,911,2011,4,48
+tenant-002,Freightliner,Cascadia,2016,3,368
+tenant-020,Toyota,Camry,2013,4,247
+tenant-034,Aston Martin,Vantage,2018,4,175
+tenant-048,Honda,CR-V,2023,5,100
+tenant-016,Freightliner,Cascadia,2026,5,207
+tenant-049,Volvo,VNL,2025,1,220
+tenant-012,Aston Martin,Vantage,2026,4,78
+tenant-007,Chevrolet,Silverado,2019,1,408
+tenant-018,Porsche,911,2011,3,6
+tenant-008,Chevrolet,Silverado,2021,2,474
+tenant-027,Mercedes-Benz,Sprinter,2014,4,338
+tenant-016,Aston Martin,DB6,2013,4,498
+tenant-014,Ford,F-150,2022,5,39
+tenant-004,Porsche,911,2024,5,212
+tenant-018,Chevrolet,Silverado,2010,5,272
+tenant-013,Aston Martin,Vantage,2021,2,441
+tenant-009,Chevrolet,Silverado,2018,4,496
+tenant-002,Toyota,Tacoma,2023,5,177
+tenant-008,Peterbilt,579,2014,4,437
+tenant-043,Kenworth,T680,2023,5,102
+tenant-006,Ford,F-150,2022,4,36
+tenant-010,Isuzu,NPR,2019,3,354
+tenant-047,Porsche,911,2023,1,268
+tenant-048,Isuzu,NPR,2020,5,28
+tenant-017,Aston Martin,DB6,2017,2,352
+tenant-031,Kenworth,T680,2023,4,372
+tenant-025,Aston Martin,DB6,2022,3,373
+tenant-026,Aston Martin,DB6,2025,1,253
+tenant-001,Isuzu,NPR,2010,1,288
+tenant-034,Aston Martin,DB6,2022,4,445
+tenant-021,Ford,Mustang,2022,3,295
+tenant-014,Ford,F-150,2014,5,122
+tenant-015,Aston Martin,Vantage,2011,5,94
+tenant-016,Ford,F-150,2015,1,311
+tenant-043,Toyota,Camry,2013,2,174
+tenant-049,Ford,F-150,2024,3,491
+tenant-040,Kenworth,T680,2019,3,147
+tenant-043,Chevrolet,Silverado,2013,5,359
+tenant-037,Aston Martin,DB6,2016,2,4
+tenant-050,Aston Martin,Vantage,2026,5,153
+tenant-002,Honda,CR-V,2025,1,80
+tenant-025,Toyota,Camry,2014,1,373
+tenant-031,Ford,Mustang,2018,2,23
+tenant-028,Mercedes-Benz,Sprinter,2020,3,464
+tenant-049,Peterbilt,579,2019,5,291
+tenant-039,Porsche,911,2018,5,333
+tenant-049,Chevrolet,Silverado,2011,3,112
+tenant-022,Aston Martin,Vantage,2018,5,146
+tenant-017,Toyota,Tacoma,2022,1,300
+tenant-025,Mercedes-Benz,Sprinter,2014,3,202
+tenant-018,Ford,F-150,2020,2,266
+tenant-036,Peterbilt,579,2018,4,32
+tenant-030,Isuzu,NPR,2010,5,433
+tenant-028,Kenworth,T680,2010,4,369
+tenant-044,Aston Martin,DB6,2020,5,437
+tenant-045,Honda,CR-V,2020,4,228
+tenant-037,Isuzu,NPR,2020,4,301
+tenant-014,Toyota,Camry,2026,2,265
+tenant-039,Peterbilt,579,2010,5,216
+tenant-017,Aston Martin,Vantage,2015,2,485
+tenant-042,Toyota,Camry,2022,5,245
+tenant-038,Isuzu,NPR,2017,2,92
+tenant-014,Ford,F-150,2012,1,128
+tenant-006,Chevrolet,Silverado,2022,2,219
+tenant-016,Kenworth,T680,2016,5,429
+tenant-004,Ford,Mustang,2019,5,261
+tenant-039,Chevrolet,Silverado,2013,1,169
+tenant-010,Toyota,Tacoma,2020,5,122
+tenant-029,Volvo,VNL,2012,5,191
+tenant-019,Aston Martin,Vantage,2011,5,436
+tenant-035,Chevrolet,Silverado,2017,1,260
+tenant-016,Freightliner,Cascadia,2012,3,203
+tenant-028,Volvo,VNL,2012,2,37
+tenant-020,Chevrolet,Silverado,2026,2,262
+tenant-047,Honda,CR-V,2023,5,103
+tenant-029,Kenworth,T680,2014,4,184
+tenant-017,Peterbilt,579,2010,1,262
+tenant-029,Volvo,VNL,2016,1,58
+tenant-042,Ford,Mustang,2016,1,359
+tenant-020,Toyota,Tacoma,2016,2,465
+tenant-005,Kenworth,T680,2017,1,293
+tenant-015,Porsche,911,2015,1,16
+tenant-049,Freightliner,Cascadia,2019,1,376
+tenant-020,Toyota,Tacoma,2012,3,265
+tenant-001,Ford,F-150,2021,2,296
+tenant-050,Peterbilt,579,2013,5,256
+tenant-032,Aston Martin,Vantage,2018,4,338
+tenant-035,Ford,Mustang,2014,4,463
+tenant-023,Toyota,Camry,2011,4,422
+tenant-029,Chevrolet,Silverado,2023,1,123
+tenant-007,Mercedes-Benz,Sprinter,2011,2,127
+tenant-049,Mercedes-Benz,Sprinter,2019,5,28
+tenant-040,Volvo,VNL,2026,4,374
+tenant-004,Peterbilt,579,2025,4,179
+tenant-018,Toyota,Tacoma,2015,5,375
+tenant-009,Honda,CR-V,2026,2,235
+tenant-041,Honda,CR-V,2018,4,113
+tenant-010,Peterbilt,579,2011,4,479
+tenant-008,Honda,CR-V,2011,3,310
+tenant-004,Chevrolet,Silverado,2012,2,296
+tenant-013,Chevrolet,Silverado,2021,3,436
+tenant-013,Porsche,911,2013,2,398
+tenant-008,Isuzu,NPR,2017,1,368
+tenant-037,Porsche,911,2022,1,424
+tenant-009,Toyota,Camry,2026,2,288
+tenant-041,Volvo,VNL,2011,2,50
+tenant-027,Freightliner,Cascadia,2024,5,196
+tenant-001,Peterbilt,579,2012,1,303
+tenant-019,Aston Martin,Vantage,2019,5,492
+tenant-007,Porsche,911,2026,4,436
+tenant-017,Aston Martin,DB6,2019,2,97
+tenant-044,Ford,F-150,2022,4,80
+tenant-015,Aston Martin,Vantage,2017,1,67
+tenant-044,Toyota,Tacoma,2016,3,304
+tenant-050,Aston Martin,Vantage,2021,4,311
+tenant-032,Aston Martin,Vantage,2020,2,86
+tenant-033,Freightliner,Cascadia,2014,3,46
+tenant-013,Toyota,Camry,2011,4,24
+tenant-049,Ford,Mustang,2021,4,128
+tenant-003,Isuzu,NPR,2020,2,487
+tenant-033,Chevrolet,Silverado,2014,2,2
+tenant-044,Mercedes-Benz,Sprinter,2010,5,406
+tenant-028,Toyota,Tacoma,2013,1,363
+tenant-006,Ford,F-150,2020,2,196
+tenant-006,Toyota,Tacoma,2012,4,453
+tenant-031,Chevrolet,Silverado,2018,4,392
+tenant-024,Isuzu,NPR,2017,2,79
+tenant-009,Chevrolet,Silverado,2012,1,353
+tenant-022,Aston Martin,DB6,2017,3,339
+tenant-040,Kenworth,T680,2016,2,277
+tenant-025,Aston Martin,DB6,2026,3,58
+tenant-037,Isuzu,NPR,2016,2,338
+tenant-043,Freightliner,Cascadia,2023,1,395
+tenant-038,Kenworth,T680,2020,4,129
+tenant-007,Porsche,911,2023,5,47
+tenant-021,Ford,F-150,2016,5,195
+tenant-007,Honda,CR-V,2026,4,271
+tenant-002,Volvo,VNL,2026,1,42
+tenant-025,Aston Martin,DB6,2026,2,329
+tenant-017,Aston Martin,Vantage,2020,3,191
+tenant-024,Freightliner,Cascadia,2015,4,31
+tenant-012,Aston Martin,DB6,2014,1,379
+tenant-032,Kenworth,T680,2010,4,126
+tenant-018,Ford,F-150,2015,3,259
+tenant-044,Mercedes-Benz,Sprinter,2015,4,97
+tenant-005,Chevrolet,Silverado,2018,3,236
+tenant-021,Aston Martin,DB6,2016,4,121
+tenant-038,Mercedes-Benz,Sprinter,2014,5,157
+tenant-037,Ford,F-150,2021,5,160
+tenant-032,Mercedes-Benz,Sprinter,2010,2,276
+tenant-010,Aston Martin,Vantage,2011,3,233
+tenant-040,Aston Martin,DB6,2021,4,252
+tenant-039,Toyota,Camry,2022,1,196
+tenant-044,Toyota,Tacoma,2019,4,167
+tenant-047,Kenworth,T680,2018,5,89
+tenant-017,Porsche,911,2013,3,241
+tenant-028,Aston Martin,DB6,2014,4,8
+tenant-020,Mercedes-Benz,Sprinter,2018,4,473
+tenant-046,Peterbilt,579,2018,2,296
+tenant-025,Aston Martin,Vantage,2011,4,215
+tenant-016,Toyota,Camry,2022,2,190
+tenant-030,Isuzu,NPR,2012,4,111
+tenant-011,Porsche,911,2017,2,380
+tenant-010,Freightliner,Cascadia,2018,5,32
+tenant-041,Peterbilt,579,2019,4,45
+tenant-041,Aston Martin,Vantage,2020,5,79
+tenant-017,Peterbilt,579,2025,2,66
+tenant-030,Volvo,VNL,2014,5,164
+tenant-018,Ford,Mustang,2024,5,235
+tenant-029,Ford,Mustang,2019,3,310
+tenant-024,Isuzu,NPR,2016,3,105
+tenant-025,Peterbilt,579,2024,2,234
+tenant-019,Peterbilt,579,2012,4,28
+tenant-026,Aston Martin,DB6,2011,2,428
+tenant-034,Peterbilt,579,2024,1,426
+tenant-018,Aston Martin,DB6,2016,5,103
+tenant-001,Mercedes-Benz,Sprinter,2025,5,125
+tenant-031,Aston Martin,DB6,2018,5,388
+tenant-044,Freightliner,Cascadia,2016,1,300
+tenant-023,Mercedes-Benz,Sprinter,2018,2,461
+tenant-020,Toyota,Camry,2023,1,87
+tenant-007,Isuzu,NPR,2017,4,159
+tenant-013,Peterbilt,579,2012,3,207
+tenant-042,Chevrolet,Silverado,2015,2,484
+tenant-038,Isuzu,NPR,2019,3,405
+tenant-008,Aston Martin,Vantage,2018,4,361
+tenant-005,Honda,CR-V,2017,1,439
+tenant-037,Kenworth,T680,2016,5,403
+tenant-027,Toyota,Camry,2013,3,298
+tenant-014,Ford,F-150,2022,4,435
+tenant-014,Toyota,Tacoma,2019,4,379
+tenant-020,Aston Martin,Vantage,2021,3,199
+tenant-049,Porsche,911,2010,4,26
+tenant-007,Toyota,Camry,2010,3,186
+tenant-001,Chevrolet,Silverado,2022,2,139
+tenant-037,Toyota,Tacoma,2014,5,76
+tenant-036,Peterbilt,579,2013,4,278
+tenant-015,Aston Martin,DB6,2014,4,397
+tenant-045,Kenworth,T680,2019,5,84
+tenant-049,Toyota,Camry,2024,2,7
+tenant-029,Ford,F-150,2012,4,198
+tenant-014,Ford,Mustang,2011,2,486
+tenant-002,Ford,F-150,2013,2,481
+tenant-037,Chevrolet,Silverado,2019,5,309
+tenant-043,Toyota,Camry,2011,2,217
+tenant-039,Aston Martin,DB6,2011,4,458
+tenant-016,Kenworth,T680,2014,3,22
+tenant-024,Freightliner,Cascadia,2019,1,48
+tenant-016,Chevrolet,Silverado,2013,2,158
+tenant-044,Chevrolet,Silverado,2017,4,167
+tenant-046,Toyota,Tacoma,2022,1,245
+tenant-020,Volvo,VNL,2020,1,127
+tenant-006,Volvo,VNL,2014,4,81
+tenant-020,Kenworth,T680,2026,3,465
+tenant-008,Peterbilt,579,2010,4,377
+tenant-026,Ford,F-150,2024,5,241
+tenant-027,Porsche,911,2023,5,7
+tenant-022,Chevrolet,Silverado,2019,1,129
+tenant-005,Porsche,911,2020,4,412
+tenant-038,Volvo,VNL,2016,4,171
+tenant-002,Toyota,Camry,2012,2,5
+tenant-011,Porsche,911,2012,4,335
+tenant-020,Aston Martin,DB6,2023,1,142
+tenant-009,Aston Martin,DB6,2012,5,178
+tenant-011,Freightliner,Cascadia,2019,3,9
+tenant-009,Toyota,Tacoma,2019,4,408
+tenant-032,Mercedes-Benz,Sprinter,2018,4,352
+tenant-022,Toyota,Tacoma,2020,1,188
+tenant-004,Ford,F-150,2013,4,440
+tenant-012,Kenworth,T680,2012,1,43
+tenant-033,Kenworth,T680,2016,3,98
+tenant-031,Toyota,Tacoma,2012,3,51
+tenant-034,Ford,Mustang,2023,5,456
+tenant-023,Ford,F-150,2020,3,57
+tenant-021,Chevrolet,Silverado,2010,4,247
+tenant-029,Ford,F-150,2019,4,83
+tenant-015,Peterbilt,579,2021,1,494
+tenant-009,Toyota,Camry,2014,3,102
+tenant-012,Mercedes-Benz,Sprinter,2015,5,170
+tenant-045,Ford,Mustang,2012,2,404
+tenant-049,Volvo,VNL,2025,2,448
+tenant-034,Ford,F-150,2019,2,166
+tenant-027,Honda,CR-V,2024,3,197
+tenant-015,Toyota,Tacoma,2018,2,470
+tenant-018,Chevrolet,Silverado,2016,4,367
+tenant-029,Toyota,Tacoma,2016,4,404
+tenant-009,Toyota,Camry,2013,4,214
+tenant-044,Ford,F-150,2010,1,350
+tenant-023,Peterbilt,579,2014,1,29
+tenant-042,Toyota,Tacoma,2025,4,356
+tenant-016,Chevrolet,Silverado,2016,4,468
+tenant-049,Ford,Mustang,2024,5,280
+tenant-035,Volvo,VNL,2010,1,184
+tenant-039,Isuzu,NPR,2013,5,418
+tenant-002,Freightliner,Cascadia,2015,3,380
+tenant-007,Peterbilt,579,2019,5,122
+tenant-035,Kenworth,T680,2020,1,472
+tenant-029,Aston Martin,Vantage,2014,1,351
+tenant-026,Chevrolet,Silverado,2019,5,351
+tenant-034,Volvo,VNL,2023,5,296
+tenant-019,Peterbilt,579,2026,3,82
+tenant-022,Porsche,911,2021,3,383
+tenant-027,Aston Martin,DB6,2021,2,57
+tenant-032,Honda,CR-V,2023,4,164
+tenant-015,Aston Martin,DB6,2022,2,255
+tenant-015,Toyota,Camry,2020,5,86
+tenant-024,Porsche,911,2021,4,443
+tenant-015,Ford,Mustang,2015,3,91
+tenant-047,Aston Martin,DB6,2014,3,259
+tenant-004,Aston Martin,Vantage,2022,4,443
+tenant-011,Kenworth,T680,2014,5,386
+tenant-019,Toyota,Camry,2014,1,364
+tenant-029,Honda,CR-V,2026,3,202
+tenant-049,Aston Martin,Vantage,2026,5,236
+tenant-013,Mercedes-Benz,Sprinter,2025,1,148
+tenant-008,Aston Martin,Vantage,2016,2,454
+tenant-047,Volvo,VNL,2010,4,266
+tenant-037,Chevrolet,Silverado,2021,1,480
+tenant-012,Isuzu,NPR,2015,1,351
+tenant-008,Ford,Mustang,2024,4,45
+tenant-035,Ford,F-150,2015,2,90
+tenant-010,Freightliner,Cascadia,2015,2,8
+tenant-017,Aston Martin,DB6,2013,5,145
+tenant-013,Ford,F-150,2014,5,36
+tenant-024,Porsche,911,2013,1,305
+tenant-006,Ford,F-150,2023,4,249
+tenant-012,Aston Martin,Vantage,2010,3,488
+tenant-008,Volvo,VNL,2016,2,147
+tenant-012,Peterbilt,579,2024,4,370
+tenant-029,Ford,F-150,2023,5,142
+tenant-016,Honda,CR-V,2022,3,283
+tenant-003,Porsche,911,2013,1,234
+tenant-013,Ford,Mustang,2014,4,452
+tenant-006,Mercedes-Benz,Sprinter,2025,3,35
+tenant-031,Mercedes-Benz,Sprinter,2014,2,353
+tenant-044,Aston Martin,DB6,2010,3,451
+tenant-031,Toyota,Camry,2025,4,60
+tenant-044,Toyota,Tacoma,2018,2,357
+tenant-046,Toyota,Tacoma,2011,1,149
+tenant-037,Toyota,Camry,2019,5,189
+tenant-044,Toyota,Tacoma,2016,2,99
+tenant-027,Volvo,VNL,2017,2,222
+tenant-028,Peterbilt,579,2014,5,165
+tenant-041,Isuzu,NPR,2026,3,17
+tenant-013,Peterbilt,579,2022,4,112
+tenant-011,Isuzu,NPR,2014,1,199
+tenant-039,Chevrolet,Silverado,2014,4,242
+tenant-044,Chevrolet,Silverado,2015,4,236
+tenant-036,Porsche,911,2016,5,300
+tenant-004,Kenworth,T680,2013,2,286
+tenant-019,Aston Martin,DB6,2022,5,408
+tenant-016,Ford,F-150,2021,2,414
+tenant-027,Peterbilt,579,2022,1,168
+tenant-009,Honda,CR-V,2021,5,489
+tenant-001,Aston Martin,DB6,2018,3,383
+tenant-033,Honda,CR-V,2016,2,322
+tenant-043,Toyota,Tacoma,2010,4,223
+tenant-032,Porsche,911,2016,3,148
+tenant-050,Honda,CR-V,2011,1,475
+tenant-040,Isuzu,NPR,2014,3,284
+tenant-026,Toyota,Tacoma,2026,4,53
+tenant-025,Kenworth,T680,2012,2,91
+tenant-014,Peterbilt,579,2022,1,180
+tenant-008,Mercedes-Benz,Sprinter,2026,4,188
+tenant-004,Mercedes-Benz,Sprinter,2012,3,31
+tenant-030,Chevrolet,Silverado,2023,5,445
+tenant-008,Porsche,911,2021,3,315
+tenant-046,Kenworth,T680,2016,5,498
+tenant-038,Isuzu,NPR,2012,4,69
+tenant-005,Porsche,911,2021,4,47
+tenant-004,Honda,CR-V,2020,4,310
+tenant-019,Toyota,Tacoma,2018,5,100
+tenant-039,Ford,Mustang,2019,1,48
+tenant-044,Ford,Mustang,2018,3,475
+tenant-004,Mercedes-Benz,Sprinter,2018,3,424
+tenant-042,Ford,F-150,2024,2,189
+tenant-047,Ford,Mustang,2016,5,16
+tenant-024,Volvo,VNL,2022,2,498
+tenant-020,Ford,F-150,2019,1,356
+tenant-043,Ford,Mustang,2026,3,423
+tenant-043,Chevrolet,Silverado,2019,5,145
+tenant-015,Ford,Mustang,2025,2,32
+tenant-023,Chevrolet,Silverado,2024,5,492
+tenant-045,Toyota,Tacoma,2011,5,113
+tenant-013,Ford,F-150,2021,4,129
+tenant-001,Aston Martin,Vantage,2020,1,53
+tenant-043,Ford,F-150,2012,1,486
+tenant-041,Toyota,Tacoma,2011,2,500
+tenant-047,Porsche,911,2026,2,420
+tenant-031,Toyota,Camry,2019,3,286
+tenant-043,Kenworth,T680,2012,1,85
+tenant-008,Ford,F-150,2012,1,269
+tenant-017,Ford,Mustang,2022,4,10
+tenant-021,Freightliner,Cascadia,2012,4,205
+tenant-029,Toyota,Camry,2024,2,23
+tenant-009,Volvo,VNL,2015,1,226
+tenant-025,Isuzu,NPR,2023,5,269
+tenant-050,Honda,CR-V,2023,2,76
+tenant-002,Aston Martin,DB6,2020,5,224
+tenant-041,Toyota,Camry,2022,4,467
+tenant-008,Volvo,VNL,2021,1,124
+tenant-046,Toyota,Camry,2012,3,163
+tenant-011,Peterbilt,579,2023,5,119
+tenant-030,Aston Martin,DB6,2017,5,15
+tenant-046,Honda,CR-V,2016,5,179
+tenant-021,Volvo,VNL,2018,3,90
+tenant-032,Ford,Mustang,2020,1,195
+tenant-034,Chevrolet,Silverado,2014,4,333
+tenant-045,Isuzu,NPR,2017,3,197
+tenant-003,Kenworth,T680,2024,4,359
+tenant-003,Ford,F-150,2023,3,70
+tenant-028,Volvo,VNL,2022,3,137
+tenant-028,Isuzu,NPR,2023,2,112
+tenant-047,Toyota,Camry,2016,3,48
+tenant-018,Peterbilt,579,2025,1,77
+tenant-017,Toyota,Camry,2015,3,399
+tenant-028,Peterbilt,579,2015,2,130
+tenant-039,Chevrolet,Silverado,2015,3,130
+tenant-001,Aston Martin,DB6,2018,3,498
+tenant-022,Honda,CR-V,2025,1,69
+tenant-016,Porsche,911,2025,1,404
+tenant-043,Ford,F-150,2013,2,208
+tenant-042,Aston Martin,DB6,2013,1,348
+tenant-047,Chevrolet,Silverado,2024,1,212
+tenant-041,Ford,F-150,2020,2,9
+tenant-038,Toyota,Tacoma,2016,1,123
+tenant-007,Aston Martin,DB6,2025,5,230
+tenant-030,Porsche,911,2016,1,267
+tenant-046,Kenworth,T680,2016,5,216
+tenant-013,Aston Martin,DB6,2014,5,471
+tenant-037,Toyota,Tacoma,2024,5,96
+tenant-042,Volvo,VNL,2013,2,124
+tenant-028,Volvo,VNL,2012,3,188
+tenant-047,Aston Martin,Vantage,2024,2,212
+tenant-014,Toyota,Camry,2013,4,258
+tenant-001,Toyota,Camry,2019,4,123
+tenant-031,Toyota,Camry,2015,2,364
+tenant-048,Ford,Mustang,2024,5,96
+tenant-027,Volvo,VNL,2020,5,44
+tenant-008,Toyota,Camry,2017,5,178
+tenant-035,Freightliner,Cascadia,2019,5,342
+tenant-041,Toyota,Camry,2022,2,194
+tenant-012,Aston Martin,DB6,2025,2,496
+tenant-023,Aston Martin,Vantage,2012,2,128
+tenant-036,Kenworth,T680,2024,1,243
+tenant-004,Peterbilt,579,2018,5,396
+tenant-013,Kenworth,T680,2022,5,46
+tenant-048,Honda,CR-V,2010,1,59
+tenant-030,Kenworth,T680,2012,1,12
+tenant-027,Chevrolet,Silverado,2015,1,158
+tenant-019,Toyota,Tacoma,2017,1,381
+tenant-003,Chevrolet,Silverado,2012,2,366
+tenant-049,Freightliner,Cascadia,2021,3,455
+tenant-035,Toyota,Tacoma,2011,4,324
+tenant-035,Chevrolet,Silverado,2013,1,407
+tenant-018,Toyota,Camry,2024,1,490
+tenant-004,Aston Martin,DB6,2013,2,486
+tenant-006,Toyota,Camry,2024,2,205
+tenant-035,Aston Martin,DB6,2011,5,431
+tenant-043,Chevrolet,Silverado,2022,2,88
+tenant-008,Freightliner,Cascadia,2016,2,23
+tenant-031,Porsche,911,2014,1,473
+tenant-029,Toyota,Camry,2018,5,258
+tenant-050,Kenworth,T680,2014,1,155
+tenant-030,Freightliner,Cascadia,2011,2,76
+tenant-043,Toyota,Camry,2023,5,246
+tenant-026,Ford,F-150,2016,1,354
+tenant-002,Toyota,Tacoma,2012,1,346
+tenant-016,Volvo,VNL,2013,1,170
+tenant-002,Mercedes-Benz,Sprinter,2011,3,158
+tenant-005,Toyota,Camry,2025,2,447
+tenant-034,Toyota,Tacoma,2015,1,214
+tenant-023,Chevrolet,Silverado,2017,2,163
+tenant-031,Aston Martin,DB6,2013,4,380
+tenant-027,Volvo,VNL,2025,3,361
+tenant-036,Aston Martin,Vantage,2014,5,192
+tenant-031,Peterbilt,579,2022,4,225
+tenant-020,Mercedes-Benz,Sprinter,2015,2,290
+tenant-046,Honda,CR-V,2026,1,52
+tenant-041,Toyota,Camry,2010,1,300
+tenant-038,Kenworth,T680,2010,2,91
+tenant-039,Toyota,Camry,2022,3,439
+tenant-003,Mercedes-Benz,Sprinter,2010,3,465
+tenant-005,Isuzu,NPR,2018,4,426
+tenant-048,Honda,CR-V,2026,5,221
+tenant-021,Isuzu,NPR,2015,4,244
+tenant-004,Chevrolet,Silverado,2024,3,42
+tenant-033,Chevrolet,Silverado,2017,4,190
+tenant-049,Aston Martin,Vantage,2022,5,65
+tenant-023,Volvo,VNL,2021,3,398
+tenant-003,Toyota,Tacoma,2017,4,53
+tenant-023,Ford,Mustang,2024,2,376
+tenant-002,Kenworth,T680,2022,1,463
+tenant-021,Freightliner,Cascadia,2016,4,118
+tenant-031,Freightliner,Cascadia,2010,2,382
+tenant-008,Peterbilt,579,2024,4,89
+tenant-027,Porsche,911,2013,5,27
+tenant-026,Isuzu,NPR,2019,3,90
+tenant-043,Honda,CR-V,2026,1,483
+tenant-016,Isuzu,NPR,2021,5,177
+tenant-030,Volvo,VNL,2021,3,204
+tenant-037,Kenworth,T680,2010,2,389
+tenant-017,Porsche,911,2010,1,243
+tenant-001,Kenworth,T680,2018,5,343
+tenant-015,Mercedes-Benz,Sprinter,2020,4,368
+tenant-031,Isuzu,NPR,2023,4,149
+tenant-032,Chevrolet,Silverado,2013,2,354
+tenant-016,Toyota,Tacoma,2025,4,20
+tenant-018,Porsche,911,2017,3,41
+tenant-043,Chevrolet,Silverado,2025,3,30
+tenant-029,Ford,Mustang,2023,2,75
+tenant-039,Chevrolet,Silverado,2011,1,189
+tenant-030,Mercedes-Benz,Sprinter,2011,5,140
+tenant-003,Kenworth,T680,2014,1,13
+tenant-015,Aston Martin,DB6,2021,3,486
+tenant-029,Toyota,Camry,2023,3,297
+tenant-036,Volvo,VNL,2011,4,153
+tenant-010,Aston Martin,Vantage,2010,5,124
+tenant-048,Toyota,Camry,2018,5,61
+tenant-041,Freightliner,Cascadia,2012,1,194
+tenant-037,Toyota,Tacoma,2021,1,199
+tenant-036,Toyota,Tacoma,2023,5,229
+tenant-012,Ford,Mustang,2012,4,60
+tenant-023,Toyota,Tacoma,2018,4,271
+tenant-014,Ford,Mustang,2020,4,139
+tenant-018,Chevrolet,Silverado,2024,3,411
+tenant-007,Ford,F-150,2022,3,146
+tenant-047,Volvo,VNL,2015,4,338
+tenant-026,Aston Martin,DB6,2011,3,236
+tenant-030,Toyota,Camry,2023,1,228
+tenant-039,Ford,Mustang,2013,5,409
+tenant-032,Ford,Mustang,2023,3,479
+tenant-050,Ford,Mustang,2021,2,493
+tenant-033,Aston Martin,DB6,2023,2,475
+tenant-020,Kenworth,T680,2011,4,66
+tenant-010,Mercedes-Benz,Sprinter,2026,4,213
+tenant-041,Porsche,911,2015,5,12
+tenant-025,Mercedes-Benz,Sprinter,2011,4,342
+tenant-045,Aston Martin,Vantage,2025,5,24
+tenant-039,Porsche,911,2018,4,431
+tenant-035,Honda,CR-V,2026,5,57
+tenant-037,Isuzu,NPR,2020,1,453
+tenant-012,Honda,CR-V,2019,2,248
+tenant-050,Aston Martin,DB6,2024,3,142
+tenant-007,Toyota,Tacoma,2011,2,405
+tenant-027,Honda,CR-V,2010,3,296
+tenant-001,Kenworth,T680,2014,1,378
+tenant-039,Toyota,Camry,2015,5,8
+tenant-014,Toyota,Tacoma,2015,3,189
+tenant-012,Chevrolet,Silverado,2021,4,244
+tenant-013,Toyota,Tacoma,2012,1,345
+tenant-008,Honda,CR-V,2018,3,328
+tenant-042,Toyota,Tacoma,2017,5,40
+tenant-045,Toyota,Camry,2021,3,435
+tenant-001,Kenworth,T680,2012,2,24
+tenant-014,Porsche,911,2010,4,487
+tenant-018,Aston Martin,DB6,2013,1,49
+tenant-039,Volvo,VNL,2010,4,25
+tenant-023,Chevrolet,Silverado,2012,4,240
+tenant-043,Honda,CR-V,2026,2,478
+tenant-032,Toyota,Tacoma,2019,2,187
+tenant-011,Mercedes-Benz,Sprinter,2016,2,169
+tenant-009,Peterbilt,579,2023,2,69
+tenant-022,Peterbilt,579,2013,3,135
+tenant-015,Kenworth,T680,2025,4,278
+tenant-023,Aston Martin,DB6,2020,5,312
+tenant-049,Volvo,VNL,2010,2,291
+tenant-009,Isuzu,NPR,2019,3,38
+tenant-013,Ford,F-150,2014,3,360
+tenant-043,Chevrolet,Silverado,2022,3,192
+tenant-017,Toyota,Tacoma,2023,3,325
+tenant-021,Toyota,Camry,2025,5,460
+tenant-034,Porsche,911,2015,1,384
+tenant-031,Aston Martin,Vantage,2025,1,211
+tenant-026,Peterbilt,579,2010,1,239
+tenant-035,Aston Martin,DB6,2017,5,180
+tenant-024,Chevrolet,Silverado,2026,2,47
+tenant-023,Toyota,Camry,2024,3,1
+tenant-016,Ford,F-150,2012,4,97
+tenant-002,Ford,Mustang,2026,1,81
+tenant-029,Ford,Mustang,2017,2,370
+tenant-019,Ford,Mustang,2013,3,198
+tenant-029,Aston Martin,Vantage,2021,4,321
+tenant-006,Aston Martin,DB6,2021,3,416
+tenant-013,Chevrolet,Silverado,2012,5,68
+tenant-039,Kenworth,T680,2015,2,461
+tenant-006,Honda,CR-V,2018,1,98
+tenant-008,Freightliner,Cascadia,2015,4,365
+tenant-028,Honda,CR-V,2013,1,269
+tenant-038,Porsche,911,2017,3,203
+tenant-008,Freightliner,Cascadia,2025,4,103
+tenant-017,Ford,F-150,2021,2,260
+tenant-016,Volvo,VNL,2022,2,420
+tenant-026,Honda,CR-V,2026,3,60
+tenant-045,Aston Martin,Vantage,2021,5,332
+tenant-006,Peterbilt,579,2023,3,182
+tenant-039,Chevrolet,Silverado,2010,3,38
+tenant-013,Porsche,911,2011,2,231
+tenant-015,Volvo,VNL,2014,4,301
+tenant-035,Honda,CR-V,2021,1,408
+tenant-027,Mercedes-Benz,Sprinter,2025,1,197
+tenant-001,Peterbilt,579,2017,5,116
+tenant-039,Ford,Mustang,2017,5,103
+tenant-014,Aston Martin,Vantage,2023,3,140
+tenant-012,Mercedes-Benz,Sprinter,2012,1,96
+tenant-028,Peterbilt,579,2018,1,336
+tenant-046,Honda,CR-V,2016,3,206
+tenant-038,Aston Martin,Vantage,2012,5,161
+tenant-039,Freightliner,Cascadia,2013,4,274
+tenant-021,Peterbilt,579,2026,3,490
+tenant-031,Mercedes-Benz,Sprinter,2026,3,400
+tenant-017,Ford,Mustang,2025,4,184
+tenant-044,Freightliner,Cascadia,2016,4,298
+tenant-012,Ford,F-150,2011,3,289
+tenant-014,Toyota,Camry,2017,3,214
+tenant-031,Porsche,911,2010,3,271
+tenant-027,Volvo,VNL,2014,3,370
+tenant-023,Ford,F-150,2016,2,499
+tenant-025,Kenworth,T680,2017,1,352
+tenant-036,Honda,CR-V,2013,4,164
+tenant-010,Volvo,VNL,2022,4,131
+tenant-025,Ford,Mustang,2011,2,267
+tenant-001,Isuzu,NPR,2023,4,494
+tenant-033,Ford,Mustang,2021,4,311
+tenant-045,Aston Martin,DB6,2013,3,340
+tenant-012,Aston Martin,Vantage,2019,3,426
+tenant-040,Freightliner,Cascadia,2026,5,496
+tenant-014,Aston Martin,Vantage,2013,5,80
+tenant-041,Kenworth,T680,2015,3,386
+tenant-035,Toyota,Camry,2022,4,398
+tenant-004,Volvo,VNL,2014,1,141
+tenant-010,Peterbilt,579,2015,2,72
+tenant-036,Isuzu,NPR,2015,5,401
+tenant-017,Ford,F-150,2019,1,153
+tenant-014,Porsche,911,2012,4,293
+tenant-010,Freightliner,Cascadia,2014,5,339
+tenant-014,Isuzu,NPR,2016,2,499
+tenant-044,Toyota,Camry,2017,4,375
+tenant-048,Mercedes-Benz,Sprinter,2024,3,62
+tenant-031,Kenworth,T680,2022,4,63
+tenant-048,Peterbilt,579,2024,2,88
+tenant-035,Isuzu,NPR,2021,5,64
+tenant-009,Toyota,Tacoma,2019,4,244
+tenant-047,Mercedes-Benz,Sprinter,2023,2,124
+tenant-043,Toyota,Camry,2012,1,325
+tenant-040,Aston Martin,DB6,2015,3,132
+tenant-038,Aston Martin,DB6,2014,4,438
+tenant-027,Honda,CR-V,2021,2,431
+tenant-020,Aston Martin,Vantage,2014,2,188
+tenant-047,Toyota,Tacoma,2018,5,418
+tenant-041,Porsche,911,2016,5,435
+tenant-041,Honda,CR-V,2015,1,91
+tenant-018,Ford,F-150,2020,1,219
+tenant-022,Peterbilt,579,2019,5,138
+tenant-001,Kenworth,T680,2014,3,261
+tenant-034,Honda,CR-V,2019,2,463
+tenant-027,Honda,CR-V,2023,2,280
+tenant-003,Volvo,VNL,2026,5,486
+tenant-013,Porsche,911,2012,2,225
+tenant-028,Isuzu,NPR,2024,4,495
+tenant-026,Aston Martin,Vantage,2013,3,421
+tenant-034,Toyota,Tacoma,2021,4,354
+tenant-021,Peterbilt,579,2018,4,35
+tenant-041,Chevrolet,Silverado,2017,3,311
+tenant-005,Volvo,VNL,2020,5,469
+tenant-020,Toyota,Camry,2021,1,66
+tenant-039,Aston Martin,Vantage,2022,4,393
+tenant-034,Porsche,911,2019,1,93
+tenant-012,Aston Martin,Vantage,2017,3,337
+tenant-007,Toyota,Camry,2017,5,15
+tenant-048,Toyota,Tacoma,2025,5,266
+tenant-041,Ford,F-150,2013,1,445
+tenant-018,Volvo,VNL,2025,1,467
+tenant-014,Porsche,911,2026,5,212
+tenant-008,Isuzu,NPR,2021,5,240
+tenant-007,Honda,CR-V,2026,5,192
+tenant-012,Peterbilt,579,2019,4,23
+tenant-028,Ford,Mustang,2012,2,328
+tenant-026,Volvo,VNL,2016,3,468
+tenant-009,Volvo,VNL,2019,5,490
+tenant-040,Aston Martin,DB6,2022,1,348
+tenant-031,Peterbilt,579,2011,2,407
+tenant-037,Toyota,Tacoma,2024,4,392
+tenant-020,Ford,F-150,2012,1,129
+tenant-033,Aston Martin,DB6,2025,3,196
+tenant-003,Peterbilt,579,2019,1,264
+tenant-019,Ford,Mustang,2014,2,21
+tenant-038,Freightliner,Cascadia,2023,1,169
+tenant-009,Chevrolet,Silverado,2021,5,287
+tenant-031,Porsche,911,2021,3,195
+tenant-033,Mercedes-Benz,Sprinter,2018,2,260
+tenant-041,Peterbilt,579,2012,4,175
+tenant-048,Chevrolet,Silverado,2026,4,104
+tenant-032,Toyota,Tacoma,2013,2,414
+tenant-021,Toyota,Tacoma,2013,1,218
+tenant-042,Toyota,Camry,2013,3,21
+tenant-024,Kenworth,T680,2023,2,149
+tenant-040,Isuzu,NPR,2025,3,37
+tenant-046,Toyota,Camry,2014,1,360
+tenant-034,Ford,F-150,2014,2,62
+tenant-019,Honda,CR-V,2022,2,214
+tenant-008,Freightliner,Cascadia,2017,4,492
+tenant-036,Freightliner,Cascadia,2011,1,268
+tenant-024,Honda,CR-V,2010,5,484
+tenant-031,Aston Martin,Vantage,2024,5,56
+tenant-039,Chevrolet,Silverado,2012,4,43
+tenant-022,Chevrolet,Silverado,2014,4,497
+tenant-009,Mercedes-Benz,Sprinter,2020,1,442
+tenant-017,Honda,CR-V,2022,4,220
+tenant-038,Mercedes-Benz,Sprinter,2021,3,131
+tenant-023,Chevrolet,Silverado,2018,3,445
+tenant-025,Ford,F-150,2016,4,26
+tenant-002,Freightliner,Cascadia,2023,5,168
+tenant-042,Volvo,VNL,2015,5,163
+tenant-035,Volvo,VNL,2018,5,124
+tenant-027,Ford,Mustang,2021,3,18
+tenant-050,Kenworth,T680,2019,5,473
+tenant-016,Toyota,Camry,2024,5,259
+tenant-033,Freightliner,Cascadia,2010,1,331
+tenant-008,Aston Martin,Vantage,2014,5,314
+tenant-013,Toyota,Tacoma,2018,3,488
+tenant-002,Peterbilt,579,2017,2,297
+tenant-002,Aston Martin,DB6,2020,4,401
+tenant-035,Aston Martin,DB6,2023,1,11
+tenant-042,Volvo,VNL,2013,2,60
+tenant-007,Isuzu,NPR,2013,1,272
+tenant-047,Aston Martin,DB6,2014,3,233
+tenant-007,Peterbilt,579,2010,5,132
+tenant-023,Chevrolet,Silverado,2013,1,267
+tenant-011,Porsche,911,2023,4,331
+tenant-033,Freightliner,Cascadia,2013,5,161
+tenant-031,Freightliner,Cascadia,2025,5,252
+tenant-011,Toyota,Camry,2012,1,473
+tenant-023,Aston Martin,Vantage,2011,2,31
+tenant-049,Aston Martin,Vantage,2021,3,148
+tenant-021,Kenworth,T680,2026,2,206
+tenant-019,Mercedes-Benz,Sprinter,2017,5,70
+tenant-002,Freightliner,Cascadia,2016,5,221
+tenant-025,Chevrolet,Silverado,2010,4,312
+tenant-048,Freightliner,Cascadia,2016,1,270
+tenant-013,Peterbilt,579,2023,5,356
+tenant-004,Volvo,VNL,2017,3,148
+tenant-040,Aston Martin,Vantage,2023,4,491
+tenant-033,Mercedes-Benz,Sprinter,2023,3,406
+tenant-042,Aston Martin,Vantage,2011,1,436
+tenant-009,Ford,Mustang,2018,2,373
+tenant-044,Isuzu,NPR,2014,1,170
+tenant-002,Honda,CR-V,2010,4,92
+tenant-003,Toyota,Camry,2015,5,250
+tenant-002,Kenworth,T680,2019,1,112
+tenant-021,Chevrolet,Silverado,2024,2,6
+tenant-018,Ford,F-150,2021,4,367
+tenant-034,Chevrolet,Silverado,2025,5,11
+tenant-028,Toyota,Tacoma,2012,1,30
+tenant-031,Honda,CR-V,2019,4,234
+tenant-014,Freightliner,Cascadia,2026,2,393
+tenant-024,Chevrolet,Silverado,2010,4,21
+tenant-019,Porsche,911,2012,4,184
+tenant-033,Honda,CR-V,2021,3,94
+tenant-013,Mercedes-Benz,Sprinter,2025,5,37
+tenant-017,Toyota,Camry,2014,2,370
+tenant-030,Ford,Mustang,2023,4,72
+tenant-018,Honda,CR-V,2025,2,410
+tenant-043,Toyota,Camry,2013,3,3
+tenant-005,Aston Martin,DB6,2019,1,429
+tenant-006,Peterbilt,579,2012,1,244
+tenant-029,Aston Martin,DB6,2017,5,165
+tenant-028,Chevrolet,Silverado,2012,2,252
+tenant-008,Honda,CR-V,2012,2,221
+tenant-032,Aston Martin,DB6,2022,1,250
+tenant-002,Freightliner,Cascadia,2017,4,115
+tenant-002,Mercedes-Benz,Sprinter,2015,4,452
+tenant-011,Isuzu,NPR,2023,3,413
+tenant-050,Porsche,911,2026,4,415
+tenant-010,Ford,F-150,2014,1,3
+tenant-017,Aston Martin,DB6,2014,5,106
+tenant-044,Volvo,VNL,2011,5,68
+tenant-014,Kenworth,T680,2026,4,24
+tenant-019,Porsche,911,2011,1,354
+tenant-034,Aston Martin,DB6,2024,3,92
+tenant-037,Mercedes-Benz,Sprinter,2011,4,471
+tenant-026,Aston Martin,DB6,2020,2,285
+tenant-004,Aston Martin,DB6,2025,4,148
+tenant-028,Toyota,Tacoma,2012,5,419
+tenant-045,Isuzu,NPR,2025,2,273
+tenant-040,Honda,CR-V,2017,4,125
+tenant-022,Volvo,VNL,2017,5,47
+tenant-005,Freightliner,Cascadia,2024,3,433
+tenant-022,Ford,F-150,2022,2,435
+tenant-033,Porsche,911,2020,4,499
+tenant-035,Porsche,911,2019,5,372
+tenant-037,Kenworth,T680,2024,2,5
+tenant-033,Aston Martin,DB6,2011,1,354
+tenant-034,Isuzu,NPR,2010,4,3
+tenant-045,Honda,CR-V,2015,5,28
+tenant-022,Toyota,Tacoma,2026,3,495
+tenant-027,Toyota,Camry,2017,3,96
+tenant-048,Freightliner,Cascadia,2024,2,253
+tenant-034,Freightliner,Cascadia,2011,3,283
+tenant-018,Toyota,Camry,2021,4,423
+tenant-042,Freightliner,Cascadia,2011,3,485
+tenant-022,Toyota,Camry,2010,5,78
+tenant-024,Isuzu,NPR,2018,5,416
+tenant-003,Chevrolet,Silverado,2023,2,32
+tenant-020,Isuzu,NPR,2016,2,135
+tenant-034,Freightliner,Cascadia,2012,4,65
+tenant-041,Peterbilt,579,2024,1,291
+tenant-040,Ford,Mustang,2016,4,3
+tenant-011,Porsche,911,2017,3,35
+tenant-033,Freightliner,Cascadia,2017,4,317
+tenant-029,Honda,CR-V,2026,3,251
+tenant-010,Peterbilt,579,2022,2,343
+tenant-049,Aston Martin,Vantage,2016,4,129
+tenant-039,Isuzu,NPR,2022,1,97
+tenant-015,Ford,Mustang,2026,3,165
+tenant-010,Isuzu,NPR,2016,3,391
+tenant-035,Freightliner,Cascadia,2026,5,175
+tenant-021,Aston Martin,Vantage,2020,2,411
+tenant-027,Toyota,Camry,2019,4,149
+tenant-037,Peterbilt,579,2024,4,297
+tenant-035,Toyota,Camry,2015,2,373
+tenant-024,Aston Martin,DB6,2011,3,125
+tenant-010,Ford,F-150,2026,2,253
+tenant-018,Honda,CR-V,2020,5,497
+tenant-008,Mercedes-Benz,Sprinter,2015,5,394
+tenant-025,Aston Martin,DB6,2016,2,388
+tenant-040,Aston Martin,DB6,2024,3,160
+tenant-030,Mercedes-Benz,Sprinter,2014,2,83
+tenant-033,Chevrolet,Silverado,2022,1,5
+tenant-041,Peterbilt,579,2018,1,33
+tenant-040,Freightliner,Cascadia,2021,4,261
+tenant-024,Isuzu,NPR,2014,5,106
+tenant-019,Aston Martin,Vantage,2024,5,331
+tenant-025,Mercedes-Benz,Sprinter,2020,3,290
+tenant-015,Mercedes-Benz,Sprinter,2023,4,406
+tenant-044,Mercedes-Benz,Sprinter,2010,3,82
+tenant-047,Toyota,Tacoma,2012,3,293
+tenant-029,Aston Martin,DB6,2026,3,18
+tenant-048,Toyota,Camry,2010,2,36
+tenant-032,Volvo,VNL,2011,1,66
+tenant-022,Ford,F-150,2022,3,159
+tenant-035,Kenworth,T680,2013,2,288
+tenant-004,Kenworth,T680,2019,1,117
+tenant-015,Toyota,Tacoma,2014,3,289
+tenant-018,Freightliner,Cascadia,2017,1,234
+tenant-041,Volvo,VNL,2018,1,385
+tenant-006,Ford,Mustang,2011,3,496
+tenant-036,Honda,CR-V,2015,3,213
+tenant-001,Porsche,911,2021,2,84
+tenant-018,Porsche,911,2025,3,229
+tenant-043,Toyota,Tacoma,2011,2,311
+tenant-008,Volvo,VNL,2020,2,478
+tenant-017,Volvo,VNL,2025,2,152
+tenant-011,Volvo,VNL,2012,4,351
+tenant-050,Toyota,Camry,2011,1,63
+tenant-041,Kenworth,T680,2017,4,133
+tenant-016,Freightliner,Cascadia,2011,2,78
+tenant-040,Ford,Mustang,2011,4,472
+tenant-013,Volvo,VNL,2021,3,273
+tenant-039,Aston Martin,Vantage,2020,3,210
+tenant-022,Volvo,VNL,2010,4,268
+tenant-017,Kenworth,T680,2018,1,334
+tenant-019,Peterbilt,579,2021,1,288
+tenant-031,Aston Martin,Vantage,2022,5,183
+tenant-012,Mercedes-Benz,Sprinter,2023,2,142
+tenant-021,Honda,CR-V,2018,1,134
+tenant-001,Aston Martin,Vantage,2026,4,471
+tenant-050,Aston Martin,DB6,2015,3,119
+tenant-016,Toyota,Tacoma,2013,3,474
+tenant-027,Toyota,Tacoma,2017,1,281
+tenant-043,Honda,CR-V,2025,4,282
+tenant-009,Chevrolet,Silverado,2013,2,137
+tenant-036,Ford,F-150,2015,3,493
+tenant-004,Kenworth,T680,2025,1,142
+tenant-047,Ford,Mustang,2015,4,48
+tenant-007,Isuzu,NPR,2016,1,464
+tenant-043,Volvo,VNL,2026,1,366
+tenant-038,Peterbilt,579,2021,1,16
+tenant-023,Peterbilt,579,2011,4,428
+tenant-028,Aston Martin,DB6,2012,3,277
+tenant-042,Freightliner,Cascadia,2011,3,44
+tenant-013,Ford,F-150,2024,5,5
+tenant-027,Chevrolet,Silverado,2021,4,414
+tenant-007,Peterbilt,579,2014,1,132
+tenant-019,Isuzu,NPR,2011,2,7
+tenant-007,Aston Martin,Vantage,2020,3,417
+tenant-029,Toyota,Tacoma,2021,5,410
+tenant-010,Toyota,Tacoma,2014,3,85
+tenant-023,Isuzu,NPR,2017,5,292
+tenant-012,Chevrolet,Silverado,2014,2,33
+tenant-008,Isuzu,NPR,2010,1,200
+tenant-050,Peterbilt,579,2024,5,219
+tenant-041,Ford,F-150,2021,3,448
+tenant-036,Freightliner,Cascadia,2012,3,444
+tenant-037,Honda,CR-V,2011,3,438
+tenant-010,Freightliner,Cascadia,2016,5,480
+tenant-009,Isuzu,NPR,2018,5,71
+tenant-025,Chevrolet,Silverado,2014,1,84
+tenant-049,Freightliner,Cascadia,2015,3,156
+tenant-011,Honda,CR-V,2011,2,289
+tenant-049,Aston Martin,Vantage,2014,4,489
+tenant-037,Chevrolet,Silverado,2021,3,265
+tenant-048,Kenworth,T680,2013,1,288
+tenant-024,Toyota,Camry,2017,1,120
+tenant-017,Toyota,Camry,2026,4,98
+tenant-031,Volvo,VNL,2025,2,388
+tenant-003,Aston Martin,DB6,2022,1,254
+tenant-041,Peterbilt,579,2012,1,397
+tenant-001,Ford,Mustang,2018,3,394
+tenant-016,Porsche,911,2012,5,146
+tenant-045,Volvo,VNL,2017,1,13
+tenant-045,Ford,Mustang,2013,2,139
+tenant-004,Chevrolet,Silverado,2020,2,95
+tenant-050,Peterbilt,579,2019,2,208
+tenant-014,Volvo,VNL,2014,5,365
+tenant-046,Porsche,911,2011,4,48
+tenant-046,Kenworth,T680,2012,2,491
+tenant-017,Porsche,911,2013,5,262
+tenant-008,Honda,CR-V,2023,5,422
+tenant-012,Volvo,VNL,2021,3,360
+tenant-023,Ford,F-150,2015,5,286
+tenant-019,Peterbilt,579,2015,5,344
+tenant-009,Porsche,911,2017,4,17
+tenant-022,Volvo,VNL,2023,2,63
+tenant-024,Aston Martin,DB6,2010,4,193
+tenant-014,Aston Martin,DB6,2021,5,235
+tenant-019,Freightliner,Cascadia,2018,2,67
+tenant-036,Volvo,VNL,2015,5,379
+tenant-040,Aston Martin,DB6,2022,5,204
+tenant-023,Toyota,Tacoma,2015,3,279
+tenant-024,Toyota,Camry,2016,3,379
+tenant-010,Mercedes-Benz,Sprinter,2023,4,192
+tenant-014,Honda,CR-V,2014,3,92
+tenant-024,Honda,CR-V,2018,2,44
+tenant-029,Mercedes-Benz,Sprinter,2015,3,296
+tenant-009,Honda,CR-V,2025,1,238
+tenant-026,Honda,CR-V,2011,4,45
+tenant-023,Peterbilt,579,2017,4,273
+tenant-043,Peterbilt,579,2026,3,264
+tenant-036,Porsche,911,2025,2,2
+tenant-018,Honda,CR-V,2015,2,58
+tenant-048,Kenworth,T680,2011,3,423
+tenant-012,Aston Martin,Vantage,2016,4,267
+tenant-015,Freightliner,Cascadia,2015,4,252
+tenant-027,Toyota,Tacoma,2024,1,167
+tenant-032,Toyota,Tacoma,2026,3,244
+tenant-027,Chevrolet,Silverado,2023,3,320
+tenant-024,Mercedes-Benz,Sprinter,2025,2,287
+tenant-035,Kenworth,T680,2013,5,168
+tenant-047,Aston Martin,DB6,2025,5,222
+tenant-044,Freightliner,Cascadia,2021,1,365
+tenant-043,Freightliner,Cascadia,2016,3,2
+tenant-004,Kenworth,T680,2024,5,283
+tenant-028,Mercedes-Benz,Sprinter,2024,5,125
+tenant-041,Volvo,VNL,2020,3,348
+tenant-025,Honda,CR-V,2026,2,392
+tenant-020,Peterbilt,579,2016,1,372
+tenant-008,Peterbilt,579,2026,5,79
+tenant-023,Toyota,Camry,2015,5,274
+tenant-042,Mercedes-Benz,Sprinter,2016,4,303
+tenant-015,Aston Martin,Vantage,2018,3,30
+tenant-050,Aston Martin,DB6,2011,1,360
+tenant-027,Isuzu,NPR,2022,2,434
+tenant-049,Freightliner,Cascadia,2026,2,373
+tenant-038,Isuzu,NPR,2013,1,73
+tenant-031,Ford,F-150,2026,2,304
+tenant-001,Kenworth,T680,2014,4,192
+tenant-013,Volvo,VNL,2018,3,444
+tenant-007,Kenworth,T680,2022,5,42
+tenant-042,Chevrolet,Silverado,2012,4,484
+tenant-016,Chevrolet,Silverado,2012,1,410
+tenant-012,Freightliner,Cascadia,2014,1,195
+tenant-040,Ford,F-150,2025,1,35
+tenant-024,Honda,CR-V,2018,4,340
+tenant-036,Toyota,Camry,2018,4,193
+tenant-037,Honda,CR-V,2025,5,372
+tenant-034,Kenworth,T680,2026,3,219
+tenant-047,Peterbilt,579,2010,3,224
+tenant-030,Honda,CR-V,2014,1,243
+tenant-007,Toyota,Camry,2015,1,40
+tenant-004,Honda,CR-V,2020,4,165
+tenant-009,Chevrolet,Silverado,2016,5,491
+tenant-028,Volvo,VNL,2022,3,339
+tenant-028,Honda,CR-V,2013,3,323
+tenant-010,Porsche,911,2021,4,61
+tenant-025,Volvo,VNL,2020,1,451
+tenant-050,Porsche,911,2015,5,496
+tenant-046,Chevrolet,Silverado,2014,4,328
+tenant-033,Aston Martin,DB6,2024,5,224
+tenant-011,Mercedes-Benz,Sprinter,2025,3,95
+tenant-030,Peterbilt,579,2013,1,85
+tenant-035,Peterbilt,579,2012,3,174
+tenant-049,Chevrolet,Silverado,2014,1,493
+tenant-044,Mercedes-Benz,Sprinter,2019,2,24
+tenant-043,Aston Martin,DB6,2019,1,284
+tenant-011,Porsche,911,2022,5,476
+tenant-006,Toyota,Tacoma,2024,5,426
+tenant-014,Porsche,911,2019,4,168
+tenant-002,Toyota,Tacoma,2019,5,208
+tenant-050,Ford,F-150,2026,3,133
+tenant-003,Toyota,Camry,2012,4,260
+tenant-011,Mercedes-Benz,Sprinter,2010,2,134
+tenant-009,Toyota,Camry,2020,2,98
+tenant-039,Isuzu,NPR,2013,3,189
+tenant-046,Chevrolet,Silverado,2018,3,450
+tenant-022,Freightliner,Cascadia,2024,3,321
+tenant-035,Mercedes-Benz,Sprinter,2026,2,310
+tenant-010,Aston Martin,DB6,2011,5,206
+tenant-014,Chevrolet,Silverado,2019,4,397
+tenant-002,Ford,F-150,2019,2,235
+tenant-038,Freightliner,Cascadia,2015,1,113
+tenant-015,Peterbilt,579,2020,4,155
+tenant-017,Mercedes-Benz,Sprinter,2026,2,392
+tenant-041,Kenworth,T680,2014,3,446
+tenant-013,Chevrolet,Silverado,2023,1,351
+tenant-042,Toyota,Tacoma,2015,2,197
+tenant-035,Ford,F-150,2017,3,78
+tenant-034,Peterbilt,579,2025,3,154
+tenant-007,Aston Martin,Vantage,2025,4,463
+tenant-050,Toyota,Tacoma,2025,2,189
+tenant-026,Freightliner,Cascadia,2020,4,277
+tenant-028,Chevrolet,Silverado,2012,5,4
+tenant-024,Ford,Mustang,2017,3,103
+tenant-022,Freightliner,Cascadia,2024,2,324
+tenant-012,Toyota,Camry,2023,2,418
+tenant-034,Ford,F-150,2023,2,48
+tenant-021,Porsche,911,2012,1,146
+tenant-045,Isuzu,NPR,2019,1,53
+tenant-011,Toyota,Camry,2019,2,195
+tenant-019,Ford,Mustang,2024,5,196
+tenant-035,Volvo,VNL,2024,2,410
+tenant-037,Ford,F-150,2010,4,233
+tenant-019,Ford,F-150,2014,5,153
+tenant-040,Honda,CR-V,2021,4,197
+tenant-030,Porsche,911,2012,4,74
+tenant-007,Ford,Mustang,2016,2,165
+tenant-042,Porsche,911,2010,3,202
+tenant-046,Porsche,911,2014,5,325
+tenant-029,Volvo,VNL,2021,5,188
+tenant-007,Kenworth,T680,2020,3,486
+tenant-030,Honda,CR-V,2024,4,148
+tenant-034,Aston Martin,Vantage,2015,3,432
+tenant-037,Aston Martin,Vantage,2011,3,453
+tenant-020,Ford,F-150,2026,4,21
+tenant-010,Mercedes-Benz,Sprinter,2025,3,79
+tenant-026,Toyota,Camry,2019,4,171
+tenant-038,Mercedes-Benz,Sprinter,2014,2,407
+tenant-019,Toyota,Tacoma,2022,5,276
+tenant-030,Mercedes-Benz,Sprinter,2023,4,374
+tenant-020,Honda,CR-V,2014,5,311
+tenant-027,Chevrolet,Silverado,2019,5,244
+tenant-020,Honda,CR-V,2021,5,448
+tenant-025,Ford,Mustang,2015,1,163
+tenant-016,Mercedes-Benz,Sprinter,2018,5,384
+tenant-023,Isuzu,NPR,2025,1,93
+tenant-026,Peterbilt,579,2022,5,419
+tenant-037,Honda,CR-V,2012,1,404
+tenant-043,Honda,CR-V,2010,4,184
+tenant-043,Honda,CR-V,2026,5,157
+tenant-039,Peterbilt,579,2010,4,347
+tenant-005,Chevrolet,Silverado,2018,2,174
+tenant-044,Peterbilt,579,2012,2,483
+tenant-010,Porsche,911,2020,5,296
+tenant-045,Toyota,Camry,2012,1,459
+tenant-035,Honda,CR-V,2013,2,317
+tenant-045,Isuzu,NPR,2013,5,34
+tenant-049,Honda,CR-V,2020,4,412
+tenant-047,Aston Martin,Vantage,2021,2,431
+tenant-019,Aston Martin,Vantage,2020,2,270
+tenant-007,Isuzu,NPR,2026,2,313
+tenant-049,Toyota,Tacoma,2012,4,149
+tenant-032,Volvo,VNL,2017,2,127
+tenant-047,Ford,Mustang,2012,5,231
+tenant-003,Freightliner,Cascadia,2021,4,86
+tenant-032,Isuzu,NPR,2019,1,453
+tenant-018,Isuzu,NPR,2016,4,336
+tenant-029,Ford,F-150,2021,1,146
+tenant-042,Aston Martin,DB6,2013,4,340
+tenant-042,Peterbilt,579,2023,5,34
+tenant-026,Mercedes-Benz,Sprinter,2015,4,141
+tenant-018,Ford,F-150,2014,2,248
+tenant-009,Toyota,Tacoma,2013,4,98
+tenant-003,Toyota,Tacoma,2012,1,234
+tenant-013,Kenworth,T680,2023,2,53
+tenant-024,Ford,F-150,2019,5,121
+tenant-004,Volvo,VNL,2015,4,241
+tenant-031,Freightliner,Cascadia,2021,1,72
+tenant-014,Ford,Mustang,2010,1,185
+tenant-003,Toyota,Camry,2020,3,390
+tenant-025,Aston Martin,Vantage,2018,1,311
+tenant-039,Ford,F-150,2024,3,196
+tenant-031,Ford,F-150,2021,4,92
+tenant-034,Chevrolet,Silverado,2026,3,323
+tenant-028,Honda,CR-V,2010,3,264
+tenant-030,Volvo,VNL,2012,3,276
+tenant-027,Mercedes-Benz,Sprinter,2018,4,141
+tenant-003,Aston Martin,Vantage,2015,1,338
+tenant-012,Freightliner,Cascadia,2020,4,234
+tenant-024,Ford,Mustang,2023,1,214
+tenant-035,Aston Martin,Vantage,2014,5,366
+tenant-006,Freightliner,Cascadia,2016,5,393
+tenant-035,Toyota,Tacoma,2024,1,68
+tenant-031,Aston Martin,DB6,2017,3,259
+tenant-047,Toyota,Tacoma,2011,4,61
+tenant-027,Aston Martin,Vantage,2018,4,32
+tenant-017,Freightliner,Cascadia,2024,4,373
+tenant-020,Aston Martin,DB6,2025,3,481
+tenant-048,Chevrolet,Silverado,2019,2,68
+tenant-042,Ford,Mustang,2020,5,399
+tenant-010,Freightliner,Cascadia,2016,2,90
+tenant-048,Peterbilt,579,2018,4,217
+tenant-042,Mercedes-Benz,Sprinter,2012,3,288
+tenant-007,Mercedes-Benz,Sprinter,2021,2,191
+tenant-049,Toyota,Camry,2010,1,91
+tenant-050,Ford,F-150,2013,1,171
+tenant-020,Freightliner,Cascadia,2014,2,457
+tenant-004,Isuzu,NPR,2024,4,470
+tenant-045,Ford,F-150,2014,2,164
+tenant-029,Isuzu,NPR,2026,5,425
+tenant-002,Toyota,Camry,2012,2,451
+tenant-022,Mercedes-Benz,Sprinter,2017,1,417
+tenant-022,Aston Martin,DB6,2020,2,134
+tenant-005,Toyota,Camry,2013,5,352
+tenant-019,Ford,F-150,2014,4,13
+tenant-046,Aston Martin,Vantage,2024,2,133
+tenant-004,Mercedes-Benz,Sprinter,2012,3,81
+tenant-026,Freightliner,Cascadia,2024,5,206
+tenant-037,Ford,Mustang,2014,1,331
+tenant-042,Mercedes-Benz,Sprinter,2016,3,335
+tenant-016,Toyota,Tacoma,2025,1,361
+tenant-004,Aston Martin,DB6,2026,1,306
+tenant-010,Aston Martin,DB6,2010,2,134
+tenant-020,Freightliner,Cascadia,2012,1,461
+tenant-005,Chevrolet,Silverado,2021,1,171
+tenant-013,Mercedes-Benz,Sprinter,2021,1,356
+tenant-015,Volvo,VNL,2022,2,350
+tenant-019,Ford,F-150,2023,4,428
+tenant-011,Aston Martin,DB6,2025,3,236
+tenant-049,Honda,CR-V,2023,5,237
+tenant-022,Toyota,Camry,2016,2,296
+tenant-023,Mercedes-Benz,Sprinter,2015,4,448
+tenant-022,Aston Martin,Vantage,2010,1,91
+tenant-015,Aston Martin,DB6,2022,4,301
+tenant-037,Ford,Mustang,2010,1,312
+tenant-006,Aston Martin,Vantage,2026,2,155
+tenant-026,Chevrolet,Silverado,2011,4,67
+tenant-049,Mercedes-Benz,Sprinter,2022,5,401
+tenant-023,Chevrolet,Silverado,2016,4,51
+tenant-007,Freightliner,Cascadia,2015,3,487
+tenant-048,Aston Martin,DB6,2011,3,133
+tenant-005,Toyota,Camry,2018,4,300
+tenant-034,Mercedes-Benz,Sprinter,2014,3,351
+tenant-018,Aston Martin,DB6,2011,5,284
+tenant-046,Aston Martin,DB6,2025,3,59
+tenant-040,Ford,F-150,2010,2,34
+tenant-030,Ford,F-150,2019,2,243
+tenant-004,Chevrolet,Silverado,2025,1,230
+tenant-039,Mercedes-Benz,Sprinter,2013,2,67
+tenant-001,Peterbilt,579,2014,4,66
+tenant-037,Freightliner,Cascadia,2024,1,140
+tenant-002,Isuzu,NPR,2014,3,140
+tenant-038,Porsche,911,2024,5,175
+tenant-037,Ford,Mustang,2017,2,452
+tenant-015,Isuzu,NPR,2025,4,1
+tenant-022,Toyota,Tacoma,2024,4,324
+tenant-027,Porsche,911,2019,2,444
+tenant-047,Freightliner,Cascadia,2011,3,141
+tenant-026,Volvo,VNL,2013,1,352
+tenant-011,Aston Martin,Vantage,2016,1,246
+tenant-002,Kenworth,T680,2012,1,227
+tenant-021,Toyota,Tacoma,2016,3,233
+tenant-023,Freightliner,Cascadia,2025,1,191
+tenant-030,Aston Martin,DB6,2024,4,380
+tenant-023,Porsche,911,2015,3,36
+tenant-004,Freightliner,Cascadia,2013,1,427
+tenant-033,Peterbilt,579,2013,2,81
+tenant-047,Isuzu,NPR,2014,4,111
+tenant-028,Honda,CR-V,2012,4,406
+tenant-025,Toyota,Tacoma,2025,2,353
+tenant-045,Chevrolet,Silverado,2014,3,472
+tenant-050,Ford,Mustang,2010,1,413
+tenant-008,Kenworth,T680,2023,1,328
+tenant-023,Isuzu,NPR,2014,3,231
+tenant-023,Volvo,VNL,2026,5,70
+tenant-002,Ford,Mustang,2018,2,105
+tenant-011,Ford,Mustang,2018,5,461
+tenant-050,Toyota,Tacoma,2024,2,440
+tenant-039,Kenworth,T680,2026,2,367
+tenant-032,Peterbilt,579,2012,2,445
+tenant-014,Aston Martin,DB6,2023,2,374
+tenant-022,Aston Martin,Vantage,2024,2,456
+tenant-043,Toyota,Camry,2010,3,52
+tenant-047,Aston Martin,Vantage,2022,3,395
+tenant-047,Honda,CR-V,2013,5,299
+tenant-035,Honda,CR-V,2024,4,330
+tenant-038,Aston Martin,DB6,2010,5,256
+tenant-044,Aston Martin,DB6,2015,5,332
+tenant-024,Toyota,Tacoma,2014,3,445
+tenant-032,Aston Martin,DB6,2025,4,401
+tenant-046,Peterbilt,579,2015,2,364
+tenant-009,Ford,Mustang,2024,5,336
+tenant-005,Mercedes-Benz,Sprinter,2021,4,272
+tenant-036,Kenworth,T680,2024,1,40
+tenant-036,Toyota,Tacoma,2011,3,252
+tenant-028,Aston Martin,DB6,2021,5,284
+tenant-003,Mercedes-Benz,Sprinter,2025,2,231
+tenant-018,Mercedes-Benz,Sprinter,2025,4,72
+tenant-022,Ford,Mustang,2025,3,281
+tenant-028,Porsche,911,2024,3,390
+tenant-003,Honda,CR-V,2017,1,76
+tenant-029,Chevrolet,Silverado,2024,3,143
+tenant-045,Aston Martin,Vantage,2020,2,71
+tenant-003,Ford,Mustang,2022,3,143
+tenant-025,Mercedes-Benz,Sprinter,2025,5,267
+tenant-005,Ford,F-150,2019,2,117
+tenant-044,Mercedes-Benz,Sprinter,2023,4,460
+tenant-036,Honda,CR-V,2025,2,428
+tenant-016,Volvo,VNL,2023,1,483
+tenant-050,Isuzu,NPR,2012,3,90
+tenant-017,Porsche,911,2010,5,25
+tenant-019,Aston Martin,Vantage,2021,2,38
+tenant-004,Kenworth,T680,2010,4,392
+tenant-037,Porsche,911,2010,2,497
+tenant-032,Ford,F-150,2020,3,103
+tenant-032,Ford,F-150,2016,2,173
+tenant-002,Volvo,VNL,2021,3,299
+tenant-041,Ford,F-150,2012,3,55
+tenant-032,Toyota,Camry,2018,3,35
+tenant-023,Peterbilt,579,2015,5,406
+tenant-005,Kenworth,T680,2014,5,199
+tenant-007,Porsche,911,2014,5,389
+tenant-025,Porsche,911,2014,4,92
+tenant-032,Honda,CR-V,2016,3,178
+tenant-049,Ford,F-150,2010,1,305
+tenant-023,Freightliner,Cascadia,2012,4,484
+tenant-023,Toyota,Camry,2015,1,323
+tenant-003,Ford,F-150,2013,4,408
+tenant-041,Ford,F-150,2011,5,307
+tenant-002,Toyota,Camry,2018,4,443
+tenant-010,Aston Martin,Vantage,2018,2,489
+tenant-038,Ford,F-150,2021,1,23
+tenant-037,Toyota,Tacoma,2020,1,9
+tenant-020,Peterbilt,579,2010,2,435
+tenant-003,Toyota,Tacoma,2022,5,173
+tenant-012,Aston Martin,Vantage,2023,4,55
+tenant-031,Aston Martin,DB6,2025,3,188
+tenant-011,Aston Martin,Vantage,2025,1,124
+tenant-018,Mercedes-Benz,Sprinter,2011,2,483
+tenant-046,Mercedes-Benz,Sprinter,2019,2,83
+tenant-025,Isuzu,NPR,2021,5,475
+tenant-019,Ford,F-150,2021,5,491
+tenant-043,Volvo,VNL,2015,4,342
+tenant-012,Aston Martin,Vantage,2012,2,185
+tenant-017,Aston Martin,DB6,2021,4,160
+tenant-007,Peterbilt,579,2014,3,470
+tenant-023,Toyota,Camry,2021,5,212
+tenant-040,Ford,F-150,2014,5,131
+tenant-034,Mercedes-Benz,Sprinter,2012,4,383
+tenant-029,Toyota,Camry,2014,2,17
+tenant-005,Freightliner,Cascadia,2010,3,461
+tenant-009,Ford,Mustang,2026,3,72
+tenant-042,Aston Martin,DB6,2022,2,126
+tenant-045,Chevrolet,Silverado,2023,2,309
+tenant-027,Honda,CR-V,2012,1,307
+tenant-022,Ford,F-150,2024,5,317
+tenant-044,Aston Martin,Vantage,2026,1,310
+tenant-050,Volvo,VNL,2018,1,425
+tenant-024,Aston Martin,DB6,2026,5,466
+tenant-050,Ford,Mustang,2022,4,387
+tenant-031,Isuzu,NPR,2021,1,422
+tenant-025,Toyota,Tacoma,2019,4,170
+tenant-037,Toyota,Tacoma,2014,2,382
+tenant-019,Chevrolet,Silverado,2023,1,346
+tenant-030,Isuzu,NPR,2019,2,94
+tenant-041,Peterbilt,579,2025,3,340
+tenant-017,Aston Martin,DB6,2013,5,214
+tenant-045,Aston Martin,DB6,2014,3,61
+tenant-021,Peterbilt,579,2019,3,372
+tenant-007,Chevrolet,Silverado,2011,2,231
+tenant-007,Peterbilt,579,2020,2,366
+tenant-011,Isuzu,NPR,2020,1,357
+tenant-040,Ford,Mustang,2020,2,69
+tenant-033,Freightliner,Cascadia,2016,3,215
+tenant-011,Toyota,Tacoma,2026,4,130
+tenant-024,Isuzu,NPR,2016,5,442
+tenant-021,Volvo,VNL,2026,1,220
+tenant-029,Peterbilt,579,2010,4,246
+tenant-026,Volvo,VNL,2025,4,463
+tenant-004,Freightliner,Cascadia,2026,3,277
+tenant-024,Ford,F-150,2019,1,20
+tenant-015,Ford,F-150,2015,4,194
+tenant-036,Ford,F-150,2022,5,180
+tenant-011,Kenworth,T680,2022,2,292
+tenant-050,Kenworth,T680,2011,5,308
+tenant-007,Toyota,Tacoma,2025,2,257
+tenant-005,Freightliner,Cascadia,2020,4,383
+tenant-021,Toyota,Tacoma,2016,3,266
+tenant-002,Peterbilt,579,2023,2,337
+tenant-004,Aston Martin,Vantage,2011,4,233
+tenant-047,Kenworth,T680,2017,3,153
+tenant-044,Kenworth,T680,2012,5,138
+tenant-034,Chevrolet,Silverado,2023,5,12
+tenant-019,Aston Martin,Vantage,2010,4,321
+tenant-001,Toyota,Tacoma,2017,5,302
+tenant-049,Kenworth,T680,2025,2,57
+tenant-008,Toyota,Tacoma,2024,3,18
+tenant-020,Isuzu,NPR,2012,1,149
+tenant-020,Isuzu,NPR,2018,3,428
+tenant-005,Peterbilt,579,2014,4,387
+tenant-036,Honda,CR-V,2012,4,248
+tenant-029,Isuzu,NPR,2013,1,317
+tenant-016,Toyota,Tacoma,2010,5,89
+tenant-029,Volvo,VNL,2013,5,197
+tenant-031,Ford,Mustang,2026,1,434
+tenant-010,Honda,CR-V,2021,4,359
+tenant-036,Volvo,VNL,2024,5,493
+tenant-010,Chevrolet,Silverado,2021,3,213
+tenant-012,Volvo,VNL,2022,2,171
+tenant-046,Aston Martin,Vantage,2019,1,491
+tenant-035,Isuzu,NPR,2016,5,422
+tenant-036,Freightliner,Cascadia,2021,2,156
+tenant-011,Ford,Mustang,2017,2,283
+tenant-031,Volvo,VNL,2015,5,196
+tenant-032,Aston Martin,Vantage,2019,4,238
+tenant-005,Peterbilt,579,2017,2,324
+tenant-040,Honda,CR-V,2026,3,313
+tenant-046,Aston Martin,Vantage,2019,2,281
+tenant-002,Freightliner,Cascadia,2011,3,2
+tenant-032,Aston Martin,Vantage,2013,1,292
+tenant-044,Mercedes-Benz,Sprinter,2025,4,48
+tenant-017,Freightliner,Cascadia,2019,1,365
+tenant-003,Honda,CR-V,2017,1,91
+tenant-005,Ford,F-150,2022,3,141
+tenant-002,Peterbilt,579,2018,4,180
+tenant-019,Porsche,911,2023,4,332
+tenant-025,Volvo,VNL,2012,5,394
+tenant-040,Toyota,Tacoma,2010,1,120
+tenant-036,Chevrolet,Silverado,2024,2,342
+tenant-029,Mercedes-Benz,Sprinter,2022,4,95
+tenant-019,Toyota,Camry,2019,3,112
+tenant-042,Isuzu,NPR,2019,3,338
+tenant-041,Ford,F-150,2023,4,414
+tenant-003,Ford,Mustang,2024,5,125
+tenant-009,Volvo,VNL,2014,3,366
+tenant-004,Kenworth,T680,2018,3,339
+tenant-023,Ford,Mustang,2026,1,63
+tenant-011,Ford,Mustang,2013,4,269
+tenant-040,Freightliner,Cascadia,2020,2,330
+tenant-046,Toyota,Tacoma,2026,1,477
+tenant-007,Honda,CR-V,2014,4,84
+tenant-050,Porsche,911,2011,1,44
+tenant-035,Aston Martin,DB6,2022,1,492
+tenant-006,Honda,CR-V,2013,4,146
+tenant-029,Toyota,Tacoma,2025,2,28
+tenant-003,Porsche,911,2017,5,426
+tenant-047,Honda,CR-V,2013,1,101
+tenant-006,Toyota,Camry,2015,5,411
+tenant-041,Chevrolet,Silverado,2022,3,379
+tenant-020,Ford,Mustang,2025,2,335
+tenant-006,Porsche,911,2014,1,67
+tenant-028,Ford,Mustang,2021,1,490
+tenant-045,Honda,CR-V,2015,5,422
+tenant-017,Honda,CR-V,2014,4,176
+tenant-012,Isuzu,NPR,2015,3,350
+tenant-005,Honda,CR-V,2013,5,72
+tenant-028,Chevrolet,Silverado,2014,3,335
+tenant-017,Freightliner,Cascadia,2019,3,238
+tenant-022,Mercedes-Benz,Sprinter,2020,2,117
+tenant-035,Aston Martin,Vantage,2023,3,212
+tenant-028,Volvo,VNL,2020,4,404
+tenant-003,Mercedes-Benz,Sprinter,2017,4,65
+tenant-003,Kenworth,T680,2018,3,224
+tenant-022,Toyota,Tacoma,2014,3,44
+tenant-039,Volvo,VNL,2018,3,59
+tenant-048,Ford,Mustang,2014,4,113
+tenant-010,Ford,F-150,2011,1,465
+tenant-045,Porsche,911,2023,4,349
+tenant-005,Mercedes-Benz,Sprinter,2012,4,466
+tenant-033,Toyota,Camry,2017,4,242
+tenant-026,Chevrolet,Silverado,2011,3,53
+tenant-041,Aston Martin,DB6,2011,5,473
+tenant-043,Aston Martin,DB6,2022,3,112
+tenant-020,Mercedes-Benz,Sprinter,2026,4,491
+tenant-048,Kenworth,T680,2012,1,198
