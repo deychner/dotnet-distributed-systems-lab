@@ -10,13 +10,18 @@ namespace TenantVault.Controllers
     {
         private readonly IAdminService _adminService = adminService;
 
-        [HttpGet("vehicle")]
+        [HttpGet("vehicles")]
         public async Task<ActionResult<IEnumerable<Vehicle>>> GetVehiclesAsync(
-            [FromQuery] int year,
+            [FromQuery] int? year,
             CancellationToken cancellationToken)
         {
-            var vehicles = await _adminService.GetVehiclesByYearAsync(year, cancellationToken);
-            return vehicles.Any() ? Ok(vehicles) : NotFound();
+            if (year is null)
+            {
+                return BadRequest("Year parameter is required.");
+            }
+
+            var vehicles = await _adminService.GetVehiclesByYearAsync(year.Value, cancellationToken);
+            return Ok(vehicles);
         }
     }
 }
