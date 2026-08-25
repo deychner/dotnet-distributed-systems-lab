@@ -17,6 +17,7 @@ namespace TenantVault
 
             ConfigureCosmos(builder);
             ConfigureLogging(builder);
+            ConfigureExceptionHandling(builder);
 
             // Add services to the container.
             builder.Services.AddScoped<IAdminService, AdminService>();
@@ -36,6 +37,7 @@ namespace TenantVault
                 app.MapOpenApi();
             }
 
+            app.UseExceptionHandler();
             app.UseHttpsRedirection();
             app.UseAuthorization();
             app.MapControllers();
@@ -67,6 +69,12 @@ namespace TenantVault
             });
 
             builder.Services.AddHostedService<CosmosBootstrapper>();
+        }
+
+        private static void ConfigureExceptionHandling(WebApplicationBuilder builder)
+        {
+            builder.Services.AddExceptionHandler<ApiExceptionHandler>();
+            builder.Services.AddProblemDetails();
         }
 
         private static void ConfigureLogging(WebApplicationBuilder builder)
