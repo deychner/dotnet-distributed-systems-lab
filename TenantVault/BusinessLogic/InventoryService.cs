@@ -27,7 +27,8 @@ namespace TenantVault.BusinessLogic
                 throw new VehicleValidationException($"SpotId {vehicle.SpotId} must be a positive number.");
             }
 
-            var vehiclesInWarehouse = await _inventoryDataAdapter.GetVehiclesByWarehouseAsync(vehicle.TenantId!, vehicle.WarehouseId, cancellationToken);
+            var vehiclesInWarehouse = await CosmosOperationRunner.ExecuteAsync(
+                () => _inventoryDataAdapter.GetVehiclesByWarehouseAsync(vehicle.TenantId!, vehicle.WarehouseId, cancellationToken));
             if (vehiclesInWarehouse.Any(v => v.SpotId == vehicle.SpotId))
             {
                 throw new VehicleValidationException($"Warehouse {vehicle.WarehouseId} spot {vehicle.SpotId} is already occupied.");
