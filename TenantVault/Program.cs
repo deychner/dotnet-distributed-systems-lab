@@ -18,6 +18,7 @@ namespace TenantVault
             ConfigureLogging(builder);
 
             // Add services to the container.
+            builder.Services.AddScoped<IAdminService, AdminService>();
             builder.Services.AddScoped<IInventoryService, InventoryService>();
             builder.Services.AddSingleton<IInventoryDataAdapter, InventoryDataAdapter>();
 
