@@ -11,6 +11,8 @@ namespace TenantVault.Controllers
         private readonly IAdminService _adminService = adminService;
 
         [HttpGet("vehicles")]
+        [ProducesResponseType(typeof(IEnumerable<Vehicle>), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<ActionResult<IEnumerable<Vehicle>>> GetVehiclesAsync(
             [FromQuery] int? year,
             CancellationToken cancellationToken)

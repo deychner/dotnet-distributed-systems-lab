@@ -12,6 +12,8 @@ namespace TenantVault.Controllers
         private readonly IInventoryService _inventoryService = inventoryService;
 
         [HttpPost("vehicle")]
+        [ProducesResponseType(typeof(Guid), StatusCodes.Status201Created)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<ActionResult<Guid>> AddVehicleAsync(
             [FromBody, Required] Vehicle vehicle,
             CancellationToken cancellationToken)
@@ -21,6 +23,8 @@ namespace TenantVault.Controllers
         }
 
         [HttpGet("vehicle/{tenantId}/{warehouseId:int}/{vehicleId:guid}")]
+        [ProducesResponseType(typeof(Vehicle), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<ActionResult<Vehicle?>> GetVehicleAsync(
             [FromRoute] string tenantId,
             [FromRoute] int warehouseId,
@@ -32,6 +36,7 @@ namespace TenantVault.Controllers
         }
 
         [HttpGet("vehicles/{tenantId}/{warehouseId:int}")]
+        [ProducesResponseType(typeof(IEnumerable<Vehicle>), StatusCodes.Status200OK)]
         public async Task<ActionResult<IEnumerable<Vehicle>>> GetVehiclesByWarehouseAsync(
             [FromRoute] string tenantId,
             [FromRoute] int warehouseId,
@@ -42,6 +47,7 @@ namespace TenantVault.Controllers
         }
 
         [HttpGet("vehicles/{tenantId}")]
+        [ProducesResponseType(typeof(IEnumerable<Vehicle>), StatusCodes.Status200OK)]
         public async Task<ActionResult<IEnumerable<Vehicle>>> GetVehiclesByTenantAsync(
             [FromRoute] string tenantId,
             CancellationToken cancellationToken)
