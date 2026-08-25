@@ -31,7 +31,7 @@ namespace TenantVault.Controllers
             return vehicle is null ? NotFound() : Ok(vehicle);
         }
 
-        [HttpGet("vehicle/{tenantId}/{warehouseId:int}")]
+        [HttpGet("vehicles/{tenantId}/{warehouseId:int}")]
         public async Task<ActionResult<IEnumerable<Vehicle>>> GetVehiclesByWarehouseAsync(
             [FromRoute] string tenantId,
             [FromRoute] int warehouseId,
@@ -41,7 +41,7 @@ namespace TenantVault.Controllers
             return Ok(vehicles);
         }
 
-        [HttpGet("vehicle/{tenantId}")]
+        [HttpGet("vehicles/{tenantId}")]
         public async Task<ActionResult<IEnumerable<Vehicle>>> GetVehiclesByTenantAsync(
             [FromRoute] string tenantId,
             CancellationToken cancellationToken)
