@@ -17,7 +17,7 @@ namespace TenantVault.Controllers
             CancellationToken cancellationToken)
         {
             var vehicleId = await _inventoryService.AddVehicleAsync(vehicle, cancellationToken);
-            return Ok(vehicleId);
+            return CreatedAtAction(nameof(GetVehicleAsync), new { tenantId = vehicle.TenantId, warehouseId = vehicle.WarehouseId, vehicleId }, vehicleId);
         }
 
         [HttpGet("vehicle/{tenantId}/{warehouseId:int}/{vehicleId:guid}")]
