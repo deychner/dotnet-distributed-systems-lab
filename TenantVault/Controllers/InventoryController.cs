@@ -31,7 +31,14 @@ namespace TenantVault.Controllers
 
         // Singular "vehicle" route: this returns exactly one resource. A missing vehicle here is
         // a genuine 404 - the specific ID doesn't exist - unlike the collection endpoints below.
+        //
+        // [ActionName] pins the routable action name to the full method name: MVC strips the
+        // "Async" suffix by default, so without this, CreatedAtAction(nameof(GetVehicleAsync), ...)
+        // above would reference a route name ("GetVehicleAsync") that doesn't actually exist
+        // (the real one is "GetVehicle"), and fail at request time with "No route matches the
+        // supplied values."
         [HttpGet("vehicle/{tenantId}/{warehouseId:int}/{vehicleId:guid}")]
+        [ActionName(nameof(GetVehicleAsync))]
         [ProducesResponseType(typeof(Vehicle), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<ActionResult<Vehicle?>> GetVehicleAsync(
