@@ -35,6 +35,7 @@ namespace TenantVault.DataAccess
                 var response = await _container.ReadItemAsync<Vehicle>(vehicleId.ToString(), partitionKey, cancellationToken: cancellationToken);
 
                 _logger.LogInformation("GetVehicleAsync Request Charge: {charge}", response.RequestCharge);
+                _logger.LogInformation("GetVehicleAsync Record Count: 1");
 
                 return response.Resource;
             }
@@ -42,6 +43,7 @@ namespace TenantVault.DataAccess
             {
                 // Idiomatic Cosmos SDK pattern for a point read: catch the specific 404 and
                 // return null instead of letting exception-driven control flow reach the caller.
+                _logger.LogInformation("GetVehicleAsync Record Count: 0");
                 return null;
             }
         }
@@ -107,7 +109,7 @@ namespace TenantVault.DataAccess
             }
 
             _logger.LogInformation("{operation} Request Charge: {charge}", operationName, totalRequestCharge);
-            _logger.LogInformation("{operation} Record count: {count}", operationName, vehicles.Count);
+            _logger.LogInformation("{operation} Record Count: {count}", operationName, vehicles.Count);
 
             return vehicles;
         }
