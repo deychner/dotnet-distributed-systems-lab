@@ -5,10 +5,10 @@ using TenantVault.Models;
 
 namespace TenantVault.DataAccess
 {
-    public class InventoryDataAdapter(CosmosClient cosmosClient, IOptions<CosmosOptions> options, ILogger<InventoryDataAdapter> logger) : IInventoryDataAdapter
+    public class InventoryDataAdapter(CosmosClient cosmosClient, CosmosOptions options, ILogger<InventoryDataAdapter> logger) : IInventoryDataAdapter
     {
         // Resolved once and cached as a field rather than looked up on every call.
-        private readonly Container _container = cosmosClient.GetContainer(options.Value.DatabaseName, options.Value.ContainerName);
+        private readonly Container _container = cosmosClient.GetContainer(options.DatabaseName, options.ContainerName);
         private readonly ILogger<InventoryDataAdapter> _logger = logger;
 
         public async Task<Guid> AddVehicleAsync(Vehicle vehicle, CancellationToken cancellationToken)
