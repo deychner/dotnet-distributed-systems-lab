@@ -3,13 +3,13 @@ using TenantVault.Models;
 
 namespace TenantVault.BusinessLogic
 {
-    public class AdminService(IInventoryDataAdapter inventoryDataAdapter) : IAdminService
+    public class AdminService(ITenantDataAdapter tenantDataAdapter) : IAdminService
     {
-        private readonly IInventoryDataAdapter _inventoryDataAdapter = inventoryDataAdapter;
+        private readonly ITenantDataAdapter _tenantDataAdapter = tenantDataAdapter;
 
         // See CosmosOperationRunner for why this goes through ExecuteAsync rather than calling
         // the adapter directly.
         public Task<IEnumerable<Vehicle>> GetVehiclesByYearAsync(int year, CancellationToken cancellationToken) =>
-            CosmosOperationRunner.ExecuteAsync(() => _inventoryDataAdapter.GetVehiclesByYearAsync(year, cancellationToken));
+            CosmosOperationRunner.ExecuteAsync(() => _tenantDataAdapter.GetVehiclesByYearAsync(year, cancellationToken));
     }
 }

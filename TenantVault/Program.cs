@@ -62,13 +62,13 @@ namespace TenantVault
                 }
             };
 
-            // Make a single CosmosClient instance and wrap it up in the InventoryDataAdapter,
+            // Make a single CosmosClient instance and wrap it up in the TenantDataAdapter,
             // which is registered as a scoped service.
             var cosmosClient = new CosmosClient(cosmosOptions.AccountEndpoint, cosmosOptions.AccountKey, clientOptions);
 
-            builder.Services.AddScoped<IInventoryDataAdapter, InventoryDataAdapter>(provider => {
-                var logger = provider.GetRequiredService<ILogger<InventoryDataAdapter>>();
-                return new InventoryDataAdapter(cosmosClient, cosmosOptions, logger);
+            builder.Services.AddScoped<ITenantDataAdapter, TenantDataAdapter>(provider => {
+                var logger = provider.GetRequiredService<ILogger<TenantDataAdapter>>();
+                return new TenantDataAdapter(cosmosClient, cosmosOptions, logger);
             });
         }
 
