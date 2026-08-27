@@ -1,5 +1,5 @@
-﻿using System.Net;
-using Microsoft.Azure.Cosmos;
+﻿using Microsoft.Azure.Cosmos;
+using System.Net;
 using TenantVault.BusinessLogic.Exceptions;
 
 namespace TenantVault.BusinessLogic

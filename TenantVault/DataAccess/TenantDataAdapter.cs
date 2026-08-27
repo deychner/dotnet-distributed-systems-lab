@@ -1,15 +1,14 @@
 ﻿using Microsoft.Azure.Cosmos;
-using Microsoft.Extensions.Options;
 using System.Net;
 using TenantVault.Models;
 
 namespace TenantVault.DataAccess
 {
-    public class InventoryDataAdapter(CosmosClient cosmosClient, IOptions<CosmosOptions> options, ILogger<InventoryDataAdapter> logger) : IInventoryDataAdapter
+    public class TenantDataAdapter(CosmosClient cosmosClient, CosmosOptions options, ILogger<TenantDataAdapter> logger) : ITenantDataAdapter
     {
         // Resolved once and cached as a field rather than looked up on every call.
-        private readonly Container _container = cosmosClient.GetContainer(options.Value.DatabaseName, options.Value.ContainerName);
-        private readonly ILogger<InventoryDataAdapter> _logger = logger;
+        private readonly Container _container = cosmosClient.GetContainer(options.DatabaseName, options.ContainerName);
+        private readonly ILogger<TenantDataAdapter> _logger = logger;
 
         public async Task<Guid> AddVehicleAsync(Vehicle vehicle, CancellationToken cancellationToken)
         {

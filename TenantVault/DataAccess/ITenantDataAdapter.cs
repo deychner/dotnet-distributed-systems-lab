@@ -2,7 +2,7 @@
 
 namespace TenantVault.DataAccess
 {
-    public interface IInventoryDataAdapter
+    public interface ITenantDataAdapter
     {
         public Task<Guid> AddVehicleAsync(Vehicle vehicle, CancellationToken cancellationToken);
 

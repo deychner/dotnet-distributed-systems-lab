@@ -1,6 +1,6 @@
 using Microsoft.Azure.Cosmos;
-using Microsoft.Extensions.Options;
 using Serilog;
+using System.ComponentModel.DataAnnotations;
 using System.Text.Json;
 using TenantVault.BusinessLogic;
 using TenantVault.DataAccess;
@@ -15,14 +15,13 @@ namespace TenantVault
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            ConfigureCosmos(builder);
             ConfigureLogging(builder);
+            ConfigureDataAccess(builder);
             ConfigureExceptionHandling(builder);
 
             // Add services to the container.
             builder.Services.AddScoped<IAdminService, AdminService>();
             builder.Services.AddScoped<IInventoryService, InventoryService>();
-            builder.Services.AddSingleton<IInventoryDataAdapter, InventoryDataAdapter>();
 
             builder.Services.AddControllers();
 
@@ -44,38 +43,33 @@ namespace TenantVault
             app.Run();
         }
 
-        private static void ConfigureCosmos(WebApplicationBuilder builder)
+        private static void ConfigureDataAccess(WebApplicationBuilder builder)
         {
-            // ValidateDataAnnotations + ValidateOnStart make a bad/missing Cosmos setting fail
-            // immediately at app startup with a clear message, instead of surfacing later as a
-            // raw Cosmos SDK exception the first time a request happens to need the client.
-            builder.Services
-                .AddOptions<CosmosOptions>()
-                .Bind(builder.Configuration.GetSection(CosmosOptions.SectionName))
-                .ValidateDataAnnotations()
-                .ValidateOnStart();
+            // Validator.ValidateObject makes a bad/missing Cosmos setting fail immediately
+            // at app startup with a clear message, instead of surfacing later as a raw
+            // Cosmos SDK exception the first time a request happens to need the client.
+            var cosmosOptions = new CosmosOptions();
+            builder.Configuration.GetSection(CosmosOptions.SectionName).Bind(cosmosOptions);
+            Validator.ValidateObject(cosmosOptions, new ValidationContext(cosmosOptions), validateAllProperties: true);
 
-            // CosmosClient is expensive to construct and is documented as thread-safe, so it's
-            // registered once as a singleton and reused for the app's lifetime.
-            builder.Services.AddSingleton<CosmosClient>(provider =>
+            var clientOptions = new CosmosClientOptions
             {
-                var options = provider.GetRequiredService<IOptions<CosmosOptions>>().Value;
-
-                var clientOptions = new CosmosClientOptions
+                ApplicationName = "TenantVault",
+                UseSystemTextJsonSerializerWithOptions = new JsonSerializerOptions
                 {
-                    ApplicationName = "TenantVault",
-                    UseSystemTextJsonSerializerWithOptions = new JsonSerializerOptions
-                    {
-                        PropertyNamingPolicy = JsonNamingPolicy.CamelCase
-                    }
-                };
+                    PropertyNamingPolicy = JsonNamingPolicy.CamelCase
+                }
+            };
 
-                return new CosmosClient(options.AccountEndpoint, options.AccountKey, clientOptions);
+            // Make a single CosmosClient instance and wrap it up in the TenantDataAdapter,
+            // which is registered as a scoped service.
+            var cosmosClient = new CosmosClient(cosmosOptions.AccountEndpoint, cosmosOptions.AccountKey, clientOptions);
+
+            builder.Services.AddScoped<ITenantDataAdapter, TenantDataAdapter>(provider =>
+            {
+                var logger = provider.GetRequiredService<ILogger<TenantDataAdapter>>();
+                return new TenantDataAdapter(cosmosClient, cosmosOptions, logger);
             });
-
-            // Runs the database/container create-if-not-exists check once at startup via
-            // IHostedService, instead of repeating it on every request that touches Cosmos.
-            builder.Services.AddHostedService<CosmosBootstrapper>();
         }
 
         // Registers a global IExceptionHandler so a domain exception thrown anywhere in the
