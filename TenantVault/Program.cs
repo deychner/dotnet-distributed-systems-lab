@@ -1,5 +1,4 @@
 using Microsoft.Azure.Cosmos;
-using Microsoft.Extensions.Options;
 using Serilog;
 using System.ComponentModel.DataAnnotations;
 using System.Text.Json;
@@ -66,7 +65,8 @@ namespace TenantVault
             // which is registered as a scoped service.
             var cosmosClient = new CosmosClient(cosmosOptions.AccountEndpoint, cosmosOptions.AccountKey, clientOptions);
 
-            builder.Services.AddScoped<ITenantDataAdapter, TenantDataAdapter>(provider => {
+            builder.Services.AddScoped<ITenantDataAdapter, TenantDataAdapter>(provider =>
+            {
                 var logger = provider.GetRequiredService<ILogger<TenantDataAdapter>>();
                 return new TenantDataAdapter(cosmosClient, cosmosOptions, logger);
             });

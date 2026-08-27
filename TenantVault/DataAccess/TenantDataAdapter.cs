@@ -1,5 +1,4 @@
 ﻿using Microsoft.Azure.Cosmos;
-using Microsoft.Extensions.Options;
 using System.Net;
 using TenantVault.Models;
 
