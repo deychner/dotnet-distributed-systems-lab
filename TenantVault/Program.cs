@@ -15,6 +15,11 @@ namespace TenantVault
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            // Register TenantContext as a scoped service so that it can be injected into controllers and services.
+            builder.Services.AddScoped<TenantContext>();
+            builder.Services.AddScoped<ISettableTenantContext>(provider => provider.GetRequiredService<TenantContext>());
+            builder.Services.AddScoped<ITenantContext>(provider => provider.GetRequiredService<TenantContext>());
+
             ConfigureLogging(builder);
             ConfigureDataAccess(builder);
             ConfigureExceptionHandling(builder);
@@ -38,7 +43,10 @@ namespace TenantVault
 
             app.UseExceptionHandler();
             app.UseHttpsRedirection();
+            app.UseRouting();
+            app.UseAuthentication();
             app.UseAuthorization();
+            app.UseMiddleware<TenantMiddleware>();
             app.MapControllers();
             app.Run();
         }
