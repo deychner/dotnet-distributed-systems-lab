@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
@@ -14,6 +15,7 @@ namespace TenantVault.Controllers
         private readonly IConfiguration _configuration = configuration;
 
         [HttpGet("jwt")]
+        [AllowAnonymous]
         [Development]
         public ActionResult<string> IssueJwt([FromQuery] string tenantId)
         {
