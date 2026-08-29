@@ -1,17 +1,27 @@
 ﻿using Microsoft.Azure.Cosmos;
 using System.Net;
-using TenantVault.Models;
+using TenantVault.DataAccess.Models;
+using TenantVault.Startup;
 
 namespace TenantVault.DataAccess
 {
-    public class TenantDataAdapter(CosmosClient cosmosClient, CosmosOptions options, ILogger<TenantDataAdapter> logger) : ITenantDataAdapter
+    public class TenantDataAdapter(
+        CosmosClient cosmosClient,
+        CosmosOptions options,
+        ITenantContext tenantContext,
+        ILogger<TenantDataAdapter> logger) : ITenantDataAdapter
     {
         // Resolved once and cached as a field rather than looked up on every call.
         private readonly Container _container = cosmosClient.GetContainer(options.DatabaseName, options.ContainerName);
+        private readonly string _tenantId = tenantContext.GetTenantId();
         private readonly ILogger<TenantDataAdapter> _logger = logger;
 
         public async Task<Guid> AddVehicleAsync(Vehicle vehicle, CancellationToken cancellationToken)
         {
+            // Do not trust the caller to set the tenantId on the vehicle, since this is a multi-tenant service
+            // and the caller could be malicious or buggy. Always pull from the ITenantContext.
+            vehicle.TenantId = _tenantId;
+
             var partitionKey = BuildPartitionKey(vehicle.TenantId, vehicle.WarehouseId);
 
             var response = await _container.CreateItemAsync(vehicle, partitionKey, cancellationToken: cancellationToken);
@@ -25,9 +35,9 @@ namespace TenantVault.DataAccess
             return vehicle.Id;
         }
 
-        public async Task<Vehicle?> GetVehicleAsync(string tenantId, int warehouseId, Guid vehicleId, CancellationToken cancellationToken)
+        public async Task<Vehicle?> GetVehicleAsync(int warehouseId, Guid vehicleId, CancellationToken cancellationToken)
         {
-            var partitionKey = BuildPartitionKey(tenantId, warehouseId);
+            var partitionKey = BuildPartitionKey(_tenantId, warehouseId);
 
             try
             {
@@ -49,13 +59,13 @@ namespace TenantVault.DataAccess
 
         // Full partition key (tenantId + warehouseId) supplied, no WHERE clause needed: Cosmos
         // routes the query directly to the matching logical partition.
-        public Task<IEnumerable<Vehicle>> GetVehiclesByWarehouseAsync(string tenantId, int warehouseId, CancellationToken cancellationToken)
+        public Task<IEnumerable<Vehicle>> GetVehiclesByWarehouseAsync(int warehouseId, CancellationToken cancellationToken)
         {
             QueryDefinition query = new("SELECT * FROM c");
 
             QueryRequestOptions requestOptions = new()
             {
-                PartitionKey = BuildPartitionKey(tenantId, warehouseId)
+                PartitionKey = BuildPartitionKey(_tenantId, warehouseId)
             };
 
             return ExecuteQueryAsync(query, requestOptions, nameof(GetVehiclesByWarehouseAsync), cancellationToken);
@@ -63,14 +73,14 @@ namespace TenantVault.DataAccess
 
         // Partial/prefix partition key (tenantId only): Cosmos still scopes the query to just
         // that tenant's logical partitions before the WHERE predicate runs.
-        public Task<IEnumerable<Vehicle>> GetVehiclesByTenantAsync(string tenantId, CancellationToken cancellationToken)
+        public Task<IEnumerable<Vehicle>> GetVehiclesByTenantAsync(CancellationToken cancellationToken)
         {
             QueryDefinition query = new QueryDefinition("SELECT * FROM c WHERE c.tenantId = @tenantId")
-                .WithParameter("@tenantId", tenantId);
+                .WithParameter("@tenantId", _tenantId);
 
             QueryRequestOptions requestOptions = new()
             {
-                PartitionKey = BuildPartitionKey(tenantId)
+                PartitionKey = BuildPartitionKey(_tenantId)
             };
 
             return ExecuteQueryAsync(query, requestOptions, nameof(GetVehiclesByTenantAsync), cancellationToken);

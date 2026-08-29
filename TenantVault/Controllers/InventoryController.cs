@@ -1,14 +1,17 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel.DataAnnotations;
 using TenantVault.BusinessLogic;
+using TenantVault.DataAccess.Models;
 using TenantVault.Models;
+using TenantVault.Startup;
 
 namespace TenantVault.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class InventoryController(IInventoryService inventoryService) : ControllerBase
+    public class InventoryController(ITenantContext tenantContext, IInventoryService inventoryService) : ControllerBase
     {
+        private readonly string _tenantId = tenantContext.GetTenantId();
         private readonly IInventoryService _inventoryService = inventoryService;
 
         // [ProducesResponseType] on every action documents the real response contract (including
@@ -18,7 +21,7 @@ namespace TenantVault.Controllers
         [ProducesResponseType(typeof(Guid), StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<ActionResult<Guid>> AddVehicleAsync(
-            [FromBody, Required] Vehicle vehicle,
+            [FromBody, Required] CreateVehicleRequest vehicle,
             CancellationToken cancellationToken)
         {
             var vehicleId = await _inventoryService.AddVehicleAsync(vehicle, cancellationToken);
@@ -26,7 +29,7 @@ namespace TenantVault.Controllers
             // CreatedAtAction returns 201 (the correct status for a resource-creation endpoint,
             // vs. a bare 200) and builds the Location header from GetVehicleAsync's own route,
             // so it can't drift out of sync if that route template ever changes.
-            return CreatedAtAction(nameof(GetVehicleAsync), new { tenantId = vehicle.TenantId, warehouseId = vehicle.WarehouseId, vehicleId }, vehicleId);
+            return CreatedAtAction(nameof(GetVehicleAsync), new { tenantId = _tenantId, warehouseId = vehicle.WarehouseId, vehicleId }, vehicleId);
         }
 
         // Singular "vehicle" route: this returns exactly one resource. A missing vehicle here is
@@ -37,42 +40,39 @@ namespace TenantVault.Controllers
         // above would reference a route name ("GetVehicleAsync") that doesn't actually exist
         // (the real one is "GetVehicle"), and fail at request time with "No route matches the
         // supplied values."
-        [HttpGet("vehicle/{tenantId}/{warehouseId:int}/{vehicleId:guid}")]
+        [HttpGet("vehicle/{warehouseId:int}/{vehicleId:guid}")]
         [ActionName(nameof(GetVehicleAsync))]
         [ProducesResponseType(typeof(Vehicle), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<ActionResult<Vehicle?>> GetVehicleAsync(
-            [FromRoute] string tenantId,
             [FromRoute] int warehouseId,
             [FromRoute] Guid vehicleId,
             CancellationToken cancellationToken)
         {
-            var vehicle = await _inventoryService.GetVehicleAsync(tenantId, warehouseId, vehicleId, cancellationToken);
+            var vehicle = await _inventoryService.GetVehicleAsync(warehouseId, vehicleId, cancellationToken);
             return vehicle is null ? NotFound() : Ok(vehicle);
         }
 
         // Plural "vehicles" route: this returns a collection, so the URL communicates
         // cardinality consistently with the endpoints below.
-        [HttpGet("vehicles/{tenantId}/{warehouseId:int}")]
+        [HttpGet("vehicles/{warehouseId:int}")]
         [ProducesResponseType(typeof(IEnumerable<Vehicle>), StatusCodes.Status200OK)]
         public async Task<ActionResult<IEnumerable<Vehicle>>> GetVehiclesByWarehouseAsync(
-            [FromRoute] string tenantId,
             [FromRoute] int warehouseId,
             CancellationToken cancellationToken)
         {
             // Always 200, even with zero matches: an empty result set is a successful query, not
             // a missing resource, so it shouldn't be conflated with the point-read 404 above.
-            var vehicles = await _inventoryService.GetVehiclesByWarehouseAsync(tenantId, warehouseId, cancellationToken);
+            var vehicles = await _inventoryService.GetVehiclesByWarehouseAsync(warehouseId, cancellationToken);
             return Ok(vehicles);
         }
 
-        [HttpGet("vehicles/{tenantId}")]
+        [HttpGet("vehicles")]
         [ProducesResponseType(typeof(IEnumerable<Vehicle>), StatusCodes.Status200OK)]
         public async Task<ActionResult<IEnumerable<Vehicle>>> GetVehiclesByTenantAsync(
-            [FromRoute] string tenantId,
             CancellationToken cancellationToken)
         {
-            var vehicles = await _inventoryService.GetVehiclesByTenantAsync(tenantId, cancellationToken);
+            var vehicles = await _inventoryService.GetVehiclesByTenantAsync(cancellationToken);
             return Ok(vehicles);
         }
     }

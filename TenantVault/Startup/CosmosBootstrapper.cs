@@ -1,6 +1,5 @@
 ﻿using Microsoft.Azure.Cosmos;
 using Microsoft.Extensions.Options;
-using TenantVault.Models;
 
 namespace TenantVault.Startup
 {

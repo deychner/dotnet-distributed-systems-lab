@@ -15,6 +15,7 @@ namespace TenantVault.Startup
             {
                 VehicleValidationException => (StatusCodes.Status400BadRequest, "Invalid vehicle data"),
                 InventoryUnavailableException => (StatusCodes.Status503ServiceUnavailable, "Inventory temporarily unavailable"),
+                UnauthorizedAccessException => (StatusCodes.Status401Unauthorized, "Unauthorized access"),
                 _ => (0, string.Empty)
             };
 

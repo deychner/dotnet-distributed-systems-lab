@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using TenantVault.BusinessLogic;
-using TenantVault.Models;
+using TenantVault.DataAccess.Models;
 
 namespace TenantVault.Controllers
 {
