@@ -1,14 +1,16 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel.DataAnnotations;
 using TenantVault.BusinessLogic;
+using TenantVault.DataAccess.Models;
 using TenantVault.Models;
 
 namespace TenantVault.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class InventoryController(IInventoryService inventoryService) : ControllerBase
+    public class InventoryController(ITenantContext tenantContext, IInventoryService inventoryService) : ControllerBase
     {
+        private readonly string _tenantId = tenantContext.GetTenantId();
         private readonly IInventoryService _inventoryService = inventoryService;
 
         // [ProducesResponseType] on every action documents the real response contract (including
@@ -18,7 +20,7 @@ namespace TenantVault.Controllers
         [ProducesResponseType(typeof(Guid), StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<ActionResult<Guid>> AddVehicleAsync(
-            [FromBody, Required] Vehicle vehicle,
+            [FromBody, Required] CreateVehicleRequest vehicle,
             CancellationToken cancellationToken)
         {
             var vehicleId = await _inventoryService.AddVehicleAsync(vehicle, cancellationToken);
@@ -26,7 +28,7 @@ namespace TenantVault.Controllers
             // CreatedAtAction returns 201 (the correct status for a resource-creation endpoint,
             // vs. a bare 200) and builds the Location header from GetVehicleAsync's own route,
             // so it can't drift out of sync if that route template ever changes.
-            return CreatedAtAction(nameof(GetVehicleAsync), new { tenantId = vehicle.TenantId, warehouseId = vehicle.WarehouseId, vehicleId }, vehicleId);
+            return CreatedAtAction(nameof(GetVehicleAsync), new { tenantId = _tenantId, warehouseId = vehicle.WarehouseId, vehicleId }, vehicleId);
         }
 
         // Singular "vehicle" route: this returns exactly one resource. A missing vehicle here is

@@ -1,18 +1,20 @@
 ﻿using TenantVault.BusinessLogic.Exceptions;
 using TenantVault.DataAccess;
+using TenantVault.DataAccess.Models;
 using TenantVault.Models;
 
 namespace TenantVault.BusinessLogic
 {
-    public class InventoryService(ITenantDataAdapter tenantDataAdapter) : IInventoryService
+    public class InventoryService(ITenantContext tenantContext, ITenantDataAdapter tenantDataAdapter) : IInventoryService
     {
         private const int MinimumVehicleYear = 1900;
 
+        private readonly string _tenantId = tenantContext.GetTenantId();
         private readonly ITenantDataAdapter _tenantDataAdapter = tenantDataAdapter;
 
         // Validates business rules the data layer has no way to enforce: Vehicle's [JsonRequired]
         // only guarantees a field was present in the payload, not that its value makes sense.
-        public async Task<Guid> AddVehicleAsync(Vehicle vehicle, CancellationToken cancellationToken)
+        public async Task<Guid> AddVehicleAsync(CreateVehicleRequest vehicle, CancellationToken cancellationToken)
         {
             if (vehicle.Year < MinimumVehicleYear || vehicle.Year > DateTime.UtcNow.Year + 1)
             {
@@ -40,7 +42,17 @@ namespace TenantVault.BusinessLogic
                 throw new VehicleValidationException($"Warehouse {vehicle.WarehouseId} spot {vehicle.SpotId} is already occupied.");
             }
 
-            return await CosmosOperationRunner.ExecuteAsync(() => _tenantDataAdapter.AddVehicleAsync(vehicle, cancellationToken));
+            Vehicle cosmosVehicle = new()
+            {
+                TenantId = _tenantId,
+                Make = vehicle.Make,
+                Model = vehicle.Model,
+                Year = vehicle.Year,
+                WarehouseId = vehicle.WarehouseId,
+                SpotId = vehicle.SpotId
+            };
+
+            return await CosmosOperationRunner.ExecuteAsync(() => _tenantDataAdapter.AddVehicleAsync(cosmosVehicle, cancellationToken));
         }
 
         // Every adapter call is routed through CosmosOperationRunner so a Cosmos SDK exception

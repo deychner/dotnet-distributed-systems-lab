@@ -1,4 +1,4 @@
-﻿using TenantVault.Models;
+﻿using TenantVault.DataAccess.Models;
 
 namespace TenantVault.BusinessLogic
 {

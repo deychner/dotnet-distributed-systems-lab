@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace TenantVault.Models
+namespace TenantVault.DataAccess.Models
 {
     public class Vehicle
     {
