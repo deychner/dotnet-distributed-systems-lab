@@ -47,7 +47,7 @@ namespace TenantVault.Controllers
             [FromRoute] Guid vehicleId,
             CancellationToken cancellationToken)
         {
-            var vehicle = await _inventoryService.GetVehicleAsync(tenantId, warehouseId, vehicleId, cancellationToken);
+            var vehicle = await _inventoryService.GetVehicleAsync(warehouseId, vehicleId, cancellationToken);
             return vehicle is null ? NotFound() : Ok(vehicle);
         }
 
@@ -62,7 +62,7 @@ namespace TenantVault.Controllers
         {
             // Always 200, even with zero matches: an empty result set is a successful query, not
             // a missing resource, so it shouldn't be conflated with the point-read 404 above.
-            var vehicles = await _inventoryService.GetVehiclesByWarehouseAsync(tenantId, warehouseId, cancellationToken);
+            var vehicles = await _inventoryService.GetVehiclesByWarehouseAsync(warehouseId, cancellationToken);
             return Ok(vehicles);
         }
 
@@ -72,7 +72,7 @@ namespace TenantVault.Controllers
             [FromRoute] string tenantId,
             CancellationToken cancellationToken)
         {
-            var vehicles = await _inventoryService.GetVehiclesByTenantAsync(tenantId, cancellationToken);
+            var vehicles = await _inventoryService.GetVehiclesByTenantAsync(cancellationToken);
             return Ok(vehicles);
         }
     }

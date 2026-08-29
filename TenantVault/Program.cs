@@ -75,8 +75,9 @@ namespace TenantVault
 
             builder.Services.AddScoped<ITenantDataAdapter, TenantDataAdapter>(provider =>
             {
+                var tenantContext = provider.GetRequiredService<ITenantContext>();
                 var logger = provider.GetRequiredService<ILogger<TenantDataAdapter>>();
-                return new TenantDataAdapter(cosmosClient, cosmosOptions, logger);
+                return new TenantDataAdapter(cosmosClient, cosmosOptions, tenantContext, logger);
             });
         }
 
