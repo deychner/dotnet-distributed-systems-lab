@@ -1,7 +1,7 @@
 ﻿using Microsoft.Azure.Cosmos;
 using System.Net;
 using TenantVault.DataAccess.Models;
-using TenantVault.Models;
+using TenantVault.Startup;
 
 namespace TenantVault.DataAccess
 {

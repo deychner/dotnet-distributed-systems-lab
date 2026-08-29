@@ -4,7 +4,6 @@ using System.ComponentModel.DataAnnotations;
 using System.Text.Json;
 using TenantVault.BusinessLogic;
 using TenantVault.DataAccess;
-using TenantVault.Models;
 using TenantVault.Startup;
 
 namespace TenantVault

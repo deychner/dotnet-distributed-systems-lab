@@ -1,4 +1,4 @@
-﻿namespace TenantVault.Models
+﻿namespace TenantVault.Startup
 {
     public class TenantContext : ITenantContext, ISettableTenantContext
     {

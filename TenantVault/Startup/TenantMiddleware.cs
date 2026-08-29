@@ -1,6 +1,4 @@
-﻿using TenantVault.Models;
-
-namespace TenantVault.Startup
+﻿namespace TenantVault.Startup
 {
     public class TenantMiddleware(ILogger<TenantMiddleware> logger)
     {
