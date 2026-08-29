@@ -17,6 +17,7 @@ namespace TenantVault.Controllers
         [HttpGet("jwt")]
         [AllowAnonymous]
         [Development]
+        [ProducesResponseType(typeof(string), StatusCodes.Status200OK)]
         public ActionResult<string> IssueJwt([FromQuery] string tenantId)
         {
             if (string.IsNullOrWhiteSpace(tenantId))
