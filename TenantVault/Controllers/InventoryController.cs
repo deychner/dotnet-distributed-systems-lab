@@ -40,12 +40,11 @@ namespace TenantVault.Controllers
         // above would reference a route name ("GetVehicleAsync") that doesn't actually exist
         // (the real one is "GetVehicle"), and fail at request time with "No route matches the
         // supplied values."
-        [HttpGet("vehicle/{tenantId}/{warehouseId:int}/{vehicleId:guid}")]
+        [HttpGet("vehicle/{warehouseId:int}/{vehicleId:guid}")]
         [ActionName(nameof(GetVehicleAsync))]
         [ProducesResponseType(typeof(Vehicle), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<ActionResult<Vehicle?>> GetVehicleAsync(
-            [FromRoute] string tenantId,
             [FromRoute] int warehouseId,
             [FromRoute] Guid vehicleId,
             CancellationToken cancellationToken)
@@ -56,10 +55,9 @@ namespace TenantVault.Controllers
 
         // Plural "vehicles" route: this returns a collection, so the URL communicates
         // cardinality consistently with the endpoints below.
-        [HttpGet("vehicles/{tenantId}/{warehouseId:int}")]
+        [HttpGet("vehicles/{warehouseId:int}")]
         [ProducesResponseType(typeof(IEnumerable<Vehicle>), StatusCodes.Status200OK)]
         public async Task<ActionResult<IEnumerable<Vehicle>>> GetVehiclesByWarehouseAsync(
-            [FromRoute] string tenantId,
             [FromRoute] int warehouseId,
             CancellationToken cancellationToken)
         {
@@ -69,10 +67,9 @@ namespace TenantVault.Controllers
             return Ok(vehicles);
         }
 
-        [HttpGet("vehicles/{tenantId}")]
+        [HttpGet("vehicles")]
         [ProducesResponseType(typeof(IEnumerable<Vehicle>), StatusCodes.Status200OK)]
         public async Task<ActionResult<IEnumerable<Vehicle>>> GetVehiclesByTenantAsync(
-            [FromRoute] string tenantId,
             CancellationToken cancellationToken)
         {
             var vehicles = await _inventoryService.GetVehiclesByTenantAsync(cancellationToken);
