@@ -1,6 +1,9 @@
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Azure.Cosmos;
+using Microsoft.IdentityModel.Tokens;
 using Serilog;
 using System.ComponentModel.DataAnnotations;
+using System.Text;
 using System.Text.Json;
 using TenantVault.BusinessLogic;
 using TenantVault.DataAccess;
@@ -22,6 +25,7 @@ namespace TenantVault
             ConfigureLogging(builder);
             ConfigureDataAccess(builder);
             ConfigureExceptionHandling(builder);
+            ConfigureAuthentication(builder);
 
             // Add services to the container.
             builder.Services.AddScoped<IAdminService, AdminService>();
@@ -48,6 +52,29 @@ namespace TenantVault
             app.UseMiddleware<TenantMiddleware>();
             app.MapControllers();
             app.Run();
+        }
+
+        private static void ConfigureAuthentication(WebApplicationBuilder builder)
+        {
+            // Configure JWT authentication
+            builder.Services.AddAuthentication(options =>
+            {
+                options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            })
+            .AddJwtBearer(options =>
+            {
+                options.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuer = true,
+                    ValidateAudience = true,
+                    ValidateLifetime = true,
+                    ValidateIssuerSigningKey = true,
+                    ValidIssuer = builder.Configuration["Jwt:Issuer"],
+                    ValidAudience = builder.Configuration["Jwt:Audience"],
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]!))
+                };
+            });
         }
 
         private static void ConfigureDataAccess(WebApplicationBuilder builder)
