@@ -61,3 +61,26 @@
 - `CosmosClient` is unreachable outside `TenantDataAdapter` via DI-registration removal + closure — flagged in-conversation as sufficient for this milestone, with true assembly-level enforcement (making `CosmosClient` construction physically unreachable via `internal` visibility across an assembly boundary) explicitly named as a stronger, deferred hardening step that belongs with Milestone 3's platform-layer defense-in-depth theme, not built now.
 - Admin-route design (`tenantId` as an explicit parameter, gated by role claim rather than tenant claim) is in place but not yet paired with actual RBAC enforcement — that pairing is Milestone 3's job.
 - Weak-spot flagged for a second rep: the **constructor-vs-method parameter distinction for convention-based middleware** and the **closure-vs-scoped-DI-resolution distinction** both required more than a rung-2 hint to land — worth being able to state both rules cold, unprompted, before Phase 1 is considered closed.
+
+---
+
+## Addendum — Fallback Authorization Policy (discovered post-checkpoint, folded back in)
+
+**Trigger:** while manually testing `TenantMiddleware`, an expired JWT was expected to be rejected by authentication before ever reaching the middleware. Instead, the request reached `TenantMiddleware` and failed there with the custom "Tenant context is not available" error — an unexpected, not-obviously-wrong-looking result that turned out to be a real gap, not a red herring.
+
+- **Root cause, correctly isolated step by step rather than patched on a guess:** the endpoint under test had **no `[Authorize]` attribute at all**. `UseAuthentication()` correctly failed to validate the expired token (confirmed directly from Serilog output — `SecurityTokenExpiredException`, "Bearer was not authenticated") and left `context.User` as an empty, unauthenticated `ClaimsPrincipal`. `UseAuthorization()` only *rejects* a request if the matched endpoint has an explicit requirement; with no `[Authorize]` present, an unauthenticated principal was allowed through by default, straight into `TenantMiddleware` — which correctly caught the missing `tenant_id` claim, but only as an incidental side effect, not as its intended job.
+- **Two false leads chased and correctly ruled out before finding the real cause** — a useful pattern to notice, not just the destination:
+  1. **Clock skew** — hypothesized first, since `JwtBearerHandler` tolerates tokens up to 5 minutes past `exp` by default. Ruled out by checking the actual log timestamps: the token was over three hours expired, far outside tolerance.
+  2. **A missing/misconfigured `Events` handler** silently swallowing the 401 — ruled out by reviewing `ConfigureAuthentication` directly and confirming no `OnAuthenticationFailed`/`OnChallenge` handlers were registered at all.
+  3. **The actual cause** — attempted to add `[Authorize]` to "the endpoint," tested, saw no change, and initially concluded the attribute wasn't taking effect. Root cause of *that* red herring: the attribute had been added to a similarly-named but different endpoint than the one actually under test. Caught only by explicitly re-verifying the exact route being hit rather than trusting memory of having already checked it — the same category of self-correction as the tenant-ID mix-up during Milestone 1's RU testing.
+- **Fix — global fallback authorization policy**, not a per-endpoint attribute reminder:
+  ```csharp
+  builder.Services.AddAuthorizationBuilder()
+      .SetFallbackPolicy(new AuthorizationPolicyBuilder()
+          .RequireAuthenticatedUser()
+          .Build());
+  ```
+  This requires authentication on **any endpoint with no explicit `[Authorize]`/`[AllowAnonymous]` metadata at all**, closing the "developer forgot the attribute" gap by default rather than relying on convention — the same category of fail-open risk already reasoned through for `CosmosClient` and the data adapter earlier in this milestone, just one layer up in the pipeline.
+- **Confirmed `[AllowAnonymous]` and `[Authorize]` both still take precedence over `FallbackPolicy`** — the fallback only applies when an endpoint declares neither, so `TenantMiddleware`'s existing `AllowAnonymousAttribute` metadata check (used to exempt the dev-token-issuing endpoint) needed no changes and continues to work unmodified alongside the new global policy.
+- **Confirmed `TenantMiddleware`'s own missing-claim check remains non-redundant even with the fallback policy in place** — the fallback policy only guarantees a request has *some* validly-authenticated identity; it says nothing about whether that identity's token happens to carry a `tenant_id` claim. A validly-authenticated user with no tenant claim is still a distinct failure mode `TenantMiddleware` alone catches.
+- **Personal, lived justification for choosing the global policy over "remember `[Authorize]` on every endpoint":** the gap was found by *personally forgetting the attribute on the very endpoint being used to test this exact scenario*, moments after having reasoned through why relying on that convention was risky. Worth keeping as the concrete story for "why not just use `[Authorize]` everywhere" if an interviewer pushes on it — it's a real anecdote, not a hypothetical.
