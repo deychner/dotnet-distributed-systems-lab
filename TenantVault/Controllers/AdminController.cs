@@ -1,6 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using TenantVault.BusinessLogic;
 using TenantVault.DataAccess.Models;
+using TenantVault.Security;
 
 namespace TenantVault.Controllers
 {
@@ -10,6 +12,7 @@ namespace TenantVault.Controllers
     // a conditional check inside a shared endpoint.
     [ApiController]
     [Route("[controller]")]
+    [Authorize(Roles = Roles.Admin)]
     public class AdminController(IAdminService adminService) : ControllerBase
     {
         private readonly IAdminService _adminService = adminService;
