@@ -33,30 +33,17 @@ namespace TenantVault.Controllers
             var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(signingKey));
             var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
 
-            Claim[] claims;
-            if (isAdmin)
-            {
-                claims =
-                    [
-                        new Claim(TENANT_ID_CLAIM_TYPE, tenantId),
-                        new Claim(JwtRegisteredClaimNames.Sub, "admin-user"),
-                        new Claim(ROLE_CLAIM_TYPE, Roles.Admin)
-                    ];
-            }
-            else
-            {
-                claims =
-                    [
-                        new Claim(TENANT_ID_CLAIM_TYPE, tenantId),
-                        new Claim(JwtRegisteredClaimNames.Sub, "regular-user"),
-                        new Claim(ROLE_CLAIM_TYPE, Roles.User)
-                    ];
-            }
+            Claim[] claims =
+                [
+                new Claim(TENANT_ID_CLAIM_TYPE, tenantId),
+                new Claim(JwtRegisteredClaimNames.Sub, isAdmin ? "admin-user" : "regular-user"),
+                new Claim(ROLE_CLAIM_TYPE, isAdmin ? Roles.Admin : Roles.User)
+                ];
 
             var token = new JwtSecurityToken(
                 issuer: _configuration["Jwt:Issuer"],
                 audience: _configuration["Jwt:Audience"],
-                claims: claims,
+                claims,
                 expires: DateTime.UtcNow.AddHours(1),
                 signingCredentials: credentials);
 
