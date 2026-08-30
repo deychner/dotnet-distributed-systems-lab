@@ -22,6 +22,12 @@ namespace TenantVault
             builder.Services.AddScoped<ISettableTenantContext>(provider => provider.GetRequiredService<TenantContext>());
             builder.Services.AddScoped<ITenantContext>(provider => provider.GetRequiredService<TenantContext>());
 
+            // Set a fallback authorization policy that requires authentication for all endpoints by default.
+            builder.Services.AddAuthorizationBuilder()
+                .SetFallbackPolicy(new Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder()
+                .RequireAuthenticatedUser()
+                .Build());
+
             ConfigureLogging(builder);
             ConfigureDataAccess(builder);
             ConfigureExceptionHandling(builder);
