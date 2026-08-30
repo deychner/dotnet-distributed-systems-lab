@@ -11,6 +11,7 @@ namespace TenantVault.Controllers
 {
     [ApiController]
     [Route("[controller]")]
+    [Development]
     public class DevelopmentController(IConfiguration configuration) : ControllerBase
     {
         private readonly IConfiguration _configuration = configuration;
@@ -20,7 +21,6 @@ namespace TenantVault.Controllers
 
         [HttpGet("jwt")]
         [AllowAnonymous]
-        [Development]
         [ProducesResponseType(typeof(string), StatusCodes.Status200OK)]
         public ActionResult<string> IssueJwt([FromQuery] string tenantId, [FromQuery] bool isAdmin)
         {
