@@ -5,7 +5,7 @@ using TenantVault.Startup;
 
 namespace TenantVault.DataAccess
 {
-    public class TenantDataAdapter(
+    public partial class TenantDataAdapter(
         CosmosClient cosmosClient,
         CosmosOptions options,
         ITenantContext tenantContext,
@@ -26,7 +26,7 @@ namespace TenantVault.DataAccess
 
             var response = await _container.CreateItemAsync(vehicle, partitionKey, cancellationToken: cancellationToken);
 
-            _logger.LogInformation("AddVehicleAsync Request Charge: {charge}", response.RequestCharge);
+            LogRequestCharge(nameof(AddVehicleAsync), response.RequestCharge);
 
             // vehicle.Id was already generated client-side before this call, so it's returned
             // directly instead of reading response.Resource.Id - response.Resource is Cosmos
@@ -43,8 +43,8 @@ namespace TenantVault.DataAccess
             {
                 var response = await _container.ReadItemAsync<Vehicle>(vehicleId.ToString(), partitionKey, cancellationToken: cancellationToken);
 
-                _logger.LogInformation("GetVehicleAsync Request Charge: {charge}", response.RequestCharge);
-                _logger.LogInformation("GetVehicleAsync Record Count: 1");
+                LogRequestCharge(nameof(GetVehicleAsync), response.RequestCharge);
+                LogRecordCount(nameof(GetVehicleAsync), 1);
 
                 return response.Resource;
             }
@@ -52,7 +52,7 @@ namespace TenantVault.DataAccess
             {
                 // Idiomatic Cosmos SDK pattern for a point read: catch the specific 404 and
                 // return null instead of letting exception-driven control flow reach the caller.
-                _logger.LogInformation("GetVehicleAsync Record Count: 0");
+                LogRecordCount(nameof(GetVehicleAsync), 0);
                 return null;
             }
         }
@@ -117,8 +117,8 @@ namespace TenantVault.DataAccess
                 totalRequestCharge += response.RequestCharge;
             }
 
-            _logger.LogInformation("{operation} Request Charge: {charge}", operationName, totalRequestCharge);
-            _logger.LogInformation("{operation} Record Count: {count}", operationName, vehicles.Count);
+            LogRequestCharge(operationName, totalRequestCharge);
+            LogRecordCount(operationName, vehicles.Count);
 
             return vehicles;
         }
@@ -139,5 +139,11 @@ namespace TenantVault.DataAccess
                 .Add(tenantId)
                 .Build();
         }
+
+        [LoggerMessage(Level = LogLevel.Information, Message = "{operation} Request Charge: {charge}")]
+        private partial void LogRequestCharge(string operation, double charge);
+
+        [LoggerMessage(Level = LogLevel.Information, Message = "{operation} Record Count: {count}")]
+        private partial void LogRecordCount(string operation, int count);
     }
 }
